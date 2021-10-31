@@ -44,3 +44,13 @@ p {
         @include fontStyle(8.8rem, -9px, 67px)
     }
 }
+
+@media (max-width: 450px) {
+    .wrapper {
+        width: 85%;
+    }
+    
+    h1 {
+        @include fontStyle(7rem, -6px, 54px)
+    }
+}
