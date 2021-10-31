@@ -1,0 +1,18 @@
+// Headers
+h1 {
+    @include fontStyle(20rem, -9px, 150px);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    @include fontStyle(3rem, 1px, auto);
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+
+// Body text
+p {
+    @include fontStyle(1.6rem, 1px, auto);
+    font-family: 'Hind Madurai', sans-serif;
+}
