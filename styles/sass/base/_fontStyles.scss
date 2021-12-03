@@ -1,18 +1,45 @@
+@font-face {
+    font-family: 'Doppelganger';
+    src: url('../assets/DoppelgangerDisplay.otf');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../assets/HelveticaNeue Regular.ttf')
+}
+
 // Headers
+h1, h2, h3, h4 {
+    font-family: 'Doppelganger', serif;
+    text-transform: uppercase;
+}
+
 h1 {
-    @include fontStyle(20rem, -9px, 150px);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-size: 28rem;
 }
 
 h2 {
-    @include fontStyle(3rem, 1px, auto);
-    font-family: 'Lora', serif;
-    font-style: italic;
+    font-size: 11rem;
+}
+
+h3 {
+    font-size: 6.4rem;
+}
+
+h4 {
+    font-size: 3.4rem;
 }
 
 // Body text
+p, .tagline {
+    font-family: 'Roboto', sans-serif;
+}
+
 p {
-    @include fontStyle(1.6rem, 1px, auto);
-    font-family: 'Hind Madurai', sans-serif;
+   font-size: 1.6rem; 
+}
+
+.tagline {
+    font-size: 1.4rem;
+    line-height: 20px;
 }
