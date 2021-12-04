@@ -403,19 +403,35 @@ h1 {
 }
 
 .aboutLine1 {
-  -ms-grid-columns: 1fr 1.5fr;
-      grid-template-columns: 1fr 1.5fr;
+  -ms-grid-columns: 1.5fr 1fr;
+      grid-template-columns: 1.5fr 1fr;
 }
 
 .aboutLine2 {
+  position: relative;
   -ms-grid-columns: 1fr 3fr;
       grid-template-columns: 1fr 3fr;
   gap: 100px;
   margin: 10px 0;
 }
 
+.aboutLine2 .arc {
+  position: absolute;
+  width: 80px;
+  height: 100px;
+  right: 5%;
+  top: -15%;
+}
+
 .aboutLine3 {
   position: relative;
+}
+
+.aboutLine3 .circleOutline {
+  position: absolute;
+  bottom: -5%;
+  left: -1%;
+  width: 560px;
 }
 
 .headshot {
