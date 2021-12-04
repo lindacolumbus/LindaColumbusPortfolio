@@ -270,6 +270,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 18rem;
+  line-height: 0.85;
 }
 
 h2 {
@@ -300,7 +301,7 @@ p {
 
 nav ul {
   width: 100%;
-  height: 80px;
+  height: 60px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -336,16 +337,16 @@ nav li:last-child {
 
 .fa-circle-notch {
   color: #FDC87E;
-  font-size: 3.5rem;
+  font-size: 2.2rem;
 }
 
 .fa-grip-lines {
   color: #4f6e6c;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin-right: 100px;
 }
 
-.title {
+header {
   height: 100vh;
 }
 
@@ -378,7 +379,50 @@ h1 {
 
 .arrowDown {
   position: absolute;
-  height: 60px;
+  height: 70px;
   right: 15%;
   bottom: 5%;
+}
+
+.aboutBlurb {
+  margin-top: 30%;
+}
+
+.aboutBlurb .tagline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutLine1, .aboutLine2 {
+  display: -ms-grid;
+  display: grid;
+}
+
+.aboutLine1 {
+  -ms-grid-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1.5fr;
+}
+
+.aboutLine2 {
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  gap: 100px;
+  margin: 10px 0;
+}
+
+.aboutLine3 {
+  position: relative;
+}
+
+.headshot {
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+  right: 6%;
+  z-index: -1;
 }
