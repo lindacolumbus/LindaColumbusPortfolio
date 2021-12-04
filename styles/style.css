@@ -250,30 +250,21 @@ i {
 
 .wrapper {
   width: 80%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 body {
-  color: #37392f;
+  color: #F3E0D6;
 }
 
-h1 {
-  color: #97705c;
-}
-
-a {
-  color: #777764;
+h1, h2, h3, h4, p {
+  color: #4f6e6c;
 }
 
 @font-face {
   font-family: 'Doppelganger';
   src: url("../assets/DoppelgangerDisplay.otf");
-}
-
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url("../assets/HelveticaNeue Regular.ttf");
 }
 
 h1, h2, h3, h4 {
@@ -282,7 +273,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 28rem;
+  font-size: 18rem;
 }
 
 h2 {
@@ -308,4 +299,36 @@ p {
 .tagline {
   font-size: 1.4rem;
   line-height: 20px;
+  text-transform: uppercase;
+}
+
+.title {
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 25vh;
+}
+
+.purpleCircle,
+.yellowCircle {
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.purpleCircle {
+  background-color: #F1E3FF;
+  height: 350px;
+  width: 350px;
+  top: -190px;
+  right: 100px;
+}
+
+.yellowCircle {
+  background-color: #FDC87E;
+  height: 1000px;
+  width: 1000px;
+  top: 100px;
+  left: -200px;
 }

@@ -3,19 +3,13 @@
     src: url('../assets/DoppelgangerDisplay.otf');
 }
 
-@font-face {
-    font-family: 'Helvetica Neue';
-    src: url('../assets/HelveticaNeue Regular.ttf')
-}
-
-// Headers
 h1, h2, h3, h4 {
     font-family: 'Doppelganger', serif;
     text-transform: uppercase;
 }
 
 h1 {
-    font-size: 28rem;
+    font-size: 18rem;
 }
 
 h2 {
@@ -30,7 +24,6 @@ h4 {
     font-size: 3.4rem;
 }
 
-// Body text
 p, .tagline {
     font-family: 'Roboto', sans-serif;
 }
@@ -42,4 +35,5 @@ p {
 .tagline {
     font-size: 1.4rem;
     line-height: 20px;
+    text-transform: uppercase;
 }
