@@ -1,0 +1,36 @@
+nav ul {
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid $darkGreen;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+nav h4 {
+    margin-left: 100px;
+}
+
+nav li:nth-child(2) {
+    justify-content: center;
+}
+
+nav li:last-child {
+    justify-content: flex-end;
+}
+
+.fa-circle-notch {
+    color: $happyYellow;
+    font-size: 3.5rem;
+}
+
+.fa-grip-lines {
+    color: $darkGreen;
+    font-size: 3.5rem;
+    margin-right: 100px;
+}
