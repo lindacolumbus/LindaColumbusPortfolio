@@ -375,3 +375,10 @@ h1 {
   top: 100px;
   left: -200px;
 }
+
+.arrowDown {
+  position: absolute;
+  height: 60px;
+  right: 15%;
+  bottom: 5%;
+}
