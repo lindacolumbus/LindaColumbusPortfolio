@@ -386,6 +386,7 @@ h1 {
 
 .aboutBlurb {
   margin-top: 30%;
+  margin-bottom: 18%;
 }
 
 .aboutBlurb .tagline {
@@ -409,10 +410,12 @@ h1 {
 
 .aboutLine2 {
   position: relative;
-  -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
   gap: 100px;
   margin: 10px 0;
+}
+
+.aboutLine2 h2 {
+  margin-left: 160px;
 }
 
 .aboutLine2 .arc {
@@ -420,7 +423,9 @@ h1 {
   width: 80px;
   height: 100px;
   right: 5%;
-  top: -15%;
+  top: -5%;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
 }
 
 .aboutLine3 {
@@ -434,6 +439,24 @@ h1 {
   width: 560px;
 }
 
+.aboutLine3 .arrowDown1,
+.aboutLine3 .arrowDown2 {
+  position: absolute;
+}
+
+.aboutLine3 .arrowDown1 {
+  bottom: -20%;
+  right: 35%;
+}
+
+.aboutLine3 .arrowDown2 {
+  right: 100px;
+  bottom: -25%;
+  right: 29%;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
 .headshot {
   height: 300px;
   border-radius: 50%;
@@ -441,4 +464,117 @@ h1 {
   top: -10%;
   right: 6%;
   z-index: -1;
+}
+
+.featuredWork {
+  background-color: #F3E0D6;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  height: 1200px;
+  text-align: center;
+}
+
+.featuredWork .wrapper {
+  width: 60%;
+  position: relative;
+}
+
+.featuredWork .tagline {
+  padding-top: 80px;
+  margin-bottom: 50px;
+}
+
+.featuredWork .circleOutline {
+  position: absolute;
+  width: 550px;
+  top: 240px;
+  left: 130px;
+}
+
+.featuredSlideshow {
+  background-color: #DAE7D9;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  height: 1200px;
+  margin-top: 300px;
+  text-align: center;
+  position: relative;
+}
+
+.featuredSlideshow .slideshowNum,
+.featuredSlideshow .tasteMaker1,
+.featuredSlideshow .tasteMaker2,
+.featuredSlideshow .arrowLeft,
+.featuredSlideshow .arrowRight,
+.featuredSlideshow .prev,
+.featuredSlideshow .next {
+  position: absolute;
+}
+
+.featuredSlideshow .slideshowNum {
+  top: -270px;
+  left: 50%;
+}
+
+.featuredSlideshow .tasteMaker1 {
+  border-radius: 120px;
+  width: 300px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 90;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  top: -100px;
+  left: 50%;
+}
+
+.featuredSlideshow .tasteMaker2 {
+  height: 500px;
+  border-radius: 32px;
+  top: -150px;
+  left: 30%;
+}
+
+.featuredSlideshow .arrowLeft {
+  width: 60px;
+  top: 20%;
+  left: 18%;
+}
+
+.featuredSlideshow .arrowRight {
+  width: 70px;
+  top: 18%;
+  right: 18%;
+}
+
+.featuredSlideshow .prev,
+.featuredSlideshow .next {
+  top: 17%;
+}
+
+.featuredSlideshow .prev {
+  left: 19%;
+}
+
+.featuredSlideshow .next {
+  right: 19.5%;
+}
+
+.featuredSlideshow .featuredDescriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.featuredSlideshow .featuredDescriptions ul {
+  padding-top: 310px;
+  width: 40%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
 }
