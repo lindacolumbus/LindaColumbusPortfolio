@@ -580,11 +580,11 @@ h1 {
 
 .featuredSlideshow .featuredDescriptions ul {
   padding-top: 270px;
-  width: 40%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-columns: (auto)[6];
+      grid-template-columns: repeat(6, auto);
+  gap: 30px;
 }
 
 .featuredSlideshow p {

@@ -193,9 +193,9 @@ h1 {
         justify-content: center;
         ul {
             padding-top: 270px;
-            width: 40%;
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
+            grid-template-columns: repeat(6, auto);
+            gap: 30px;
         }
     }
     p {
