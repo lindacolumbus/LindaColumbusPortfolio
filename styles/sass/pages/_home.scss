@@ -39,10 +39,10 @@ header.home {
 .aboutBlurb {
     margin-top: 30%;
     margin-bottom: 18%;
-    .tagline {
-        display: flex;
-        align-items: center;
-    }
+    // .tagline {
+    //     display: flex;
+    //     align-items: center;
+    // }
 }
 
 .aboutLine1, .aboutLine2 {
@@ -50,7 +50,7 @@ header.home {
 }
 
 .aboutLine1 {
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 3fr 1.75fr;
     position: relative;
     p:last-of-type {
         grid-column-start: 1;

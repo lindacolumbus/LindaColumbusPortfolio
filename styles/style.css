@@ -393,8 +393,8 @@ footer .footerNav {
 footer .footerNav ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[3] 9fr;
-      grid-template-columns: repeat(3, auto) 9fr;
+  -ms-grid-columns: (auto)[4] 9fr;
+      grid-template-columns: repeat(4, auto) 9fr;
   gap: 25px;
   padding: 20px 0 25px 0;
 }
@@ -450,23 +450,14 @@ header.home .arrowDown {
   margin-bottom: 18%;
 }
 
-.aboutBlurb .tagline {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .aboutLine1, .aboutLine2 {
   display: -ms-grid;
   display: grid;
 }
 
 .aboutLine1 {
-  -ms-grid-columns: 3fr 2fr;
-      grid-template-columns: 3fr 2fr;
+  -ms-grid-columns: 3fr 1.75fr;
+      grid-template-columns: 3fr 1.75fr;
   position: relative;
 }
 
@@ -750,8 +741,8 @@ footer .footerNav {
 footer .footerNav ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[3] 9fr;
-      grid-template-columns: repeat(3, auto) 9fr;
+  -ms-grid-columns: (auto)[4] 9fr;
+      grid-template-columns: repeat(4, auto) 9fr;
   gap: 25px;
   padding: 20px 0 25px 0;
 }
@@ -779,14 +770,13 @@ header.about {
 
 main.about {
   background-color: #F1E3FF;
-  height: 800px;
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
   margin-top: -300px;
 }
 
 .titleName {
-  width: 50%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -796,4 +786,5 @@ main.about {
           flex-direction: column;
   text-align: center;
   margin: 0 auto;
+  padding-top: 150px;
 }
