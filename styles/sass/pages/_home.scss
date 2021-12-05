@@ -1,40 +1,38 @@
+@import '../layout/header';
+@import '../layout/footer';
+
 // Title landing
-header {
+header.home {
     height: 100vh;
-}
-
-h1 {
+    h1 {
     margin-top: 25vh;
-}
-
-.purpleCircle,
-.yellowCircle {
+    }
+    .purpleCircle,
+    .yellowCircle {
     border-radius: 50%;
     position: absolute;
     z-index: -1;
-}
-
-.purpleCircle {
+    }
+    .purpleCircle {
     background-color: $babyLilac;
     height: 350px;
     width: 350px;
     top: -190px;
     right: 100px;
-}
-
-.yellowCircle {
+    }
+    .yellowCircle {
     background-color: $happyYellow;
     height: 1000px;
     width: 1000px;
     top: 100px;
     left: -200px;
-}
-
-.arrowDown {
+    }
+    .arrowDown {
     position: absolute;
     height: 70px;
     right: 15%;
     bottom: 5%;
+    }
 }
 
 // About blurb
@@ -52,12 +50,24 @@ h1 {
 }
 
 .aboutLine1 {
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 3fr 2fr;
+    position: relative;
+    p:last-of-type {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: right;
+        margin-right: 40px;
+    }
+    .circleOutline {
+        position: absolute;
+        right: 0;
+        bottom: -15px;
+    }
 }
 
 .aboutLine2 {
     position: relative;
-    // grid-template-columns: 1fr 3fr;
+    // grid-template-columns: 1fr 4fr;
     gap: 100px;
     margin: 10px 0;
     h2 {
@@ -81,6 +91,20 @@ h1 {
         left: -1%;
         width: 560px;
     }
+    // h2 {
+    //     position: relative;
+    // }
+    // h2::after {
+    //     content: '';
+    //     position: absolute;
+    //     background-image: url('../assets/Circle.svg');
+    //     display: block;
+    //     background-size: cover;
+    //     width: 53%;
+    //     aspect-ratio: 3.1/1;
+    //     top: 33%;
+    //     left: -1%;
+    // }
     .arrowDown1,
     .arrowDown2 {
         position: absolute;
@@ -206,44 +230,5 @@ h1 {
         width: 160px;
         left: 45%;
         top: 610px;
-    }
-}
-
-// Footer / contact blurb
-footer {
-    background-color: $happyYellow;
-    padding-top: 100px;
-    text-align: center;
-    div {
-        display: flex;
-        justify-content: center;
-        position: relative;
-    }
-    h2 {
-        padding-top: 100px;
-        padding-bottom: 150px;
-        max-width: 800px;
-        width: 50%;
-    }
-    .circleOutline {
-        position: absolute;
-        width: 350px;
-        top: 43%;
-        left: 44%;
-    }
-    .footerNav {
-        border-top: 1px solid $darkGreen;
-        ul {
-            display: grid;
-            grid-template-columns: repeat(3, auto) 9fr;
-            gap: 25px;
-            padding: 20px 0 25px 0;
-        }
-        li {
-            text-align: left;
-        }
-        li:last-of-type {
-            text-align: right;
-        }
     }
 }
