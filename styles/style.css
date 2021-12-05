@@ -470,7 +470,7 @@ h1 {
   background-color: #F3E0D6;
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
-  height: 1200px;
+  height: 1300px;
   text-align: center;
 }
 
@@ -512,7 +512,7 @@ h1 {
 }
 
 .featuredSlideshow .slideshowNum {
-  top: -270px;
+  top: -330px;
   left: 50%;
 }
 
@@ -550,7 +550,7 @@ h1 {
 
 .featuredSlideshow .prev,
 .featuredSlideshow .next {
-  top: 17%;
+  top: 14%;
 }
 
 .featuredSlideshow .prev {
@@ -571,10 +571,21 @@ h1 {
 }
 
 .featuredSlideshow .featuredDescriptions ul {
-  padding-top: 310px;
+  padding-top: 270px;
   width: 40%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
+}
+
+.featuredSlideshow p {
+  margin-top: 40px;
+}
+
+.featuredSlideshow .circleOutline {
+  position: absolute;
+  width: 160px;
+  left: 45%;
+  top: 610px;
 }

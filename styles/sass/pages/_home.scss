@@ -111,7 +111,7 @@ h1 {
     background-color: $sand;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
-    height: 1200px;
+    height: 1300px;
     text-align: center;
     .wrapper {
         width: 60%; 
@@ -148,7 +148,7 @@ h1 {
         position: absolute;
     }
     .slideshowNum {
-        top: -270px;
+        top: -330px;
         left: 50%;
     }
     .tasteMaker1 {
@@ -179,7 +179,7 @@ h1 {
     }
     .prev,
     .next {
-        top: 17%;
+        top: 14%;
     }
     .prev {
         left: 19%
@@ -191,10 +191,19 @@ h1 {
         display: flex;
         justify-content: center;
         ul {
-            padding-top: 310px;
+            padding-top: 270px;
             width: 40%;
             display: grid;
             grid-template-columns: repeat(6, 1fr);
         }
+    }
+    p {
+        margin-top: 40px;
+    }
+    .circleOutline {
+        position: absolute;
+        width: 160px;
+        left: 45%;
+        top: 610px;
     }
 }
