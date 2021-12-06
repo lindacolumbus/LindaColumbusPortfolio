@@ -24,19 +24,37 @@ body.projects {
 
 .tasteMakerBackground {
     background-image: url('https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?auto=format&fit=crop&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1169');
+    background-position: top;
+    margin-top: 80px;
+}
+
+.weatherScoutBackground {
+    background-image: url('https://images.unsplash.com/photo-1496450681664-3df85efbd29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
     background-position: center;
+    margin-top: -200px;
+}
+
+.tasteMakerBackground,
+.weatherScoutBackground {
     background-size: cover;
     height: 800px;
     border-radius: 100px;
-    margin-top: 80px;
 }
 
 .tasteMakerInfo {
     background-color: $babyLilac;
+}
+
+.weatherScoutInfo {
+    background-color: $babyGreen;
+}
+
+.tasteMakerInfo,
+.weatherScoutInfo {
     height: 800px;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
-    margin-top: -600px;
+    margin-top: -550px;
     display: flex;
     flex-direction: column;
     align-items: center;

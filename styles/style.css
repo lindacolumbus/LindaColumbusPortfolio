@@ -888,19 +888,37 @@ body.projects {
 
 .tasteMakerBackground {
   background-image: url("https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?auto=format&fit=crop&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1169");
+  background-position: top;
+  margin-top: 80px;
+}
+
+.weatherScoutBackground {
+  background-image: url("https://images.unsplash.com/photo-1496450681664-3df85efbd29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
   background-position: center;
+  margin-top: -200px;
+}
+
+.tasteMakerBackground,
+.weatherScoutBackground {
   background-size: cover;
   height: 800px;
   border-radius: 100px;
-  margin-top: 80px;
 }
 
 .tasteMakerInfo {
   background-color: #F1E3FF;
+}
+
+.weatherScoutInfo {
+  background-color: #DAE7D9;
+}
+
+.tasteMakerInfo,
+.weatherScoutInfo {
   height: 800px;
   border-top-left-radius: 100%;
   border-top-right-radius: 100%;
-  margin-top: -600px;
+  margin-top: -550px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -913,7 +931,8 @@ body.projects {
           align-items: center;
 }
 
-.tasteMakerInfo ul.tagline {
+.tasteMakerInfo ul.tagline,
+.weatherScoutInfo ul.tagline {
   padding-top: 120px;
   width: 50%;
   display: -ms-grid;
@@ -923,26 +942,31 @@ body.projects {
   text-align: center;
 }
 
-.tasteMakerInfo div {
+.tasteMakerInfo div,
+.weatherScoutInfo div {
   position: relative;
 }
 
-.tasteMakerInfo div p {
+.tasteMakerInfo div p,
+.weatherScoutInfo div p {
   position: absolute;
   top: 54px;
   left: -80px;
 }
 
-.tasteMakerInfo h2 {
+.tasteMakerInfo h2,
+.weatherScoutInfo h2 {
   margin: 50px 0 30px 0;
 }
 
-.tasteMakerInfo p:nth-child(3) {
+.tasteMakerInfo p:nth-child(3),
+.weatherScoutInfo p:nth-child(3) {
   width: 30%;
   text-align: center;
 }
 
-.tasteMakerInfo ul:nth-of-type(2) {
+.tasteMakerInfo ul:nth-of-type(2),
+.weatherScoutInfo ul:nth-of-type(2) {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -951,11 +975,13 @@ body.projects {
   margin: 50px 0;
 }
 
-.tasteMakerInfo ul:nth-of-type(2) p {
+.tasteMakerInfo ul:nth-of-type(2) p,
+.weatherScoutInfo ul:nth-of-type(2) p {
   position: relative;
 }
 
-.tasteMakerInfo ul:nth-of-type(2) .linkOne:hover::after {
+.tasteMakerInfo ul:nth-of-type(2) .linkOne:hover::after,
+.weatherScoutInfo ul:nth-of-type(2) .linkOne:hover::after {
   content: url("../assets/Circle.svg");
   display: block;
   position: absolute;
@@ -963,7 +989,8 @@ body.projects {
   left: -40px;
 }
 
-.tasteMakerInfo ul:nth-of-type(2) .linkTwo:hover::after {
+.tasteMakerInfo ul:nth-of-type(2) .linkTwo:hover::after,
+.weatherScoutInfo ul:nth-of-type(2) .linkTwo:hover::after {
   content: url("../assets/Circle.svg");
   display: block;
   position: absolute;
