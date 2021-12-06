@@ -776,7 +776,6 @@ main.about {
 }
 
 .titleName {
-  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -787,4 +786,111 @@ main.about {
   text-align: center;
   margin: 0 auto;
   padding-top: 150px;
+}
+
+.aboutInfo {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  position: relative;
+}
+
+.aboutInfo img {
+  width: 350px;
+  border-radius: 150px;
+}
+
+.aboutInfo p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-bottom: 60px;
+}
+
+.aboutInfo .arrowDown1,
+.aboutInfo .arrowDown2 {
+  position: absolute;
+  width: 50px;
+}
+
+.aboutInfo .arrowDown1 {
+  top: 10%;
+  right: 30%;
+}
+
+.aboutInfo .arrowDown2 {
+  top: 5%;
+  right: 25%;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.skillList {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.skillList ul {
+  margin: 50px 0;
+}
+
+.skillList li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  margin: 0 auto;
+  gap: 8px;
+}
+
+h3:first-of-type {
+  text-align: right;
+}
+
+.aboutLinks ul {
+  width: 50%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  padding: 80px 0;
+  text-align: center;
+  position: relative;
+}
+
+.aboutLinks li:first-child:hover::after {
+  content: url("../assets/Circle.svg");
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 7%;
+}
+
+.aboutLinks li:nth-child(2):hover::after {
+  content: url("../assets/Circle.svg");
+  display: block;
+  position: absolute;
+  top: 35%;
+  left: 39%;
+}
+
+.aboutLinks li:last-child:hover::after {
+  content: url("../assets/Circle.svg");
+  display: block;
+  position: absolute;
+  top: 35%;
+  right: 5%;
 }

@@ -24,7 +24,6 @@ main.about {
 }
 
 .titleName {
-    width: 80%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -33,5 +32,87 @@ main.about {
 }
 
 .aboutInfo {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    position: relative;
+    img {
+        width: 350px;
+        border-radius: 150px;
+    }
+    p {
+        display: flex;
+        align-items: end;
+        margin-bottom: 60px;
+    }
+    .arrowDown1,
+    .arrowDown2 {
+        position: absolute;
+        width: 50px;
+    }
+    .arrowDown1 {
+        top: 10%;
+        right: 30%;
+    }
+    .arrowDown2 {
+        top: 5%;
+        right: 25%;
+        transform: rotate(-10deg);
+    }
+}
 
+.skillList {
+    width: 70%;
+    margin: 0 auto;
+    ul {
+        margin: 50px 0;
+    }
+    li {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, auto);
+        margin: 0 auto;
+        gap: 8px;
+    }
+}
+
+h3:first-of-type {
+    text-align: right;
+}
+
+.aboutLinks {
+    ul {
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    }
+    li:first-child:hover::after {
+        content:url('../assets/Circle.svg');
+        display: block;
+        position: absolute;
+        top: 35%;
+        left: 7%;
+    }
+    li:nth-child(2):hover::after {
+        content:url('../assets/Circle.svg');
+        display: block;
+        position: absolute;
+        top: 35%;
+        left: 39%;
+    }
+    li:last-child:hover::after {
+        content:url('../assets/Circle.svg');
+        display: block;
+        position: absolute;
+        top: 35%;
+        right: 5%;
+    }
 }
