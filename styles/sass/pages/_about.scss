@@ -5,6 +5,13 @@ body.about {
     background: linear-gradient(90deg, #0081c6 50%, #0077bd 50%);
 }
 
+.about .headerNav {
+    border-bottom: 1px solid $happyYellow;
+    h4, .fa-grip-lines {
+        color: $happyYellow;
+    }
+}
+
 // Header
 header.about {
     height: 100vh;
@@ -72,7 +79,7 @@ main.about {
     }
     li {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr 1fr 1.22fr;
         grid-template-rows: repeat(3, auto);
         margin: 0 auto;
         gap: 8px;
@@ -94,21 +101,21 @@ h3:first-of-type {
     text-align: center;
     position: relative;
     }
-    li:first-child:hover::after {
+    .oneLink:hover::after {
         content:url('../assets/Circle.svg');
         display: block;
         position: absolute;
         top: 35%;
         left: 7%;
     }
-    li:nth-child(2):hover::after {
+    .twoLink:hover::after {
         content:url('../assets/Circle.svg');
         display: block;
         position: absolute;
         top: 35%;
         left: 39%;
     }
-    li:last-child:hover::after {
+    .threeLink:hover::after {
         content:url('../assets/Circle.svg');
         display: block;
         position: absolute;

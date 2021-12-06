@@ -249,7 +249,7 @@ a {
   color: #4f6e6c;
 }
 
-a:hover {
+footer a:hover {
   color: white;
 }
 
@@ -760,6 +760,14 @@ body.about {
   background: linear-gradient(90deg, #0081c6 50%, #0077bd 50%);
 }
 
+.about .headerNav {
+  border-bottom: 1px solid #FDC87E;
+}
+
+.about .headerNav h4, .about .headerNav .fa-grip-lines {
+  color: #FDC87E;
+}
+
 header.about {
   height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
@@ -845,8 +853,8 @@ main.about {
 .skillList li {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: 1fr 1fr 1fr 1.22fr;
+      grid-template-columns: 1fr 1fr 1fr 1.22fr;
   -ms-grid-rows: (auto)[3];
       grid-template-rows: repeat(3, auto);
   margin: 0 auto;
@@ -871,7 +879,7 @@ h3:first-of-type {
   position: relative;
 }
 
-.aboutLinks li:first-child:hover::after {
+.aboutLinks .oneLink:hover::after {
   content: url("../assets/Circle.svg");
   display: block;
   position: absolute;
@@ -879,7 +887,7 @@ h3:first-of-type {
   left: 7%;
 }
 
-.aboutLinks li:nth-child(2):hover::after {
+.aboutLinks .twoLink:hover::after {
   content: url("../assets/Circle.svg");
   display: block;
   position: absolute;
@@ -887,7 +895,7 @@ h3:first-of-type {
   left: 39%;
 }
 
-.aboutLinks li:last-child:hover::after {
+.aboutLinks .threeLink:hover::after {
   content: url("../assets/Circle.svg");
   display: block;
   position: absolute;
