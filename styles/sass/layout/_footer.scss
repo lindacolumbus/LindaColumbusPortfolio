@@ -6,18 +6,31 @@ footer {
     div {
         display: flex;
         justify-content: center;
-        position: relative;
     }
     h2 {
         padding-top: 100px;
         padding-bottom: 150px;
         max-width: 800px;
         width: 50%;
-        pointer-events: none;
+    }
+    span {
+        position: relative;
+    }
+    span::after {
+        content: '';
+        position: absolute;
+        background-image: url('../assets/Circle White.svg');
+        background-repeat: no-repeat;
+        display: block;
+        width: 400px;
+        height: 120px;
+        top: -20px;
+        left: -40px;
+        background-size: 330px;
     }
     .circleOutline {
         position: absolute;
-        width: 350px;
+        width: 500px;
         top: 43%;
         left: 44%;
     }

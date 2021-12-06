@@ -368,7 +368,6 @@ footer div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
 }
 
 footer h2 {
@@ -376,12 +375,28 @@ footer h2 {
   padding-bottom: 150px;
   max-width: 800px;
   width: 50%;
-  pointer-events: none;
+}
+
+footer span {
+  position: relative;
+}
+
+footer span::after {
+  content: '';
+  position: absolute;
+  background-image: url("../assets/Circle White.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 400px;
+  height: 120px;
+  top: -20px;
+  left: -40px;
+  background-size: 330px;
 }
 
 footer .circleOutline {
   position: absolute;
-  width: 350px;
+  width: 500px;
   top: 43%;
   left: 44%;
 }
@@ -458,7 +473,23 @@ header.home .arrowDown {
 .aboutLine1 {
   -ms-grid-columns: 3fr 1.75fr;
       grid-template-columns: 3fr 1.75fr;
+}
+
+.aboutLine1 span {
   position: relative;
+}
+
+.aboutLine1 span::after {
+  content: '';
+  position: absolute;
+  background-image: url("../assets/Circle.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 600px;
+  height: 400px;
+  top: -15px;
+  left: -35px;
+  background-size: 160px;
 }
 
 .aboutLine1 p:last-of-type {
@@ -467,12 +498,6 @@ header.home .arrowDown {
   grid-column-end: 3;
   text-align: right;
   margin-right: 40px;
-}
-
-.aboutLine1 .circleOutline {
-  position: absolute;
-  right: 0;
-  bottom: -15px;
 }
 
 .aboutLine2 {
@@ -499,11 +524,21 @@ header.home .arrowDown {
   position: relative;
 }
 
-.aboutLine3 .circleOutline {
+.aboutLine3 span {
+  position: relative;
+}
+
+.aboutLine3 span::after {
+  content: '';
   position: absolute;
-  bottom: -5%;
-  left: -1%;
-  width: 560px;
+  background-image: url("../assets/Circle.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 600px;
+  height: 400px;
+  top: -40px;
+  left: -10px;
+  background-size: 560px;
 }
 
 .aboutLine3 .arrowDown1,
@@ -542,19 +577,28 @@ header.home .arrowDown {
 
 .featuredWork .wrapper {
   width: 60%;
+}
+
+.featuredWork .featureTitle span {
   position: relative;
+}
+
+.featuredWork .featureTitle span::after {
+  content: '';
+  position: absolute;
+  background-image: url("../assets/Circle.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 600px;
+  height: 400px;
+  top: -40px;
+  left: -30px;
+  background-size: 550px;
 }
 
 .featuredWork .tagline {
   padding-top: 80px;
   margin-bottom: 50px;
-}
-
-.featuredWork .circleOutline {
-  position: absolute;
-  width: 550px;
-  top: 240px;
-  left: 130px;
 }
 
 .featuredSlideshow {
@@ -649,110 +693,21 @@ header.home .arrowDown {
   margin-top: 40px;
 }
 
-.featuredSlideshow .circleOutline {
-  position: absolute;
-  width: 160px;
-  left: 45%;
-  top: 610px;
-}
-
-.headerNav ul {
-  width: 100%;
-  height: 60px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  border-bottom: 1px solid #4f6e6c;
-}
-
-.headerNav li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 5px;
-}
-
-.headerNav h4 {
-  margin-left: 100px;
-}
-
-.headerNav li:nth-child(2) {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.headerNav li:last-child {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.fa-circle-notch {
-  color: #FDC87E;
-  font-size: 2.2rem;
-}
-
-.fa-grip-lines {
-  color: #4f6e6c;
-  font-size: 2.5rem;
-  margin-right: 100px;
-}
-
-footer {
-  background-color: #FDC87E;
-  padding-top: 100px;
-  text-align: center;
-}
-
-footer div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.featuredSlideshow p span {
   position: relative;
 }
 
-footer h2 {
-  padding-top: 100px;
-  padding-bottom: 150px;
-  max-width: 800px;
-  width: 50%;
-  pointer-events: none;
-}
-
-footer .circleOutline {
+.featuredSlideshow p span::after {
+  content: '';
   position: absolute;
-  width: 350px;
-  top: 43%;
-  left: 44%;
-}
-
-footer .footerNav {
-  border-top: 1px solid #4f6e6c;
-}
-
-footer .footerNav ul {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (auto)[4] 9fr;
-      grid-template-columns: repeat(4, auto) 9fr;
-  gap: 25px;
-  padding: 20px 0 25px 0;
-}
-
-footer .footerNav li {
-  text-align: left;
-}
-
-footer .footerNav li:last-of-type {
-  text-align: right;
+  background-image: url("../assets/Circle.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 400px;
+  height: 120px;
+  top: -15px;
+  left: -40px;
+  background-size: 160px;
 }
 
 body.about {
@@ -842,8 +797,9 @@ main.about {
 }
 
 .skillList {
-  width: 70%;
+  width: 62%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .skillList ul {
@@ -901,4 +857,116 @@ h3:first-of-type {
   position: absolute;
   top: 35%;
   right: 5%;
+}
+
+body.projects {
+  background-color: #F3E0D6;
+}
+
+.projectIntro {
+  width: 60%;
+  margin-top: 70px;
+  text-align: center;
+  position: relative;
+}
+
+.projectIntro img {
+  border-radius: 100%;
+  width: 700px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  top: 5%;
+  left: calc(50% - 350px);
+}
+
+.projectIntro :nth-child(3) {
+  margin-top: 60vh;
+}
+
+.tasteMakerBackground {
+  background-image: url("https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?auto=format&fit=crop&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1169");
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  border-radius: 100px;
+  margin-top: 80px;
+}
+
+.tasteMakerInfo {
+  background-color: #F1E3FF;
+  height: 800px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  margin-top: -600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tasteMakerInfo ul.tagline {
+  padding-top: 120px;
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+}
+
+.tasteMakerInfo div {
+  position: relative;
+}
+
+.tasteMakerInfo div p {
+  position: absolute;
+  top: 54px;
+  left: -80px;
+}
+
+.tasteMakerInfo h2 {
+  margin: 50px 0 30px 0;
+}
+
+.tasteMakerInfo p:nth-child(3) {
+  width: 30%;
+  text-align: center;
+}
+
+.tasteMakerInfo ul:nth-of-type(2) {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 150px;
+  margin: 50px 0;
+}
+
+.tasteMakerInfo ul:nth-of-type(2) p {
+  position: relative;
+}
+
+.tasteMakerInfo ul:nth-of-type(2) .linkOne:hover::after {
+  content: url("../assets/Circle.svg");
+  display: block;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+}
+
+.tasteMakerInfo ul:nth-of-type(2) .linkTwo:hover::after {
+  content: url("../assets/Circle.svg");
+  display: block;
+  position: absolute;
+  top: -15px;
+  left: -40px;
 }

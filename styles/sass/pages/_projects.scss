@@ -1,0 +1,88 @@
+body.projects {
+    background-color: $sand;
+}
+
+.projectIntro {
+    width: 60%;
+    margin-top: 70px;
+    text-align: center;
+    position: relative;
+    img {
+        border-radius: 100%;
+        width: 700px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+        top: 5%;
+        left: calc(50% - 350px);
+    }
+    :nth-child(3) {
+        margin-top:60vh;
+    }
+}
+
+.tasteMakerBackground {
+    background-image: url('https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?auto=format&fit=crop&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1169');
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    border-radius: 100px;
+    margin-top: 80px;
+}
+
+.tasteMakerInfo {
+    background-color: $babyLilac;
+    height: 800px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    margin-top: -600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul.tagline{
+        padding-top: 120px;
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        text-align: center;
+    }
+    div {
+        position: relative;
+        p {
+            position: absolute;
+            top: 54px;
+            left: -80px;
+        }
+    }
+    h2 {
+        margin: 50px 0 30px 0;
+    }
+    p:nth-child(3) {
+        width: 30%;
+        text-align: center;
+    }
+    ul:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 150px;
+        margin: 50px 0;
+        p {
+            position: relative;
+        }
+        .linkOne:hover::after {
+        content:url('../assets/Circle.svg');
+        display: block;
+        position: absolute;
+        top: -15px;
+        left: -40px;
+        }
+        .linkTwo:hover::after {
+            content:url('../assets/Circle.svg');
+            display: block;
+            position: absolute;
+            top: -15px;
+            left: -40px;
+        }
+    }
+}

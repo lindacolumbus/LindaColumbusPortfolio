@@ -39,10 +39,6 @@ header.home {
 .aboutBlurb {
     margin-top: 30%;
     margin-bottom: 18%;
-    // .tagline {
-    //     display: flex;
-    //     align-items: center;
-    // }
 }
 
 .aboutLine1, .aboutLine2 {
@@ -51,23 +47,31 @@ header.home {
 
 .aboutLine1 {
     grid-template-columns: 3fr 1.75fr;
-    position: relative;
+    span {
+        position: relative;
+    }
+    span::after {
+        content: '';
+        position: absolute;
+        background-image: url('../assets/Circle.svg');
+        background-repeat: no-repeat;
+        display: block;
+        width: 600px;
+        height: 400px;
+        top: -15px;
+        left: -35px;
+        background-size: 160px;
+    }
     p:last-of-type {
         grid-column-start: 1;
         grid-column-end: 3;
         text-align: right;
         margin-right: 40px;
     }
-    .circleOutline {
-        position: absolute;
-        right: 0;
-        bottom: -15px;
-    }
 }
 
 .aboutLine2 {
     position: relative;
-    // grid-template-columns: 1fr 4fr;
     gap: 100px;
     margin: 10px 0;
     h2 {
@@ -85,26 +89,21 @@ header.home {
 
 .aboutLine3 {
     position: relative;
-    .circleOutline {
-        position: absolute;
-        bottom: -5%;
-        left: -1%;
-        width: 560px;
+    span {
+        position: relative;
     }
-    // h2 {
-    //     position: relative;
-    // }
-    // h2::after {
-    //     content: '';
-    //     position: absolute;
-    //     background-image: url('../assets/Circle.svg');
-    //     display: block;
-    //     background-size: cover;
-    //     width: 53%;
-    //     aspect-ratio: 3.1/1;
-    //     top: 33%;
-    //     left: -1%;
-    // }
+    span::after {
+        content: '';
+        position: absolute;
+        background-image: url('../assets/Circle.svg');
+        background-repeat: no-repeat;
+        display: block;
+        width: 600px;
+        height: 400px;
+        top: -40px;
+        left: -10px;
+        background-size: 560px;
+    }
     .arrowDown1,
     .arrowDown2 {
         position: absolute;
@@ -135,21 +134,30 @@ header.home {
     background-color: $sand;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
-    // height: 1300px;
     text-align: center;
     .wrapper {
         width: 60%; 
+    }
+    .featureTitle {
+        span {
         position: relative;
+        }
+        span::after {
+        content: '';
+        position: absolute;
+        background-image: url('../assets/Circle.svg');
+        background-repeat: no-repeat;
+        display: block;
+        width: 600px;
+        height: 400px;
+        top: -40px;
+        left: -30px;
+        background-size: 550px;
+        }
     }
     .tagline {
         padding-top: 80px;
         margin-bottom: 50px;
-    }
-    .circleOutline {
-        position: absolute;
-        width: 550px;
-        top: 240px;
-        left: 130px;
     }
 }
 
@@ -158,7 +166,6 @@ header.home {
     background-color: $babyGreen;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
-    // height: 1200px;
     margin-top: 300px;
     padding-bottom: 100px;
     text-align: center;
@@ -224,11 +231,20 @@ header.home {
     }
     p {
         margin-top: 40px;
-    }
-    .circleOutline {
+        span {
+            position: relative;
+        }
+        span::after {
+        content: '';
         position: absolute;
-        width: 160px;
-        left: 45%;
-        top: 610px;
+        background-image: url('../assets/Circle.svg');
+        background-repeat: no-repeat;
+        display: block;
+        width: 400px;
+        height: 120px;
+        top: -15px;
+        left: -40px;
+        background-size: 160px;
+        }
     }
 }
