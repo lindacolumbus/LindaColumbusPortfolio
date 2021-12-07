@@ -249,8 +249,7 @@ a {
   color: #4f6e6c;
 }
 
-footer a:hover
-.contact a:hover {
+footer a:hover {
   color: white;
 }
 
@@ -1035,6 +1034,10 @@ footer.projects {
   background-color: #F3E0D6;
 }
 
+main a:hover {
+  color: white;
+}
+
 main > h2 {
   margin: 100px 0 0 100px;
 }
@@ -1062,10 +1065,10 @@ main h3.email::before {
   background-image: url("../assets/ArrowPointRight.svg");
   background-repeat: no-repeat;
   display: block;
-  width: 600px;
-  height: 400px;
-  top: 40px;
-  left: 0;
+  width: 100px;
+  height: 100px;
+  top: -50px;
+  left: 80px;
   background-size: 80px;
   -webkit-transform: scaleX(-1) rotate(90deg);
           transform: scaleX(-1) rotate(90deg);
@@ -1076,8 +1079,22 @@ main ul {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  width: 30%;
+  width: 40%;
   margin: 0 auto;
   text-align: center;
   margin-top: 110px;
+}
+
+main ul a {
+  position: relative;
+}
+
+main ul .oneLink:hover::after,
+main ul .twoLink:hover::after,
+main ul .threeLink:hover::after {
+  content: url("../assets/Circle.svg");
+  display: block;
+  position: absolute;
+  top: -8px;
+  left: -70px;
 }

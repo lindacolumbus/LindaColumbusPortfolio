@@ -3,6 +3,9 @@
 }
 
 main {
+    a:hover {
+        color: white;
+        }
     > h2 {
         margin: 100px 0 0 100px;
     }
@@ -24,19 +27,31 @@ main {
         background-image: url('../assets/ArrowPointRight.svg');
         background-repeat: no-repeat;
         display: block;
-        width: 600px;
-        height: 400px;
-        top: 40px;
-        left: 0;
+        width: 100px;
+        height: 100px;
+        top: -50px;
+        left: 80px;
         background-size: 80px;
         transform: scaleX(-1) rotate(90deg);
     }
     ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        width: 30%;
+        width: 40%;
         margin: 0 auto;
         text-align: center;
         margin-top: 110px;
+        a {
+            position: relative;
+        }
+        .oneLink:hover::after,
+        .twoLink:hover::after,
+        .threeLink:hover::after {
+            content:url('../assets/Circle.svg');
+            display: block;
+            position: absolute;
+            top: -8px;
+            left: -70px;
+        }
     }
 }
