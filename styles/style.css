@@ -249,7 +249,8 @@ a {
   color: #4f6e6c;
 }
 
-footer a:hover {
+footer a:hover
+.contact a:hover {
   color: white;
 }
 
@@ -392,13 +393,6 @@ footer span::after {
   top: -20px;
   left: -40px;
   background-size: 330px;
-}
-
-footer .circleOutline {
-  position: absolute;
-  width: 500px;
-  top: 43%;
-  left: 44%;
 }
 
 footer .footerNav {
@@ -1035,4 +1029,55 @@ body.projects {
 
 footer.projects {
   margin-top: -200px;
+}
+
+.contact {
+  background-color: #F3E0D6;
+}
+
+main > h2 {
+  margin: 100px 0 0 100px;
+}
+
+main div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+}
+
+main div p {
+  margin-top: 15px;
+}
+
+main h3.email {
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+}
+
+main h3.email::before {
+  content: '';
+  position: absolute;
+  background-image: url("../assets/ArrowPointRight.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 600px;
+  height: 400px;
+  top: 40px;
+  left: 0;
+  background-size: 80px;
+  -webkit-transform: scaleX(-1) rotate(90deg);
+          transform: scaleX(-1) rotate(90deg);
+}
+
+main ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 110px;
 }

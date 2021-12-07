@@ -1,0 +1,42 @@
+.contact {
+    background-color: $sand;
+}
+
+main {
+    > h2 {
+        margin: 100px 0 0 100px;
+    }
+    div {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        p {
+            margin-top: 15px;
+        }
+    }
+    h3.email {
+        margin-top: 50px;
+        text-align: center;
+        position: relative;
+    }
+    h3.email::before {
+        content: '';
+        position: absolute;
+        background-image: url('../assets/ArrowPointRight.svg');
+        background-repeat: no-repeat;
+        display: block;
+        width: 600px;
+        height: 400px;
+        top: 40px;
+        left: 0;
+        background-size: 80px;
+        transform: scaleX(-1) rotate(90deg);
+    }
+    ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 110px;
+    }
+}
