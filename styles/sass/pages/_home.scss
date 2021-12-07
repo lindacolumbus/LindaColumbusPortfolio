@@ -35,6 +35,10 @@ header.home {
     }
 }
 
+main {
+    overflow-x: hidden;
+}
+
 // About blurb
 .aboutBlurb {
     margin-top: 30%;
@@ -56,7 +60,7 @@ header.home {
         background-image: url('../assets/Circle.svg');
         background-repeat: no-repeat;
         display: block;
-        width: 600px;
+        width: 200px;
         height: 400px;
         top: -15px;
         left: -35px;
@@ -98,7 +102,7 @@ header.home {
         background-image: url('../assets/Circle.svg');
         background-repeat: no-repeat;
         display: block;
-        width: 600px;
+        width: 5610px;
         height: 400px;
         top: -40px;
         left: -10px;
@@ -148,7 +152,7 @@ header.home {
         background-image: url('../assets/Circle.svg');
         background-repeat: no-repeat;
         display: block;
-        width: 600px;
+        width: 551px;
         height: 400px;
         top: -40px;
         left: -30px;
@@ -171,8 +175,8 @@ header.home {
     text-align: center;
     position: relative;
     .slideshowNum,
-    .tasteMaker1,
-    .tasteMaker2,
+    .projectSlideshow1,
+    .projectSlideshow2,
     .arrowLeft,
     .arrowRight,
     .prev,
@@ -183,7 +187,7 @@ header.home {
         top: -330px;
         left: 50%;
     }
-    .tasteMaker1 {
+    .projectSlideshow1 {
         border-radius: 120px;
         width: 300px;
         height: 400px;
@@ -193,9 +197,10 @@ header.home {
         top: -100px;
         left: 50%;
     }
-    .tasteMaker2 {
+    .projectSlideshow2 {
         height: 500px;
         border-radius: 32px;
+        border: 1px solid $darkGreen;
         top: -150px;
         left: 30%;
     }
@@ -240,7 +245,7 @@ header.home {
         background-image: url('../assets/Circle.svg');
         background-repeat: no-repeat;
         display: block;
-        width: 400px;
+        width: 200px;
         height: 120px;
         top: -15px;
         left: -40px;

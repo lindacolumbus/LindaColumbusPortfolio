@@ -453,6 +453,10 @@ header.home .arrowDown {
   bottom: 5%;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 .aboutBlurb {
   margin-top: 30%;
   margin-bottom: 18%;
@@ -478,7 +482,7 @@ header.home .arrowDown {
   background-image: url("../assets/Circle.svg");
   background-repeat: no-repeat;
   display: block;
-  width: 600px;
+  width: 200px;
   height: 400px;
   top: -15px;
   left: -35px;
@@ -527,7 +531,7 @@ header.home .arrowDown {
   background-image: url("../assets/Circle.svg");
   background-repeat: no-repeat;
   display: block;
-  width: 600px;
+  width: 5610px;
   height: 400px;
   top: -40px;
   left: -10px;
@@ -582,7 +586,7 @@ header.home .arrowDown {
   background-image: url("../assets/Circle.svg");
   background-repeat: no-repeat;
   display: block;
-  width: 600px;
+  width: 551px;
   height: 400px;
   top: -40px;
   left: -30px;
@@ -605,8 +609,8 @@ header.home .arrowDown {
 }
 
 .featuredSlideshow .slideshowNum,
-.featuredSlideshow .tasteMaker1,
-.featuredSlideshow .tasteMaker2,
+.featuredSlideshow .projectSlideshow1,
+.featuredSlideshow .projectSlideshow2,
 .featuredSlideshow .arrowLeft,
 .featuredSlideshow .arrowRight,
 .featuredSlideshow .prev,
@@ -619,7 +623,7 @@ header.home .arrowDown {
   left: 50%;
 }
 
-.featuredSlideshow .tasteMaker1 {
+.featuredSlideshow .projectSlideshow1 {
   border-radius: 120px;
   width: 300px;
   height: 400px;
@@ -632,9 +636,10 @@ header.home .arrowDown {
   left: 50%;
 }
 
-.featuredSlideshow .tasteMaker2 {
+.featuredSlideshow .projectSlideshow2 {
   height: 500px;
   border-radius: 32px;
+  border: 1px solid #4f6e6c;
   top: -150px;
   left: 30%;
 }
@@ -696,7 +701,7 @@ header.home .arrowDown {
   background-image: url("../assets/Circle.svg");
   background-repeat: no-repeat;
   display: block;
-  width: 400px;
+  width: 200px;
   height: 120px;
   top: -15px;
   left: -40px;
@@ -876,7 +881,7 @@ body.projects {
 }
 
 .projectIntro :nth-child(3) {
-  margin-top: 60vh;
+  margin-top: 70vh;
 }
 
 .tasteMakerBackground {
@@ -1034,32 +1039,32 @@ footer.projects {
   background-color: #F3E0D6;
 }
 
-main a:hover {
+main.contact a:hover {
   color: white;
 }
 
-main > h2 {
+main.contact > h2 {
   margin: 100px 0 0 100px;
 }
 
-main div {
+main.contact div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 3fr 1fr;
       grid-template-columns: 3fr 1fr;
 }
 
-main div p {
+main.contact div p {
   margin-top: 15px;
 }
 
-main h3.email {
+main.contact h3.email {
   margin-top: 50px;
   text-align: center;
   position: relative;
 }
 
-main h3.email::before {
+main.contact h3.email::before {
   content: '';
   position: absolute;
   background-image: url("../assets/ArrowPointRight.svg");
@@ -1074,7 +1079,7 @@ main h3.email::before {
           transform: scaleX(-1) rotate(90deg);
 }
 
-main ul {
+main.contact ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -1082,16 +1087,17 @@ main ul {
   width: 40%;
   margin: 0 auto;
   text-align: center;
-  margin-top: 110px;
+  margin-top: 90px;
+  margin-bottom: 20px;
 }
 
-main ul a {
+main.contact ul a {
   position: relative;
 }
 
-main ul .oneLink:hover::after,
-main ul .twoLink:hover::after,
-main ul .threeLink:hover::after {
+main.contact ul .oneLink:hover::after,
+main.contact ul .twoLink:hover::after,
+main.contact ul .threeLink:hover::after {
   content: url("../assets/Circle.svg");
   display: block;
   position: absolute;
