@@ -249,7 +249,7 @@ a {
   color: #4f6e6c;
 }
 
-footer a:hover {
+a:hover {
   color: white;
 }
 
@@ -394,6 +394,10 @@ p {
   margin: 50px 0 0 50px;
 }
 
+.visible ul h2 {
+  position: relative;
+}
+
 .visible ul li:first-of-type::before,
 .visible ul li:last-of-type::after,
 .visible ul li:nth-of-type(3)::after {
@@ -411,24 +415,12 @@ p {
   left: -5%;
 }
 
-.visible ul li:nth-of-type(2) {
-  margin-left: 15%;
-}
-
-.visible ul li:nth-of-type(3) {
-  margin-left: 30%;
-}
-
 .visible ul li:nth-of-type(3)::after {
   height: 500px;
   width: 500px;
-  background-color: #F3E0D6;
+  background-color: #D8BBB6;
   top: -30%;
   right: -5%;
-}
-
-.visible ul li:last-of-type {
-  margin-left: 50%;
 }
 
 .visible ul li:last-of-type::after {
@@ -437,6 +429,60 @@ p {
   background-color: #F1E3FF;
   bottom: -30%;
   left: 10%;
+}
+
+.visible ul li:first-child h2:first-child:hover::after,
+.visible ul li:nth-child(2) h2:first-child:hover::before,
+.visible ul li:nth-child(3) h2:first-child:hover::before,
+.visible ul li:last-child h2:first-child:hover::before {
+  content: '';
+  position: absolute;
+  background-image: url("../assets/ArrowPointRight.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-size: 80px;
+}
+
+.visible ul li:first-child h2:first-child:hover::after {
+  top: -40px;
+  left: 220px;
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.visible ul li:nth-child(2) h2:first-child:hover::before {
+  top: 20px;
+  left: -100px;
+  -webkit-transform: rotate(290deg);
+          transform: rotate(290deg);
+}
+
+.visible ul li:nth-child(3) h2:first-child:hover::before {
+  top: 65px;
+  left: -80px;
+  -webkit-transform: scaleX(-1) rotate(180deg);
+          transform: scaleX(-1) rotate(180deg);
+}
+
+.visible ul li:last-child h2:first-child:hover::before {
+  top: -50px;
+  left: 400px;
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.visible ul li:nth-of-type(2) {
+  margin-left: 15%;
+}
+
+.visible ul li:nth-of-type(3) {
+  margin-left: 30%;
+}
+
+.visible ul li:last-of-type {
+  margin-left: 50%;
 }
 
 footer {
@@ -1121,10 +1167,6 @@ footer.projects {
 
 .contact {
   background-color: #F3E0D6;
-}
-
-main.contact a:hover {
-  color: white;
 }
 
 main.contact > h2 {

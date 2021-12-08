@@ -70,6 +70,10 @@
         }
     ul {
         margin: 50px 0 0 50px;
+        h2 {
+            position: relative;
+        }
+        // background colour circles
         li:first-of-type::before,
         li:last-of-type::after,
         li:nth-of-type(3)::after {
@@ -85,21 +89,12 @@
             top: -30%;
             left: -5%;
         }
-        li:nth-of-type(2) {
-            margin-left: 15%;
-        }
-        li:nth-of-type(3) {
-            margin-left: 30%;
-        }
         li:nth-of-type(3)::after {
             height: 500px;
             width: 500px;
-            background-color: $darksSand;
+            background-color: $darkSand;
             top: -30%;
             right: -5%;
-        }
-        li:last-of-type {
-            margin-left: 50%;
         }
         li:last-of-type::after {
         height: 400px;
@@ -107,6 +102,50 @@
         background-color: $babyLilac;
         bottom: -30%;
         left: 10%;
+        }
+        // hover arrows
+        li:first-child h2:first-child:hover::after,
+        li:nth-child(2) h2:first-child:hover::before,
+        li:nth-child(3) h2:first-child:hover::before,
+        li:last-child h2:first-child:hover::before {
+            content: '';
+            position: absolute;
+            background-image: url('../assets/ArrowPointRight.svg');
+            background-repeat: no-repeat;
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-size: 80px;
+        }
+        li:first-child h2:first-child:hover::after {
+            top: -40px;
+            left: 220px;
+            transform: rotate(120deg);
+        }
+        li:nth-child(2) h2:first-child:hover::before {
+            top: 20px;
+            left: -100px;
+            transform: rotate(290deg);
+        }
+        li:nth-child(3) h2:first-child:hover::before {
+            top: 65px;
+            left: -80px;
+            transform: scaleX(-1) rotate(180deg);
+        }
+        li:last-child h2:first-child:hover::before {
+            top: -50px;
+            left: 400px;
+            transform: rotate(120deg);
+        }
+
+        li:nth-of-type(2) {
+            margin-left: 15%;
+        }
+        li:nth-of-type(3) {
+            margin-left: 30%;
+        }
+        li:last-of-type {
+            margin-left: 50%;
         }
     }
 }
