@@ -360,7 +360,7 @@ p {
 }
 
 .visible {
-  background: white;
+  background: #EEEBE5;
   display: block;
   height: 100vh;
   width: 100vw;
@@ -368,6 +368,75 @@ p {
   top: 0;
   left: 0;
   z-index: 500;
+}
+
+.visible .closeModal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 50px 100px;
+}
+
+.visible .closeModal::before {
+  content: '';
+  position: absolute;
+  background-image: url("../assets/Circle.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 201px;
+  height: 201px;
+  top: -15px;
+  left: -50px;
+  background-size: 150px;
+}
+
+.visible ul {
+  margin: 50px 0 0 50px;
+}
+
+.visible ul li:first-of-type::before,
+.visible ul li:last-of-type::after,
+.visible ul li:nth-of-type(3)::after {
+  content: '';
+  position: absolute;
+  border-radius: 100%;
+  z-index: -1;
+}
+
+.visible ul li:first-of-type::before {
+  height: 300px;
+  width: 300px;
+  background-color: #DAE7D9;
+  top: -30%;
+  left: -5%;
+}
+
+.visible ul li:nth-of-type(2) {
+  margin-left: 15%;
+}
+
+.visible ul li:nth-of-type(3) {
+  margin-left: 30%;
+}
+
+.visible ul li:nth-of-type(3)::after {
+  height: 500px;
+  width: 500px;
+  background-color: #F3E0D6;
+  top: -30%;
+  right: -5%;
+}
+
+.visible ul li:last-of-type {
+  margin-left: 50%;
+}
+
+.visible ul li:last-of-type::after {
+  height: 400px;
+  width: 400px;
+  background-color: #F1E3FF;
+  bottom: -30%;
+  left: 10%;
 }
 
 footer {
