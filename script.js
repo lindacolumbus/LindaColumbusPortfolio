@@ -32,7 +32,7 @@ portfolio.projects = [
         projectNum: '03 / 03',
         srcImage1: './assets/Delicious 1.jpeg',
         srcImage2: './assets/Delicious2.png',
-        skillsHTML: '<ul><li><p class="tagline">HTML5</p></li><li><p class="tagline">CSS</p></li><li><p class="tagline">SCSS</p></li></ul>',
+        skillsHTML: '<ul class="shortSkillList"><li><p class="tagline">HTML5</p></li><li><p class="tagline">CSS</p></li><li><p class="tagline">SCSS</p></li></ul>',
         title: 'Delicious'
     }
 ]

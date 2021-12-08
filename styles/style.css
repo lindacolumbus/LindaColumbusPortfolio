@@ -230,6 +230,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 body, h1, h2, h3, h4, p, nav, ul, li, button {
   margin: 0;
   padding: 0;
@@ -249,7 +253,8 @@ a {
   color: #4f6e6c;
 }
 
-a:hover {
+footer a:hover,
+.contact a:hover {
   color: white;
 }
 
@@ -545,6 +550,10 @@ footer .footerNav li:last-of-type {
   text-align: right;
 }
 
+footer .smallDisplayEmail {
+  display: none;
+}
+
 header.home {
   height: 100vh;
 }
@@ -581,10 +590,6 @@ header.home .arrowDown {
   height: 70px;
   right: 15%;
   bottom: 5%;
-}
-
-main {
-  overflow-x: hidden;
 }
 
 .aboutBlurb {
@@ -661,7 +666,7 @@ main {
   background-image: url("../assets/Circle.svg");
   background-repeat: no-repeat;
   display: block;
-  width: 5610px;
+  width: 560px;
   height: 400px;
   top: -40px;
   left: -10px;
@@ -693,6 +698,10 @@ main {
   top: -10%;
   right: 6%;
   z-index: -1;
+}
+
+.smallDisplay {
+  display: none;
 }
 
 .featuredWork {
@@ -820,6 +829,11 @@ main {
   -ms-grid-columns: (auto)[6];
       grid-template-columns: repeat(6, auto);
   gap: 30px;
+}
+
+.featuredSlideshow .featuredDescriptions ul.shortSkillList {
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
 }
 
 .featuredSlideshow p {
@@ -1234,4 +1248,276 @@ main.contact ul .fourLink:hover::after {
   position: absolute;
   top: -8px;
   left: -70px;
+}
+
+@media (max-width: 1280px) {
+  .headshot {
+    right: -10%;
+  }
+}
+
+@media (max-width: 1090px) {
+  h1 {
+    font-size: 15rem;
+  }
+  h2 {
+    font-size: 9rem;
+  }
+  header.home .yellowCircle {
+    height: 700px;
+    width: 700px;
+    left: -100px;
+  }
+  header.home .arrowDown {
+    right: 10%;
+  }
+  .featuredSlideshow .next {
+    right: 13%;
+  }
+  .featuredSlideshow .arrowRight {
+    right: 11%;
+  }
+  .featuredSlideshow .projectSlideshow2 {
+    height: 400px;
+  }
+}
+
+@media (max-width: 940px) {
+  header.home .arrowDown {
+    right: 6%;
+    bottom: 10%;
+    width: 50px;
+  }
+  h2 {
+    font-size: 8rem;
+  }
+  .aboutLine1 {
+    -ms-grid-columns: 3fr 2.5fr;
+        grid-template-columns: 3fr 2.5fr;
+  }
+  .aboutLine3 .arrowDown1,
+  .aboutLine3 .arrowDown2 {
+    width: 50px;
+  }
+  .aboutLine3 span::after {
+    background-size: 450px;
+    left: -20px;
+  }
+  .featuredSlideshow .projectSlideshow1 {
+    width: 250px;
+    height: 350px;
+  }
+  .featuredSlideshow .projectSlideshow2 {
+    height: 350px;
+    width: auto;
+  }
+  .featuredSlideshow .featuredDescriptions ul {
+    padding-top: 150px;
+  }
+  .featuredWork .featureTitle span::after {
+    background-size: 450px;
+    left: -40px;
+  }
+  footer span::after {
+    background-size: 260px;
+    top: -12px;
+    left: -30px;
+  }
+}
+
+@media (max-width: 880px) {
+  .largeDisplay {
+    display: none;
+  }
+  .smallDisplay {
+    display: block;
+    width: 60%;
+    margin-bottom: 50px;
+  }
+  .aboutLine3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutLine3 h2 {
+    margin-bottom: 50px;
+  }
+  .aboutLine3 p:nth-of-type(2) {
+    text-align: right;
+    margin-right: 200px;
+  }
+  .aboutLine3 a > span:after {
+    background-size: 150px;
+    width: 200px;
+    height: 50px;
+    top: -15px;
+    left: -35px;
+  }
+  .aboutLine3 .headshot {
+    top: 18%;
+    right: -6%;
+  }
+  .featuredWork {
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+  }
+  .featuredSlideshow {
+    padding-top: 0;
+  }
+  .featuredSlideshow .projectSlideshow1 {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerNav h4 {
+    margin-left: 50px;
+  }
+  .headerNav .fa-grip-lines {
+    margin-right: 50px;
+  }
+  h1 {
+    font-size: 12rem;
+  }
+  header.home .yellowCircle {
+    height: 600px;
+    width: 600px;
+  }
+  h2 {
+    font-size: 7rem;
+  }
+  .aboutLine3 .headshot {
+    top: 35%;
+    width: 160px;
+    height: auto;
+  }
+  .aboutLine3 span::after {
+    background-size: 370px;
+    left: -10px;
+    top: -30px;
+  }
+  .featuredWork {
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+  }
+  .featuredWork .featureTitle span::after {
+    background-size: 350px;
+    left: -10px;
+    top: -30px;
+    width: 351px;
+    height: 200px;
+  }
+  .featuredSlideshow {
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+  }
+  .featuredSlideshow .projectSlideshow1 {
+    width: 200px;
+    height: 300px;
+  }
+  .featuredSlideshow .projectSlideshow2 {
+    height: 300px;
+    left: 20%;
+  }
+  .featuredSlideshow .arrowLeft {
+    left: 5%;
+  }
+  .featuredSlideshow .prev {
+    left: 6%;
+  }
+  .featuredSlideshow .arrowRight {
+    right: 5%;
+  }
+  .featuredSlideshow .next {
+    right: 7%;
+  }
+  footer span::after {
+    background-size: 220px;
+  }
+}
+
+@media (max-width: 620px) {
+  header.home .yellowCircle {
+    height: 500px;
+    width: 500px;
+  }
+  header.home .purpleCircle {
+    height: 250px;
+    width: 250px;
+    top: -150px;
+  }
+  header.home .arrowDown {
+    bottom: 30%;
+  }
+  h1 {
+    font-size: 10rem;
+  }
+  h2 {
+    font-size: 6rem;
+  }
+  .aboutLine2 h2 {
+    margin-left: 100px;
+  }
+  .aboutLine3 .arrowDown1 {
+    bottom: 20px;
+    left: 10px;
+  }
+  .aboutLine3 .arrowDown2 {
+    bottom: 0;
+    left: 60px;
+  }
+  .aboutLine3 span::after {
+    background-size: 300px;
+    left: -10px;
+    top: -20px;
+  }
+  .featuredSlideshow .projectSlideshow1 {
+    left: 45%;
+  }
+  .featuredSlideshow .projectSlideshow2 {
+    left: 20%;
+  }
+  footer h2 {
+    width: 80%;
+  }
+  footer span::after {
+    background-size: 200px;
+  }
+  footer .footerNav ul {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  .aboutLine3 span::after {
+    background-size: 250px;
+  }
+  .featuredWork {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  .featuredWork .featureTitle span::after {
+    background-size: 250px;
+    top: -20px;
+  }
+  footer .smallDisplayEmail {
+    display: inherit;
+  }
+  footer .largeDisplayEmail {
+    display: none;
+  }
+  footer span::after {
+    background-size: 170px;
+  }
 }

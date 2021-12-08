@@ -35,20 +35,14 @@ header.home {
     }
 }
 
-main {
-    overflow-x: hidden;
-}
-
 // About blurb
 .aboutBlurb {
     margin-top: 30%;
     margin-bottom: 18%;
 }
-
 .aboutLine1, .aboutLine2 {
     display: grid;
 }
-
 .aboutLine1 {
     grid-template-columns: 3fr 1.75fr;
     span {
@@ -73,7 +67,6 @@ main {
         margin-right: 40px;
     }
 }
-
 .aboutLine2 {
     position: relative;
     gap: 100px;
@@ -90,7 +83,6 @@ main {
         transform: rotate(-20deg);
     }
 }
-
 .aboutLine3 {
     position: relative;
     span {
@@ -102,7 +94,7 @@ main {
         background-image: url('../assets/Circle.svg');
         background-repeat: no-repeat;
         display: block;
-        width: 5610px;
+        width: 560px;
         height: 400px;
         top: -40px;
         left: -10px;
@@ -123,7 +115,6 @@ main {
         transform: rotate(15deg);
     }
 }
-
 .headshot {
     height: 300px;
     border-radius: 50%;
@@ -131,6 +122,9 @@ main {
     top: -10%;
     right: 6%;
     z-index: -1;
+}
+.smallDisplay {
+    display: none;
 }
 
 // Featured work
@@ -236,6 +230,9 @@ main {
             display: grid;
             grid-template-columns: repeat(6, auto);
             gap: 30px;
+        }
+        ul.shortSkillList{
+            grid-template-columns: repeat(3, auto);
         }
     }
     p {
