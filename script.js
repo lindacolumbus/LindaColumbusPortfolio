@@ -7,6 +7,7 @@ portfolio.skillsList = document.getElementsByClassName('featuredDescriptions');
 portfolio.projectTitle = document.getElementsByClassName('projectTitle');
 portfolio.menuButton = document.getElementsByClassName('fas fa-grip-lines');
 portfolio.modal = document.getElementsByClassName('modal');
+portfolio.closeModal = document.getElementsByClassName('closeModal');
 
 // Array to store info/list of projects
 portfolio.projects = [
@@ -72,17 +73,16 @@ portfolio.startEventListener = () => {
     })
 }
 
-// Toggle visibility of modal
-portfolio.show = () => {
-    portfolio.modal[0].classList.add('visible')
-};
-
-portfolio.hide = () => {
-    portfolio.modal[0].classList.remove('visible')
-};
-
+// Menu modal open/close
 portfolio.menuButton[0].addEventListener('click', function(event) {
-    portfolio.modal[0].classList.toggle('visible')
+    portfolio.modal[0].classList.add('visible');
+    document.body.style.overflow = 'hidden';
+    document.body.style.height = '100%';
+})
+
+portfolio.closeModal[0].addEventListener('click', function (event) {
+    portfolio.modal[0].classList.remove('visible');
+    document.body.style.overflow = 'initial';
 })
 
 
