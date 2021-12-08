@@ -33,8 +33,8 @@ main.contact {
     }
     ul {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 40%;
+        grid-template-columns: repeat(4, 1fr);
+        width: 70%;
         margin: 0 auto;
         text-align: center;
         margin-top: 90px;
@@ -44,7 +44,8 @@ main.contact {
         }
         .oneLink:hover::after,
         .twoLink:hover::after,
-        .threeLink:hover::after {
+        .threeLink:hover::after,
+        .fourLink:hover::after {
             content:url('../assets/Circle.svg');
             display: block;
             position: absolute;

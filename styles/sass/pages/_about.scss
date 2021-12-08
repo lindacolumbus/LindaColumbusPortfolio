@@ -93,31 +93,30 @@ h3:first-of-type {
     width: 50%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     padding: 80px 0;
     text-align: center;
     position: relative;
+    text-align: left;
     }
-    .oneLink:hover::after {
+    .oneLink,
+    .twoLink,
+    .threeLink,
+    .fourLink {
+        position: relative;
+    }
+    .oneLink:hover::after,
+    .twoLink:hover::after,
+    .threeLink:hover::after,
+    .fourLink:hover::after {
         content:url('../assets/Circle.svg');
         display: block;
         position: absolute;
-        top: 35%;
-        left: 7%;
+        top: -15px;
+        left: -40px;
     }
-    .twoLink:hover::after {
-        content:url('../assets/Circle.svg');
-        display: block;
-        position: absolute;
-        top: 35%;
-        left: 39%;
-    }
-    .threeLink:hover::after {
-        content:url('../assets/Circle.svg');
-        display: block;
-        position: absolute;
-        top: 35%;
-        right: 5%;
+    .fourLink:hover::after {
+        left: 0px;
     }
 }

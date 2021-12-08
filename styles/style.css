@@ -791,6 +791,11 @@ main {
   top: 14%;
 }
 
+.featuredSlideshow .prev:hover,
+.featuredSlideshow .next:hover {
+  cursor: pointer;
+}
+
 .featuredSlideshow .prev {
   left: 19%;
 }
@@ -954,37 +959,36 @@ h3:first-of-type {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   padding: 80px 0;
   text-align: center;
   position: relative;
+  text-align: left;
 }
 
-.aboutLinks .oneLink:hover::after {
+.aboutLinks .oneLink,
+.aboutLinks .twoLink,
+.aboutLinks .threeLink,
+.aboutLinks .fourLink {
+  position: relative;
+}
+
+.aboutLinks .oneLink:hover::after,
+.aboutLinks .twoLink:hover::after,
+.aboutLinks .threeLink:hover::after,
+.aboutLinks .fourLink:hover::after {
   content: url("../assets/Circle.svg");
   display: block;
   position: absolute;
-  top: 35%;
-  left: 7%;
+  top: -15px;
+  left: -40px;
 }
 
-.aboutLinks .twoLink:hover::after {
-  content: url("../assets/Circle.svg");
-  display: block;
-  position: absolute;
-  top: 35%;
-  left: 39%;
-}
-
-.aboutLinks .threeLink:hover::after {
-  content: url("../assets/Circle.svg");
-  display: block;
-  position: absolute;
-  top: 35%;
-  right: 5%;
+.aboutLinks .fourLink:hover::after {
+  left: 0px;
 }
 
 body.projects {
@@ -1208,9 +1212,9 @@ main.contact h3.email::before {
 main.contact ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  width: 40%;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  width: 70%;
   margin: 0 auto;
   text-align: center;
   margin-top: 90px;
@@ -1223,7 +1227,8 @@ main.contact ul a {
 
 main.contact ul .oneLink:hover::after,
 main.contact ul .twoLink:hover::after,
-main.contact ul .threeLink:hover::after {
+main.contact ul .threeLink:hover::after,
+main.contact ul .fourLink:hover::after {
   content: url("../assets/Circle.svg");
   display: block;
   position: absolute;

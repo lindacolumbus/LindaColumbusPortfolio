@@ -218,6 +218,10 @@ main {
     .next {
         top: 14%;
     }
+    .prev:hover,
+    .next:hover {
+        cursor: pointer;
+    }
     .prev {
         left: 19%
     }
