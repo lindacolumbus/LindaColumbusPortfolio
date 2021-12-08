@@ -4,8 +4,11 @@ portfolio.projectNum = document.getElementsByClassName('slideshowNum');
 portfolio.slideshowImage1 = document.getElementsByClassName('projectSlideshow1');
 portfolio.slideshowImage2 = document.getElementsByClassName('projectSlideshow2');
 portfolio.skillsList = document.getElementsByClassName('featuredDescriptions');
-portfolio.projectTitle = document.getElementsByClassName('projectTitle')
+portfolio.projectTitle = document.getElementsByClassName('projectTitle');
+portfolio.menuButton = document.getElementsByClassName('fas fa-grip-lines');
+portfolio.modal = document.getElementsByClassName('modal');
 
+// Array to store info/list of projects
 portfolio.projects = [
 
     tasteMaker = {
@@ -33,6 +36,7 @@ portfolio.projects = [
     }
 ]
 
+// Project image carousel 
 portfolio.startEventListener = () => {
     const nextButton = document.getElementsByClassName('next');
     const prevButton = document.getElementsByClassName('prev');
@@ -67,6 +71,20 @@ portfolio.startEventListener = () => {
         }
     })
 }
+
+// Toggle visibility of modal
+portfolio.show = () => {
+    portfolio.modal[0].classList.add('visible')
+};
+
+portfolio.hide = () => {
+    portfolio.modal[0].classList.remove('visible')
+};
+
+portfolio.menuButton[0].addEventListener('click', function(event) {
+    portfolio.modal[0].classList.toggle('visible')
+})
+
 
 portfolio.init = () => {
     portfolio.startEventListener()
