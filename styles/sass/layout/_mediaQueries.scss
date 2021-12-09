@@ -2,6 +2,26 @@
     .headshot {
         right: -10%;
     }
+    footer h2 {
+        width: 70%;
+    }
+    // About
+    main.about {
+        .titleName {
+            h2 {
+                font-size: 9rem;
+            }
+        }
+        .aboutInfo {
+        width: 80%;
+        }
+        h3 {
+            font-size: 5.5rem;
+        }
+        .aboutLinks ul {
+            width: 70%;
+        }
+    }
 }
 
 @media (max-width: 1090px) {
@@ -36,6 +56,22 @@
     // Modal
     .visible ul li:last-child h2:first-child:hover::before {
         left: 320px;
+    }
+    // About
+    main.about {
+        border-top-left-radius: 40%;
+        border-top-right-radius: 40%;
+        .aboutInfo {
+            .arrowDown1 {
+                top: 0;
+            }
+            .arrowDown2 {
+                top: -5%;
+            }
+        }
+        .skillList {
+            width: 80%;
+        }
     }
 }
 
@@ -97,6 +133,27 @@
             top: 50%;
         }
     }
+    // About
+    main.about {
+        .aboutInfo {
+            width: 90%;
+            grid-template-columns: 0.8fr 1fr;
+            .arrowDown1 {
+                top: -15%;
+                right: 25%;
+            }
+            .arrowDown2 {
+                top: -20%;
+                right: 20%;
+            }
+        }
+        .skillList {
+            width: 100%;
+        }
+        h3 {
+            font-size: 4.3rem;
+        }
+    }
 }
 
 @media (max-width: 880px) {
@@ -145,6 +202,19 @@
     // Modal
     .visible ul li:last-child h2:first-child:hover::before {
         left: 70%;
+    }
+    // About
+    main.about {
+        .aboutInfo {
+            .arrowDown1 {
+                top: -30%;
+                right: 5%;
+            }
+            .arrowDown2 {
+                top: -40%;
+                right: 0;
+            }
+        }
     }
 }
 
@@ -239,6 +309,37 @@
             transform: rotate(250deg);
         }
     }
+    // About
+    main.about {
+        border-top-left-radius: 200px;
+        border-top-right-radius: 200px;
+        .aboutInfo {
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr auto;
+            .arrowDown1 {
+                top: -10%;
+            }
+            .arrowDown2 {
+                top: -15%;
+            }
+            img {
+                margin: 0 auto;
+            }
+            p {
+                text-align: center;
+                align-items: start;
+                margin-bottom: 20px;
+            }
+            h3 {
+                font-size: 3.5rem;
+            }
+        }
+        .aboutLinks {
+            p.fourLink {
+                text-align: center;
+            }
+        }
+    }
 }
 
 @media (max-width: 620px) {
@@ -290,9 +391,6 @@
         }
     }
     footer {
-        h2 {
-            width: 80%;
-        }
         span::after {
             background-size: 200px;
         }

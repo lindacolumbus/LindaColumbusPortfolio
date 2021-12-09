@@ -437,10 +437,10 @@ p {
   left: 10%;
 }
 
-.visible ul li:first-child h2:first-child::after,
-.visible ul li:nth-child(2) h2:first-child::before,
-.visible ul li:nth-child(3) h2:first-child::before,
-.visible ul li:last-child h2:first-child::before {
+.visible ul li:first-child h2:first-child:hover::after,
+.visible ul li:nth-child(2) h2:first-child:hover::before,
+.visible ul li:nth-child(3) h2:first-child:hover::before,
+.visible ul li:last-child h2:first-child:hover::before {
   content: '';
   position: absolute;
   background-image: url("../assets/ArrowPointRight.svg");
@@ -451,28 +451,28 @@ p {
   background-size: 80px;
 }
 
-.visible ul li:first-child h2:first-child::after {
+.visible ul li:first-child h2:first-child:hover::after {
   top: -40px;
   left: 220px;
   -webkit-transform: rotate(120deg);
           transform: rotate(120deg);
 }
 
-.visible ul li:nth-child(2) h2:first-child::before {
+.visible ul li:nth-child(2) h2:first-child:hover::before {
   top: 20px;
   left: -100px;
   -webkit-transform: rotate(290deg);
           transform: rotate(290deg);
 }
 
-.visible ul li:nth-child(3) h2:first-child::before {
+.visible ul li:nth-child(3) h2:first-child:hover::before {
   top: 65px;
   left: -80px;
   -webkit-transform: scaleX(-1) rotate(180deg);
           transform: scaleX(-1) rotate(180deg);
 }
 
-.visible ul li:last-child h2:first-child::before {
+.visible ul li:last-child h2:first-child:hover::before {
   top: -50px;
   left: 400px;
   -webkit-transform: rotate(120deg);
@@ -1255,6 +1255,21 @@ main.contact ul .fourLink:hover::after {
   .headshot {
     right: -10%;
   }
+  footer h2 {
+    width: 70%;
+  }
+  main.about .titleName h2 {
+    font-size: 9rem;
+  }
+  main.about .aboutInfo {
+    width: 80%;
+  }
+  main.about h3 {
+    font-size: 5.5rem;
+  }
+  main.about .aboutLinks ul {
+    width: 70%;
+  }
 }
 
 @media (max-width: 1090px) {
@@ -1283,6 +1298,19 @@ main.contact ul .fourLink:hover::after {
   }
   .visible ul li:last-child h2:first-child:hover::before {
     left: 320px;
+  }
+  main.about {
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+  }
+  main.about .aboutInfo .arrowDown1 {
+    top: 0;
+  }
+  main.about .aboutInfo .arrowDown2 {
+    top: -5%;
+  }
+  main.about .skillList {
+    width: 80%;
   }
 }
 
@@ -1332,6 +1360,25 @@ main.contact ul .fourLink:hover::after {
   }
   .visible ul li:nth-child(3) h2:first-child:hover::before {
     top: 50%;
+  }
+  main.about .aboutInfo {
+    width: 90%;
+    -ms-grid-columns: 0.8fr 1fr;
+        grid-template-columns: 0.8fr 1fr;
+  }
+  main.about .aboutInfo .arrowDown1 {
+    top: -15%;
+    right: 25%;
+  }
+  main.about .aboutInfo .arrowDown2 {
+    top: -20%;
+    right: 20%;
+  }
+  main.about .skillList {
+    width: 100%;
+  }
+  main.about h3 {
+    font-size: 4.3rem;
   }
 }
 
@@ -1384,6 +1431,14 @@ main.contact ul .fourLink:hover::after {
   }
   .visible ul li:last-child h2:first-child:hover::before {
     left: 70%;
+  }
+  main.about .aboutInfo .arrowDown1 {
+    top: -30%;
+    right: 5%;
+  }
+  main.about .aboutInfo .arrowDown2 {
+    top: -40%;
+    right: 0;
   }
 }
 
@@ -1471,6 +1526,38 @@ main.contact ul .fourLink:hover::after {
     -webkit-transform: rotate(250deg);
             transform: rotate(250deg);
   }
+  main.about {
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+  }
+  main.about .aboutInfo {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 2fr auto;
+        grid-template-rows: 2fr auto;
+  }
+  main.about .aboutInfo .arrowDown1 {
+    top: -10%;
+  }
+  main.about .aboutInfo .arrowDown2 {
+    top: -15%;
+  }
+  main.about .aboutInfo img {
+    margin: 0 auto;
+  }
+  main.about .aboutInfo p {
+    text-align: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin-bottom: 20px;
+  }
+  main.about .aboutInfo h3 {
+    font-size: 3.5rem;
+  }
+  main.about .aboutLinks p.fourLink {
+    text-align: center;
+  }
 }
 
 @media (max-width: 620px) {
@@ -1513,9 +1600,6 @@ main.contact ul .fourLink:hover::after {
   }
   .featuredSlideshow .projectSlideshow2 {
     left: 20%;
-  }
-  footer h2 {
-    width: 80%;
   }
   footer span::after {
     background-size: 200px;
