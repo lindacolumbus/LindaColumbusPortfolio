@@ -877,6 +877,7 @@ header.about {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 90%;
+  background-position-x: center;
 }
 
 main.about {
@@ -1002,7 +1003,7 @@ h3:first-of-type {
   left: -40px;
 }
 
-.aboutLinks .fourLink:hover::after {
+.aboutLinks .fourLink::after {
   left: 0px;
 }
 
@@ -1440,6 +1441,10 @@ main.contact ul .fourLink:hover::after {
     top: -40%;
     right: 0;
   }
+  main.about h3 {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1546,17 +1551,19 @@ main.contact ul .fourLink:hover::after {
     margin: 0 auto;
   }
   main.about .aboutInfo p {
-    text-align: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
   main.about .aboutInfo h3 {
     font-size: 3.5rem;
   }
   main.about .aboutLinks p.fourLink {
     text-align: center;
+  }
+  main.about .aboutLinks ul {
+    padding-top: 60px;
   }
 }
 
@@ -1614,6 +1621,27 @@ main.contact ul .fourLink:hover::after {
   .visible ul li:last-child h2:first-child:hover::before {
     bottom: -90%;
   }
+  .titleName {
+    padding-top: 100px;
+  }
+  .aboutInfo img {
+    width: 300px;
+  }
+  .aboutLinks ul {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding-top: 40px;
+  }
+  .aboutLinks ul li {
+    padding: 20px;
+    text-align: center;
+  }
+  .aboutLinks ul .oneLink:hover::after,
+  .aboutLinks ul .twoLink:hover::after,
+  .aboutLinks ul .threeLink:hover::after,
+  .aboutLinks ul .fourLink:hover::after {
+    left: 10px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -1669,6 +1697,10 @@ main.contact ul .fourLink:hover::after {
     top: -10%;
     left: -12%;
   }
+  .skillList li {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1700,6 +1732,21 @@ main.contact ul .fourLink:hover::after {
   }
   .visible ul li:nth-child(3) h2:first-child:hover::before {
     left: -20%;
+  }
+  header.about {
+    height: 80vh;
+  }
+  main.about {
+    margin-top: -500px;
+  }
+  main.about .titleName h2 {
+    font-size: 8rem;
+  }
+  main.about h3 {
+    font-size: 4rem;
+  }
+  main.about .aboutLinks ul {
+    padding-top: 40px;
   }
 }
 
@@ -1788,5 +1835,17 @@ main.contact ul .fourLink:hover::after {
   .visible ul li:last-child h2:first-child:hover::before {
     left: -10%;
     bottom: -70%;
+  }
+  main.about .titleName h2 {
+    font-size: 6.5rem;
+  }
+  main.about .aboutInfo .arrowDown1 {
+    top: -5%;
+  }
+  main.about .aboutInfo .arrowDown2 {
+    top: -8%;
+  }
+  main.about h3 {
+    font-size: 3.8rem;
   }
 }

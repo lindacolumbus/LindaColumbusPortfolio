@@ -215,6 +215,10 @@
                 right: 0;
             }
         }
+        h3 {
+            width: 100%;
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -326,9 +330,8 @@
                 margin: 0 auto;
             }
             p {
-                text-align: center;
                 align-items: start;
-                margin-bottom: 20px;
+                margin-bottom: 0;
             }
             h3 {
                 font-size: 3.5rem;
@@ -337,6 +340,9 @@
         .aboutLinks {
             p.fourLink {
                 text-align: center;
+            }
+            ul {
+                padding-top: 60px;
             }
         }
     }
@@ -408,6 +414,29 @@
             bottom: -90%;
         }
     }
+    // About
+    .titleName {
+        padding-top: 100px;
+    }
+    .aboutInfo {
+        img {
+            width: 300px;
+        }
+    }
+    .aboutLinks ul {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 40px;
+        li {
+            padding: 20px;
+            text-align: center;
+        }
+        .oneLink:hover::after,
+        .twoLink:hover::after,
+        .threeLink:hover::after,
+        .fourLink:hover::after {
+            left: 10px;
+        }
+    }
 }
 
 @media (max-width: 540px) {
@@ -472,8 +501,26 @@
             top: -10%;
             left: -12%;
         }
-
     }
+    // About
+    .skillList {
+        li {
+            grid-template-columns: 1fr;
+        }
+    }
+    // .aboutLinks {
+    //     .oneLink::before,
+    //     .twoLink::before,
+    //     .threeLink::before,
+    //     .fourLink::before {
+    //         content: '';
+    //         background-color: $happyYellow;
+    //         height: 2px;
+    //         width: 60px;
+    //         bottom: -5px;
+    //         left: 30%;
+    //     }
+    // }
 }
 
 @media (max-width: 450px) {
@@ -512,6 +559,22 @@
         }
         li:nth-child(3) h2:first-child:hover::before {
             left: -20%;
+        }
+    }
+    // About
+    header.about {
+        height: 80vh;
+    }
+    main.about {
+        margin-top: -500px;
+        .titleName h2 {
+            font-size: 8rem;
+        }
+        h3 {
+            font-size: 4rem;
+        }
+        .aboutLinks ul {
+            padding-top: 40px;
         }
     }
 }
@@ -616,6 +679,23 @@
         li:last-child h2:first-child:hover::before {
             left: -10%;
             bottom: -70%;
+        }
+    }
+    // About
+    main.about {
+        .titleName h2 {
+            font-size: 6.5rem;
+        }
+        .aboutInfo {
+            .arrowDown1 {
+                top: -5%;
+            }
+            .arrowDown2 {
+                top: -8%;
+            }
+        }
+        h3 {
+            font-size: 3.8rem;
         }
     }
 }

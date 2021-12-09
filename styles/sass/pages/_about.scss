@@ -16,6 +16,7 @@ header.about {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 90%;
+    background-position-x: center;
 }
 
 // Main
@@ -116,7 +117,7 @@ h3:first-of-type {
         top: -15px;
         left: -40px;
     }
-    .fourLink:hover::after {
+    .fourLink::after {
         left: 0px;
     }
 }
