@@ -230,7 +230,7 @@ html {
   font-size: 62.5%;
 }
 
-body {
+html, body {
   overflow-x: hidden;
 }
 
