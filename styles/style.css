@@ -1511,6 +1511,12 @@ main.contact ul .fourLink:hover::after {
     background-size: 250px;
     top: -20px;
   }
+  .featuredSlideshow .projectSlideshow1 {
+    left: 40%;
+  }
+  .featuredSlideshow .projectSlideshow2 {
+    height: 250px;
+  }
   footer .smallDisplayEmail {
     display: inherit;
   }
@@ -1519,5 +1525,89 @@ main.contact ul .fourLink:hover::after {
   }
   footer span::after {
     background-size: 170px;
+  }
+}
+
+@media (max-width: 450px) {
+  header.home {
+    height: 70vh;
+  }
+  .aboutLine3 .arrowDown1 {
+    bottom: -10px;
+  }
+  .aboutLine3 .arrowDown2 {
+    bottom: -30px;
+  }
+  .aboutLine3 .featuredSlideshow .projectSlideshow1 {
+    width: 150px;
+    height: 250px;
+  }
+  .aboutLine3 footer h2 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 415px) {
+  .headerNav h4 {
+    margin-left: 20px;
+  }
+  .headerNav .fa-grip-lines {
+    margin-right: 20px;
+  }
+  h1 {
+    font-size: 6.3rem;
+  }
+  header.home .yellowCircle {
+    height: 400px;
+    width: 400px;
+  }
+  header.home .purpleCircle {
+    right: 0;
+  }
+  h2 {
+    font-size: 3.9rem;
+  }
+  .aboutLine2 h2 {
+    margin-left: 50px;
+  }
+  .aboutLine3 .headshot {
+    width: 130px;
+  }
+  .aboutLine3 span::after {
+    background-size: 220px;
+  }
+  .aboutLine3 .arrowDown1 {
+    bottom: -30px;
+  }
+  .aboutLine3 .arrowDown2 {
+    bottom: -50px;
+  }
+  .smallDisplay {
+    width: 55%;
+  }
+  .featuredWork .featureTitle span::after {
+    background-size: 200px;
+    top: -15px;
+  }
+  .featuredSlideshow {
+    margin-top: 250px;
+  }
+  .featuredSlideshow .slideshowNum {
+    left: 45%;
+  }
+  .featuredSlideshow .projectSlideshow1 {
+    width: 150px;
+    height: 250px;
+  }
+  .featuredSlideshow .featuredDescriptions ul {
+    gap: 10px;
+  }
+  footer h2 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  footer .footerNav ul {
+    gap: 7px;
   }
 }
