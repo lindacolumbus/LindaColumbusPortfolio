@@ -5,6 +5,7 @@
 }
 
 @media (max-width: 1090px) {
+    // Homepage
     h1 {
         font-size: 15rem;
     }
@@ -32,9 +33,14 @@
             height: 400px;
         }
     }
+    // Modal
+    .visible ul li:last-child h2:first-child:hover::before {
+        left: 320px;
+    }
 }
 
 @media (max-width: 940px) {
+    // Homepage
     header.home {
         .arrowDown {
         right: 6%;
@@ -82,9 +88,19 @@
         top: -12px;
         left: -30px;
     }
+    // Modal
+    .visible ul {
+        li:first-child h2:first-child:hover::after {
+            left: 20%;
+        }   
+        li:nth-child(3) h2:first-child:hover::before {
+            top: 50%;
+        }
+    }
 }
 
 @media (max-width: 880px) {
+    // Homepage
     .largeDisplay {
         display: none;
     }
@@ -126,9 +142,14 @@
             height: 350px;
         }
     }
+    // Modal
+    .visible ul li:last-child h2:first-child:hover::before {
+        left: 70%;
+    }
 }
 
 @media (max-width: 768px) {
+    // Homepage
     .headerNav {
         h4 {
             margin-left: 50px;
@@ -197,9 +218,31 @@
     footer span::after {
         background-size: 220px;
     }
+    // Modal
+    .visible ul {
+        li:first-of-type::before {
+            top: -20%;
+            left: -15%;
+        }
+        li:nth-of-type(3)::after {
+            height: 400px;
+            width: 400px;
+            top: -10%;
+            right: -25%;
+        }
+        li:nth-child(3) h2:first-child:hover::before {
+            top: 20%;
+        }
+        li:last-child h2:first-child:hover::before {
+            left: -10%;
+            bottom: -70%;
+            transform: rotate(250deg);
+        }
+    }
 }
 
 @media (max-width: 620px) {
+    // Homepage
     header.home {
         .yellowCircle {
             height: 500px;
@@ -257,9 +300,20 @@
             gap: 10px;
         }
     }
+    // Modal
+    .visible ul {
+        li:nth-child(2) h2:first-child:hover::before {
+            top: 0;
+            left: -80px;
+        }
+        li:last-child h2:first-child:hover::before {
+            bottom: -90%;
+        }
+    }
 }
 
 @media (max-width: 540px) {
+    // Homepage
     h1 {
         font-size: 8rem;
     }
@@ -298,9 +352,34 @@
             background-size: 170px;
         }
     }
+    // Modal
+    .visible ul {
+        li:nth-of-type(3)::after {
+            top: 0;
+            right: -35%;
+        }
+        li:first-child h2:first-child:hover::after,
+        li:nth-child(2) h2:first-child:hover::before,
+        li:nth-child(3) h2:first-child:hover::before,
+        li:last-child h2:first-child:hover::before  {
+            background-size: 60px;
+        }
+        li:first-child h2:first-child:hover::after {
+            left: 15%;
+        }
+        li:nth-child(2) h2:first-child:hover::before {
+            left: -13%;
+        }
+        li:nth-child(3) h2:first-child:hover::before {
+            top: -10%;
+            left: -12%;
+        }
+
+    }
 }
 
 @media (max-width: 450px) {
+    // Homepage
     header.home {
         height: 70vh;
     }
@@ -322,9 +401,25 @@
             padding-bottom: 100px;
         }
     }
+    // Modal
+    .visible ul {
+        li:first-of-type::before {
+            left: -35%;
+        }
+        li:nth-of-type(3)::after {
+            right: -50%;
+        }
+        li:first-child h2:first-child:hover::after {
+            left: 20%;
+        }
+        li:nth-child(3) h2:first-child:hover::before {
+            left: -20%;
+        }
+    }
 }
 
 @media (max-width: 415px) {
+    // Homepage
     .headerNav {
         h4 {
         margin-left: 20px;
@@ -394,8 +489,35 @@
             padding-top: 50px;
             padding-bottom: 100px;
         }
+        span::after {
+            background-size: 130px;
+            left: -20px;
+            top: -10px;
+        }
         .footerNav ul {
             gap: 7px;
+        }
+    }
+    // Modal
+    .visible ul {
+        li:first-child h2:first-child:hover::after,
+        li:nth-child(2) h2:first-child:hover::before,
+        li:nth-child(3) h2:first-child:hover::before,
+        li:last-child h2:first-child:hover::before  {
+            background-size: 40px;
+        }
+        li:first-child h2:first-child:hover::after {
+            left: 10%;
+        }
+        li:nth-child(2) h2:first-child:hover::before {
+            top: -50%;
+        }
+        li:nth-child(3) h2:first-child:hover::before {
+            top: -80%;
+        }
+        li:last-child h2:first-child:hover::before {
+            left: -10%;
+            bottom: -70%;
         }
     }
 }

@@ -436,10 +436,10 @@ p {
   left: 10%;
 }
 
-.visible ul li:first-child h2:first-child:hover::after,
-.visible ul li:nth-child(2) h2:first-child:hover::before,
-.visible ul li:nth-child(3) h2:first-child:hover::before,
-.visible ul li:last-child h2:first-child:hover::before {
+.visible ul li:first-child h2:first-child::after,
+.visible ul li:nth-child(2) h2:first-child::before,
+.visible ul li:nth-child(3) h2:first-child::before,
+.visible ul li:last-child h2:first-child::before {
   content: '';
   position: absolute;
   background-image: url("../assets/ArrowPointRight.svg");
@@ -450,28 +450,28 @@ p {
   background-size: 80px;
 }
 
-.visible ul li:first-child h2:first-child:hover::after {
+.visible ul li:first-child h2:first-child::after {
   top: -40px;
   left: 220px;
   -webkit-transform: rotate(120deg);
           transform: rotate(120deg);
 }
 
-.visible ul li:nth-child(2) h2:first-child:hover::before {
+.visible ul li:nth-child(2) h2:first-child::before {
   top: 20px;
   left: -100px;
   -webkit-transform: rotate(290deg);
           transform: rotate(290deg);
 }
 
-.visible ul li:nth-child(3) h2:first-child:hover::before {
+.visible ul li:nth-child(3) h2:first-child::before {
   top: 65px;
   left: -80px;
   -webkit-transform: scaleX(-1) rotate(180deg);
           transform: scaleX(-1) rotate(180deg);
 }
 
-.visible ul li:last-child h2:first-child:hover::before {
+.visible ul li:last-child h2:first-child::before {
   top: -50px;
   left: 400px;
   -webkit-transform: rotate(120deg);
@@ -1280,6 +1280,9 @@ main.contact ul .fourLink:hover::after {
   .featuredSlideshow .projectSlideshow2 {
     height: 400px;
   }
+  .visible ul li:last-child h2:first-child:hover::before {
+    left: 320px;
+  }
 }
 
 @media (max-width: 940px) {
@@ -1322,6 +1325,12 @@ main.contact ul .fourLink:hover::after {
     background-size: 260px;
     top: -12px;
     left: -30px;
+  }
+  .visible ul li:first-child h2:first-child:hover::after {
+    left: 20%;
+  }
+  .visible ul li:nth-child(3) h2:first-child:hover::before {
+    top: 50%;
   }
 }
 
@@ -1371,6 +1380,9 @@ main.contact ul .fourLink:hover::after {
   .featuredSlideshow .projectSlideshow1 {
     width: 250px;
     height: 350px;
+  }
+  .visible ul li:last-child h2:first-child:hover::before {
+    left: 70%;
   }
 }
 
@@ -1439,6 +1451,25 @@ main.contact ul .fourLink:hover::after {
   footer span::after {
     background-size: 220px;
   }
+  .visible ul li:first-of-type::before {
+    top: -20%;
+    left: -15%;
+  }
+  .visible ul li:nth-of-type(3)::after {
+    height: 400px;
+    width: 400px;
+    top: -10%;
+    right: -25%;
+  }
+  .visible ul li:nth-child(3) h2:first-child:hover::before {
+    top: 20%;
+  }
+  .visible ul li:last-child h2:first-child:hover::before {
+    left: -10%;
+    bottom: -70%;
+    -webkit-transform: rotate(250deg);
+            transform: rotate(250deg);
+  }
 }
 
 @media (max-width: 620px) {
@@ -1491,6 +1522,13 @@ main.contact ul .fourLink:hover::after {
   footer .footerNav ul {
     gap: 10px;
   }
+  .visible ul li:nth-child(2) h2:first-child:hover::before {
+    top: 0;
+    left: -80px;
+  }
+  .visible ul li:last-child h2:first-child:hover::before {
+    bottom: -90%;
+  }
 }
 
 @media (max-width: 540px) {
@@ -1526,6 +1564,26 @@ main.contact ul .fourLink:hover::after {
   footer span::after {
     background-size: 170px;
   }
+  .visible ul li:nth-of-type(3)::after {
+    top: 0;
+    right: -35%;
+  }
+  .visible ul li:first-child h2:first-child:hover::after,
+  .visible ul li:nth-child(2) h2:first-child:hover::before,
+  .visible ul li:nth-child(3) h2:first-child:hover::before,
+  .visible ul li:last-child h2:first-child:hover::before {
+    background-size: 60px;
+  }
+  .visible ul li:first-child h2:first-child:hover::after {
+    left: 15%;
+  }
+  .visible ul li:nth-child(2) h2:first-child:hover::before {
+    left: -13%;
+  }
+  .visible ul li:nth-child(3) h2:first-child:hover::before {
+    top: -10%;
+    left: -12%;
+  }
 }
 
 @media (max-width: 450px) {
@@ -1545,6 +1603,18 @@ main.contact ul .fourLink:hover::after {
   .aboutLine3 footer h2 {
     padding-top: 50px;
     padding-bottom: 100px;
+  }
+  .visible ul li:first-of-type::before {
+    left: -35%;
+  }
+  .visible ul li:nth-of-type(3)::after {
+    right: -50%;
+  }
+  .visible ul li:first-child h2:first-child:hover::after {
+    left: 20%;
+  }
+  .visible ul li:nth-child(3) h2:first-child:hover::before {
+    left: -20%;
   }
 }
 
@@ -1607,7 +1677,31 @@ main.contact ul .fourLink:hover::after {
     padding-top: 50px;
     padding-bottom: 100px;
   }
+  footer span::after {
+    background-size: 130px;
+    left: -20px;
+    top: -10px;
+  }
   footer .footerNav ul {
     gap: 7px;
+  }
+  .visible ul li:first-child h2:first-child:hover::after,
+  .visible ul li:nth-child(2) h2:first-child:hover::before,
+  .visible ul li:nth-child(3) h2:first-child:hover::before,
+  .visible ul li:last-child h2:first-child:hover::before {
+    background-size: 40px;
+  }
+  .visible ul li:first-child h2:first-child:hover::after {
+    left: 10%;
+  }
+  .visible ul li:nth-child(2) h2:first-child:hover::before {
+    top: -50%;
+  }
+  .visible ul li:nth-child(3) h2:first-child:hover::before {
+    top: -80%;
+  }
+  .visible ul li:last-child h2:first-child:hover::before {
+    left: -10%;
+    bottom: -70%;
   }
 }

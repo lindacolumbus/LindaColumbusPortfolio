@@ -104,10 +104,10 @@
         left: 10%;
         }
         // hover arrows
-        li:first-child h2:first-child:hover::after,
-        li:nth-child(2) h2:first-child:hover::before,
-        li:nth-child(3) h2:first-child:hover::before,
-        li:last-child h2:first-child:hover::before {
+        li:first-child h2:first-child::after,
+        li:nth-child(2) h2:first-child::before,
+        li:nth-child(3) h2:first-child::before,
+        li:last-child h2:first-child::before {
             content: '';
             position: absolute;
             background-image: url('../assets/ArrowPointRight.svg');
@@ -117,22 +117,22 @@
             height: 100px;
             background-size: 80px;
         }
-        li:first-child h2:first-child:hover::after {
+        li:first-child h2:first-child::after {
             top: -40px;
             left: 220px;
             transform: rotate(120deg);
         }
-        li:nth-child(2) h2:first-child:hover::before {
+        li:nth-child(2) h2:first-child::before {
             top: 20px;
             left: -100px;
             transform: rotate(290deg);
         }
-        li:nth-child(3) h2:first-child:hover::before {
+        li:nth-child(3) h2:first-child::before {
             top: 65px;
             left: -80px;
             transform: scaleX(-1) rotate(180deg);
         }
-        li:last-child h2:first-child:hover::before {
+        li:last-child h2:first-child::before {
             top: -50px;
             left: 400px;
             transform: rotate(120deg);
