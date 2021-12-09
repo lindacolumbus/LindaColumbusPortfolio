@@ -1290,6 +1290,15 @@ main.contact ul .fourLink:hover::after {
   footer.projects {
     margin-top: -250px;
   }
+  main.contact h2 {
+    font-size: 10rem;
+  }
+  main.contact h3.email::before {
+    left: 0;
+  }
+  main.contact ul {
+    width: 80%;
+  }
 }
 
 @media (max-width: 1090px) {
@@ -1344,6 +1353,23 @@ main.contact ul .fourLink:hover::after {
   main.projects .weatherScoutInfo div p,
   main.projects .deliciousInfo div p {
     left: -30px;
+  }
+  main.contact h2 {
+    font-size: 8rem;
+  }
+  main.contact div {
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+  }
+  main.contact h3.email::before {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+    top: -30px;
+    left: -30px;
+  }
+  main.contact ul {
+    text-align: left;
   }
 }
 
@@ -1423,6 +1449,36 @@ main.contact ul .fourLink:hover::after {
   main.projects .projectIntro :nth-child(3) {
     margin-top: 300px;
   }
+  main.contact .largeDisplay {
+    display: none;
+  }
+  main.contact .smallDisplay {
+    display: block;
+    width: 100%;
+  }
+  main.contact > h2 {
+    margin: 100px 0 0 0;
+  }
+  main.contact h3.email::before {
+    left: -50px;
+  }
+  main.contact ul {
+    width: 100%;
+  }
+  main.contact ul .oneLink:hover::after,
+  main.contact ul .twoLink:hover::after,
+  main.contact ul .threeLink:hover::after {
+    left: -40px;
+  }
+  main.contact ul .fourLink:hover::after {
+    left: 0;
+  }
+  main.contact p.smallDisplay {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 880px) {
@@ -1493,6 +1549,12 @@ main.contact ul .fourLink:hover::after {
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
   }
+  main.contact h3 {
+    font-size: 5rem;
+  }
+  main.contact h3.email::before {
+    left: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1560,24 +1622,11 @@ main.contact ul .fourLink:hover::after {
   footer span::after {
     background-size: 220px;
   }
-  .visible ul li:first-of-type::before {
-    top: -20%;
-    left: -15%;
-  }
-  .visible ul li:nth-of-type(3)::after {
-    height: 400px;
-    width: 400px;
-    top: -10%;
-    right: -25%;
-  }
-  .visible ul li:nth-child(3) h2:first-child:hover::before {
-    top: 20%;
-  }
+  .visible ul li:first-child h2:first-child:hover::after,
+  .visible ul li:nth-child(2) h2:first-child:hover::before,
+  .visible ul li:nth-child(3) h2:first-child:hover::before,
   .visible ul li:last-child h2:first-child:hover::before {
-    left: -10%;
-    bottom: -70%;
-    -webkit-transform: rotate(250deg);
-            transform: rotate(250deg);
+    display: none;
   }
   main.about {
     border-top-left-radius: 200px;
@@ -1653,6 +1702,57 @@ main.contact ul .fourLink:hover::after {
     bottom: -8px;
     left: calc(50% - 25px);
   }
+  main.contact h2 {
+    font-size: 6rem;
+  }
+  main.contact h3 {
+    font-size: 4rem;
+  }
+  main.contact h3.email::before {
+    left: -5px;
+  }
+  main.contact h3.email::after {
+    display: block;
+    position: absolute;
+    content: '';
+    background-color: #FDC87E;
+    height: 2px;
+    width: 80%;
+    bottom: 0;
+    left: 10%;
+  }
+  main.contact p.smallDisplay {
+    width: 80%;
+    margin-top: 50px;
+  }
+  main.contact ul {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 0;
+  }
+  main.contact ul li {
+    text-align: center;
+  }
+  main.contact ul .oneLink:hover::after,
+  main.contact ul .twoLink:hover::after,
+  main.contact ul .threeLink:hover::after,
+  main.contact ul .fourLink:hover::after {
+    display: none;
+  }
+  main.contact ul .oneLink::after,
+  main.contact ul .twoLink::after,
+  main.contact ul .threeLink::after,
+  main.contact ul .fourLink::after {
+    display: block;
+    position: absolute;
+    content: '';
+    background-color: #FDC87E;
+    height: 2px;
+    width: 50px;
+    bottom: -20px;
+    left: calc(50% - 25px);
+  }
 }
 
 @media (max-width: 620px) {
@@ -1702,13 +1802,6 @@ main.contact ul .fourLink:hover::after {
   footer .footerNav ul {
     gap: 10px;
   }
-  .visible ul li:nth-child(2) h2:first-child:hover::before {
-    top: 0;
-    left: -80px;
-  }
-  .visible ul li:last-child h2:first-child:hover::before {
-    bottom: -90%;
-  }
   .titleName {
     padding-top: 100px;
   }
@@ -1735,6 +1828,9 @@ main.contact ul .fourLink:hover::after {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+  }
+  main.contact h3.email::before {
+    left: -40px;
   }
 }
 
@@ -1775,22 +1871,6 @@ main.contact ul .fourLink:hover::after {
     top: 0;
     right: -35%;
   }
-  .visible ul li:first-child h2:first-child:hover::after,
-  .visible ul li:nth-child(2) h2:first-child:hover::before,
-  .visible ul li:nth-child(3) h2:first-child:hover::before,
-  .visible ul li:last-child h2:first-child:hover::before {
-    background-size: 60px;
-  }
-  .visible ul li:first-child h2:first-child:hover::after {
-    left: 15%;
-  }
-  .visible ul li:nth-child(2) h2:first-child:hover::before {
-    left: -13%;
-  }
-  .visible ul li:nth-child(3) h2:first-child:hover::before {
-    top: -10%;
-    left: -12%;
-  }
   header.about {
     height: 80vh;
   }
@@ -1812,6 +1892,12 @@ main.contact ul .fourLink:hover::after {
   }
   main.projects h2 {
     font-size: 5rem;
+  }
+  main.contact h3 {
+    font-size: 3.5rem;
+  }
+  main.contact p.smallDisplay {
+    width: 100%;
   }
 }
 
@@ -1839,12 +1925,6 @@ main.contact ul .fourLink:hover::after {
   .visible ul li:nth-of-type(3)::after {
     right: -50%;
   }
-  .visible ul li:first-child h2:first-child:hover::after {
-    left: 20%;
-  }
-  .visible ul li:nth-child(3) h2:first-child:hover::before {
-    left: -20%;
-  }
   main.about h3 {
     font-size: 4rem;
   }
@@ -1854,6 +1934,15 @@ main.contact ul .fourLink:hover::after {
   main.projects .projectIntro img {
     width: 350px;
     left: calc(50% - 175px);
+  }
+  main.contact > h2 {
+    margin-top: 70px;
+  }
+  main.contact h3 {
+    font-size: 3.2rem;
+  }
+  main.contact ul {
+    margin-top: 60px;
   }
 }
 
@@ -1924,25 +2013,6 @@ main.contact ul .fourLink:hover::after {
   footer .footerNav ul {
     gap: 7px;
   }
-  .visible ul li:first-child h2:first-child:hover::after,
-  .visible ul li:nth-child(2) h2:first-child:hover::before,
-  .visible ul li:nth-child(3) h2:first-child:hover::before,
-  .visible ul li:last-child h2:first-child:hover::before {
-    background-size: 40px;
-  }
-  .visible ul li:first-child h2:first-child:hover::after {
-    left: 10%;
-  }
-  .visible ul li:nth-child(2) h2:first-child:hover::before {
-    top: -50%;
-  }
-  .visible ul li:nth-child(3) h2:first-child:hover::before {
-    top: -80%;
-  }
-  .visible ul li:last-child h2:first-child:hover::before {
-    left: -10%;
-    bottom: -70%;
-  }
   main.about .titleName h2 {
     font-size: 6.5rem;
   }
@@ -1979,5 +2049,19 @@ main.contact ul .fourLink:hover::after {
   }
   footer.projects {
     margin-top: -320px;
+  }
+  main.contact h2 {
+    font-size: 5rem;
+  }
+  main.contact h3.email::before {
+    left: -40px;
+  }
+  main.contact h3 {
+    font-size: 2.8rem;
+  }
+  main.contact ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
