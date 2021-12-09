@@ -22,6 +22,28 @@
             width: 70%;
         }
     }
+    // Projects
+    main.projects {
+        h2 {
+            font-size: 10rem;
+        }
+        .projectIntro img {
+            top: 0;
+        }
+        > section {
+            margin-top: -650px;
+        }
+        .weatherScoutBackground,
+        .deliciousBackground {
+            margin-top: -250px;
+        }
+        .deliciousBackground {
+            background-size: contain;
+        }
+    }
+    footer.projects {
+        margin-top: -250px;
+    }
 }
 
 @media (max-width: 1090px) {
@@ -71,6 +93,22 @@
         }
         .skillList {
             width: 80%;
+        }
+    }
+    // Projects
+    main.projects {
+        .projectIntro {
+        width: 80%;
+        }
+        .tasteMakerInfo p:nth-child(3), 
+        .weatherScoutInfo p:nth-child(3), 
+        .deliciousInfo p:nth-child(3) {
+            width: 60%;
+        }
+        .tasteMakerInfo div p, 
+        .weatherScoutInfo div p, 
+        .deliciousInfo div p {
+            left: -30px;
         }
     }
 }
@@ -154,6 +192,21 @@
             font-size: 4.3rem;
         }
     }
+    // Projects
+    main.projects {
+        h2 {
+            font-size: 9rem;
+        }
+        .projectIntro {
+            img {
+                width: 500px;
+                left: calc(50% - 250px);
+            }
+            :nth-child(3) {
+                margin-top: 300px;
+            }
+        }
+    }
 }
 
 @media (max-width: 880px) {
@@ -218,6 +271,15 @@
         h3 {
             width: 100%;
             margin-bottom: 0;
+        }
+    }
+    // Projects
+    main.projects {
+        .tasteMakerInfo, 
+        .weatherScoutInfo, 
+        .deliciousInfo {
+            border-top-left-radius: 150px;
+            border-top-right-radius: 150px;
         }
     }
 }
@@ -344,6 +406,49 @@
             ul {
                 padding-top: 60px;
             }
+            .oneLink:hover::after,
+            .twoLink:hover::after,
+            .threeLink:hover::after,
+            .fourLink:hover::after {
+                display: none;
+            }
+            .oneLink::after,
+            .twoLink::after,
+            .threeLink::after,
+            .fourLink::after {
+                position: absolute;
+                content: '';
+                background-color: $happyYellow;
+                height: 2px;
+                width: 50px;
+                bottom: -8px;
+                left: calc(50% - 25px);
+                display: block;
+            }
+        }
+    }
+    // Projects
+    main.projects {
+        h2 {
+            font-size: 7rem;
+        }
+        ul.tagline {
+            width: 80%;
+        }
+        .linkOne:hover::after,
+        .linkTwo:hover::after {
+            display: none;
+        }
+        .linkOne::after,
+        .linkTwo::after {
+            display: block;
+            position: absolute;
+            content: '';
+            background-color: $happyYellow;
+            height: 2px;
+            width: 50px;
+            bottom: -8px;
+            left: calc(50% - 25px);
         }
     }
 }
@@ -423,18 +528,30 @@
             width: 300px;
         }
     }
-    .aboutLinks ul {
-        grid-template-columns: repeat(2, 1fr);
-        padding-top: 40px;
-        li {
-            padding: 20px;
-            text-align: center;
+    .aboutLinks {
+        ul {
+            grid-template-columns: repeat(2, 1fr);
+            padding-top: 40px;
+            li {
+                padding: 20px;
+                text-align: center;
+            }
         }
-        .oneLink:hover::after,
-        .twoLink:hover::after,
-        .threeLink:hover::after,
-        .fourLink:hover::after {
-            left: 10px;
+    }
+    // Projects
+    main.projects {
+        .projectIntro {
+            img {
+                width: 400px;
+                left: calc(50% - 200px);
+            }
+            :nth-child(3) {
+                margin-top: 200px;
+            }
+        }
+        .tasteMakerInfo ul.tagline {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
         }
     }
 }
@@ -503,24 +620,32 @@
         }
     }
     // About
+    header.about {
+        height: 80vh;
+    }
+    main.about {
+        margin-top: -500px;
+        .titleName h2 {
+            font-size: 8rem;
+        }
+    }
     .skillList {
         li {
             grid-template-columns: 1fr;
         }
     }
-    // .aboutLinks {
-    //     .oneLink::before,
-    //     .twoLink::before,
-    //     .threeLink::before,
-    //     .fourLink::before {
-    //         content: '';
-    //         background-color: $happyYellow;
-    //         height: 2px;
-    //         width: 60px;
-    //         bottom: -5px;
-    //         left: 30%;
-    //     }
-    // }
+    // Projects
+    main.projects {
+        .projectIntro {
+            width: 90%;
+            :nth-child(3) {
+                margin-top: 260px;
+            }
+        }
+        h2 {
+            font-size: 5rem;
+        }
+    }
 }
 
 @media (max-width: 450px) {
@@ -562,19 +687,21 @@
         }
     }
     // About
-    header.about {
-        height: 80vh;
-    }
     main.about {
-        margin-top: -500px;
-        .titleName h2 {
-            font-size: 8rem;
-        }
         h3 {
             font-size: 4rem;
         }
         .aboutLinks ul {
             padding-top: 40px;
+        }
+    }
+    // Projects
+    main.projects {
+        .projectIntro {
+            img {
+                width: 350px;
+                left: calc(50% - 175px);
+            }
         }
     }
 }
@@ -697,5 +824,37 @@
         h3 {
             font-size: 3.8rem;
         }
+    }
+    // Projects
+    main.projects {
+        .projectIntro {
+            img {
+                width: 300px;
+                left: calc(50% - 150px);
+            }
+            :nth-child(3) {
+                margin-top: 170px;
+            }
+        }
+        .tasteMakerInfo,
+        .weatherScoutInfo,
+        .deliciousInfo {
+            border-top-left-radius: 100px;
+            border-top-right-radius: 100px;
+        }
+        .weatherScoutInfo {
+            ul.tagline {
+                width: 90%;
+            }
+            h2 {
+                font-size: 4.3rem;
+            }
+        }
+        .deliciousBackground {
+            margin-top: -320px;
+        }
+    }
+    footer.projects {
+        margin-top: -320px;
     }
 }

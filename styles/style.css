@@ -1031,7 +1031,7 @@ body.projects {
 }
 
 .projectIntro :nth-child(3) {
-  margin-top: 70vh;
+  margin-top: 450px;
 }
 
 .tasteMakerBackground {
@@ -1271,6 +1271,25 @@ main.contact ul .fourLink:hover::after {
   main.about .aboutLinks ul {
     width: 70%;
   }
+  main.projects h2 {
+    font-size: 10rem;
+  }
+  main.projects .projectIntro img {
+    top: 0;
+  }
+  main.projects > section {
+    margin-top: -650px;
+  }
+  main.projects .weatherScoutBackground,
+  main.projects .deliciousBackground {
+    margin-top: -250px;
+  }
+  main.projects .deliciousBackground {
+    background-size: contain;
+  }
+  footer.projects {
+    margin-top: -250px;
+  }
 }
 
 @media (max-width: 1090px) {
@@ -1312,6 +1331,19 @@ main.contact ul .fourLink:hover::after {
   }
   main.about .skillList {
     width: 80%;
+  }
+  main.projects .projectIntro {
+    width: 80%;
+  }
+  main.projects .tasteMakerInfo p:nth-child(3),
+  main.projects .weatherScoutInfo p:nth-child(3),
+  main.projects .deliciousInfo p:nth-child(3) {
+    width: 60%;
+  }
+  main.projects .tasteMakerInfo div p,
+  main.projects .weatherScoutInfo div p,
+  main.projects .deliciousInfo div p {
+    left: -30px;
   }
 }
 
@@ -1381,6 +1413,16 @@ main.contact ul .fourLink:hover::after {
   main.about h3 {
     font-size: 4.3rem;
   }
+  main.projects h2 {
+    font-size: 9rem;
+  }
+  main.projects .projectIntro img {
+    width: 500px;
+    left: calc(50% - 250px);
+  }
+  main.projects .projectIntro :nth-child(3) {
+    margin-top: 300px;
+  }
 }
 
 @media (max-width: 880px) {
@@ -1444,6 +1486,12 @@ main.contact ul .fourLink:hover::after {
   main.about h3 {
     width: 100%;
     margin-bottom: 0;
+  }
+  main.projects .tasteMakerInfo,
+  main.projects .weatherScoutInfo,
+  main.projects .deliciousInfo {
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
   }
 }
 
@@ -1565,6 +1613,46 @@ main.contact ul .fourLink:hover::after {
   main.about .aboutLinks ul {
     padding-top: 60px;
   }
+  main.about .aboutLinks .oneLink:hover::after,
+  main.about .aboutLinks .twoLink:hover::after,
+  main.about .aboutLinks .threeLink:hover::after,
+  main.about .aboutLinks .fourLink:hover::after {
+    display: none;
+  }
+  main.about .aboutLinks .oneLink::after,
+  main.about .aboutLinks .twoLink::after,
+  main.about .aboutLinks .threeLink::after,
+  main.about .aboutLinks .fourLink::after {
+    position: absolute;
+    content: '';
+    background-color: #FDC87E;
+    height: 2px;
+    width: 50px;
+    bottom: -8px;
+    left: calc(50% - 25px);
+    display: block;
+  }
+  main.projects h2 {
+    font-size: 7rem;
+  }
+  main.projects ul.tagline {
+    width: 80%;
+  }
+  main.projects .linkOne:hover::after,
+  main.projects .linkTwo:hover::after {
+    display: none;
+  }
+  main.projects .linkOne::after,
+  main.projects .linkTwo::after {
+    display: block;
+    position: absolute;
+    content: '';
+    background-color: #FDC87E;
+    height: 2px;
+    width: 50px;
+    bottom: -8px;
+    left: calc(50% - 25px);
+  }
 }
 
 @media (max-width: 620px) {
@@ -1636,11 +1724,17 @@ main.contact ul .fourLink:hover::after {
     padding: 20px;
     text-align: center;
   }
-  .aboutLinks ul .oneLink:hover::after,
-  .aboutLinks ul .twoLink:hover::after,
-  .aboutLinks ul .threeLink:hover::after,
-  .aboutLinks ul .fourLink:hover::after {
-    left: 10px;
+  main.projects .projectIntro img {
+    width: 400px;
+    left: calc(50% - 200px);
+  }
+  main.projects .projectIntro :nth-child(3) {
+    margin-top: 200px;
+  }
+  main.projects .tasteMakerInfo ul.tagline {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
   }
 }
 
@@ -1697,9 +1791,27 @@ main.contact ul .fourLink:hover::after {
     top: -10%;
     left: -12%;
   }
+  header.about {
+    height: 80vh;
+  }
+  main.about {
+    margin-top: -500px;
+  }
+  main.about .titleName h2 {
+    font-size: 8rem;
+  }
   .skillList li {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  main.projects .projectIntro {
+    width: 90%;
+  }
+  main.projects .projectIntro :nth-child(3) {
+    margin-top: 260px;
+  }
+  main.projects h2 {
+    font-size: 5rem;
   }
 }
 
@@ -1733,20 +1845,15 @@ main.contact ul .fourLink:hover::after {
   .visible ul li:nth-child(3) h2:first-child:hover::before {
     left: -20%;
   }
-  header.about {
-    height: 80vh;
-  }
-  main.about {
-    margin-top: -500px;
-  }
-  main.about .titleName h2 {
-    font-size: 8rem;
-  }
   main.about h3 {
     font-size: 4rem;
   }
   main.about .aboutLinks ul {
     padding-top: 40px;
+  }
+  main.projects .projectIntro img {
+    width: 350px;
+    left: calc(50% - 175px);
   }
 }
 
@@ -1847,5 +1954,30 @@ main.contact ul .fourLink:hover::after {
   }
   main.about h3 {
     font-size: 3.8rem;
+  }
+  main.projects .projectIntro img {
+    width: 300px;
+    left: calc(50% - 150px);
+  }
+  main.projects .projectIntro :nth-child(3) {
+    margin-top: 170px;
+  }
+  main.projects .tasteMakerInfo,
+  main.projects .weatherScoutInfo,
+  main.projects .deliciousInfo {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+  }
+  main.projects .weatherScoutInfo ul.tagline {
+    width: 90%;
+  }
+  main.projects .weatherScoutInfo h2 {
+    font-size: 4.3rem;
+  }
+  main.projects .deliciousBackground {
+    margin-top: -320px;
+  }
+  footer.projects {
+    margin-top: -320px;
   }
 }
