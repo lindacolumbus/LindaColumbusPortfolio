@@ -6,6 +6,9 @@
         width: 70%;
     }
     // About
+    header.about {
+        background-position-y: 300%;
+    }
     main.about {
         .titleName {
             h2 {
@@ -201,8 +204,16 @@
         li:nth-child(3) h2:first-child:hover::before {
             top: 50%;
         }
+        li:last-of-type::after {
+            bottom: 20%;
+            height: 300px;
+            width: 300px;
+        }
     }
     // About
+    header.about {
+        height: 70vh;
+    }
     main.about {
         .aboutInfo {
             width: 90%;
@@ -321,6 +332,9 @@
         left: 70%;
     }
     // About
+    header.about {
+        height: 70vh;
+    }
     main.about {
         .aboutInfo {
             .arrowDown1 {
@@ -434,6 +448,13 @@
         li:nth-child(3) h2:first-child:hover::before,
         li:last-child h2:first-child:hover::before {
             display: none;
+        }
+        li:nth-of-type(3)::after {
+            right: -25%;
+        }
+        li:last-of-type::after {
+            bottom: 30%;
+            left: -30%;
         }
     }
     // About
@@ -780,7 +801,7 @@
             left: -35%;
         }
         li:nth-of-type(3)::after {
-            right: -50%;
+            right: -70%;
         }
     }
     // About

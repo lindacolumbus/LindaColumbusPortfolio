@@ -433,7 +433,7 @@ p {
   height: 400px;
   width: 400px;
   background-color: #F1E3FF;
-  bottom: -30%;
+  bottom: 0;
   left: 10%;
 }
 
@@ -1259,6 +1259,9 @@ main.contact ul .fourLink:hover::after {
   footer h2 {
     width: 70%;
   }
+  header.about {
+    background-position-y: 300%;
+  }
   main.about .titleName h2 {
     font-size: 9rem;
   }
@@ -1420,6 +1423,14 @@ main.contact ul .fourLink:hover::after {
   .visible ul li:nth-child(3) h2:first-child:hover::before {
     top: 50%;
   }
+  .visible ul li:last-of-type::after {
+    bottom: 20%;
+    height: 300px;
+    width: 300px;
+  }
+  header.about {
+    height: 70vh;
+  }
   main.about .aboutInfo {
     width: 90%;
     -ms-grid-columns: 0.8fr 1fr;
@@ -1531,6 +1542,9 @@ main.contact ul .fourLink:hover::after {
   .visible ul li:last-child h2:first-child:hover::before {
     left: 70%;
   }
+  header.about {
+    height: 70vh;
+  }
   main.about .aboutInfo .arrowDown1 {
     top: -30%;
     right: 5%;
@@ -1627,6 +1641,13 @@ main.contact ul .fourLink:hover::after {
   .visible ul li:nth-child(3) h2:first-child:hover::before,
   .visible ul li:last-child h2:first-child:hover::before {
     display: none;
+  }
+  .visible ul li:nth-of-type(3)::after {
+    right: -25%;
+  }
+  .visible ul li:last-of-type::after {
+    bottom: 30%;
+    left: -30%;
   }
   main.about {
     border-top-left-radius: 200px;
@@ -1923,7 +1944,7 @@ main.contact ul .fourLink:hover::after {
     left: -35%;
   }
   .visible ul li:nth-of-type(3)::after {
-    right: -50%;
+    right: -70%;
   }
   main.about h3 {
     font-size: 4rem;
