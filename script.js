@@ -86,11 +86,13 @@ portfolio.menuButton[0].addEventListener('click', function(event) {
     portfolio.modal[0].classList.add('visible');
     document.body.style.overflow = 'hidden';
     document.body.style.height = '100%';
+    document.body.style.position = 'fixed';
 })
 
 portfolio.closeModal[0].addEventListener('click', function (event) {
     portfolio.modal[0].classList.remove('visible');
     document.body.style.overflow = 'initial';
+    document.body.style.position = 'static';
 })
 
 
