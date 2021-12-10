@@ -517,7 +517,7 @@ p {
   }
   .visible ul li:nth-of-type(3)::after {
     top: 0;
-    right: -35%;
+    right: -55%;
   }
 }
 
