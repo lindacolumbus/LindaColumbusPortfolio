@@ -45,3 +45,17 @@ body {
 h1, h2, h3, h4, p {
     color: $darkGreen;
 }
+
+// Skip to Content Nav
+.skipLink {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    .skipLink:focus {
+        left: 0;
+    }
+}
