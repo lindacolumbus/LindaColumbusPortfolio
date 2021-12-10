@@ -16,11 +16,6 @@
     }
 }
 
-.fa-circle-notch {
-    color: $happyYellow;
-    font-size: 2.2rem;
-}
-
 .fa-grip-lines {
     color: $darkGreen;
     font-size: 2.5rem;
@@ -136,7 +131,8 @@
             margin: auto 0;
         }
         ul {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             li:nth-of-type(3)::after {
             right: -25%;
             }
