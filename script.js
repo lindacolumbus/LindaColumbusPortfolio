@@ -91,6 +91,7 @@ portfolio.menuButton[0].addEventListener('click', function(event) {
 
 portfolio.closeModal[0].addEventListener('click', function (event) {
     portfolio.modal[0].classList.remove('visible');
+    document.body.style.overflowX = 'hidden';
     document.body.style.overflowY = 'initial';
     document.body.style.position = 'static';
 })
