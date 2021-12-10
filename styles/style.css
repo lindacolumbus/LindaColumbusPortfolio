@@ -654,7 +654,7 @@ header.home .arrowDown {
   position: relative;
 }
 
-.aboutLine1 span::after {
+.aboutLine1 span.readMore::after {
   position: absolute;
   content: '';
   background-color: #FDC87E;
@@ -701,7 +701,7 @@ header.home .arrowDown {
   position: relative;
 }
 
-.aboutLine3 span::after {
+.aboutLine3 span.developer::after {
   content: '';
   position: absolute;
   background-image: url("../assets/Circle.svg");
@@ -930,7 +930,7 @@ header.home .arrowDown {
   .featuredSlideshow .projectSlideshow2 {
     height: 400px;
   }
-  .aboutLine3 span::after {
+  .aboutLine3 span.developer::after {
     background-size: 450px;
     left: -20px;
   }
@@ -1000,12 +1000,15 @@ header.home .arrowDown {
     text-align: right;
     margin-right: 200px;
   }
-  .aboutLine3 a > span:after {
-    background-size: 150px;
-    width: 200px;
-    height: 50px;
-    top: -15px;
-    left: -35px;
+  .aboutLine3 span.readMore::after {
+    position: absolute;
+    content: '';
+    background-color: #FDC87E;
+    height: 2px;
+    width: 50px;
+    bottom: -8px;
+    left: calc(50% - 25px);
+    display: block;
   }
   .aboutLine3 .headshot {
     top: 18%;
@@ -1049,7 +1052,7 @@ header.home .arrowDown {
     width: 160px;
     height: auto;
   }
-  .aboutLine3 span::after {
+  .aboutLine3 span.developer::after {
     background-size: 370px;
     left: -10px;
     top: -30px;
@@ -1124,7 +1127,7 @@ header.home .arrowDown {
     bottom: 0;
     left: 60px;
   }
-  .aboutLine3 span::after {
+  .aboutLine3 span.developer::after {
     background-size: 300px;
     left: -10px;
     top: -20px;
@@ -1150,7 +1153,7 @@ header.home .arrowDown {
   h2 {
     font-size: 5rem;
   }
-  .aboutLine3 span::after {
+  .aboutLine3 span.developer::after {
     background-size: 250px;
   }
   .featuredWork {
@@ -1221,7 +1224,7 @@ header.home .arrowDown {
   .aboutLine3 .headshot {
     width: 130px;
   }
-  .aboutLine3 span::after {
+  .aboutLine3 span.developer::after {
     background-size: 220px;
   }
   .aboutLine3 .arrowDown1 {

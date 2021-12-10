@@ -48,7 +48,7 @@ header.home {
     span {
         position: relative;
     }
-    span::after {
+    span.readMore::after {
         position: absolute;
         content: '';
         background-color: $happyYellow;
@@ -86,7 +86,7 @@ header.home {
     span {
         position: relative;
     }
-    span::after {
+    span.developer::after {
         content: '';
         position: absolute;
         background-image: url('../assets/Circle.svg');
@@ -291,7 +291,7 @@ header.home {
         }
     }
     .aboutLine3 {
-        span::after {
+        span.developer::after {
         background-size: 450px;
         left: -20px;
         }
@@ -345,7 +345,6 @@ header.home {
 }
 
 @media (max-width: 880px) {
-    // Homepage
     .largeDisplay {
         display: none;
     }
@@ -364,12 +363,15 @@ header.home {
             text-align: right;
             margin-right: 200px;
         }
-        a > span:after {
-            background-size: 150px;
-            width: 200px;
-            height: 50px;
-            top: -15px;
-            left: -35px;
+        span.readMore::after {
+            position: absolute;
+            content: '';
+            background-color: $happyYellow;
+            height: 2px;
+            width: 50px;
+            bottom: -8px;
+            left: calc(50% - 25px);
+            display: block;
         }
         .headshot {
             top: 18%;
@@ -417,7 +419,7 @@ header.home {
             width: 160px;
             height: auto;
         }
-        span::after {
+        span.developer::after {
             background-size: 370px;
             left: -10px;
             top: -30px;
@@ -496,7 +498,7 @@ header.home {
             bottom: 0;
             left: 60px;
         }
-        span::after {
+        span.developer::after {
             background-size: 300px;
             left: -10px;
             top: -20px;
@@ -528,7 +530,7 @@ header.home {
         font-size: 5rem;
     }
     .aboutLine3 {
-        span::after {
+        span.developer::after {
             background-size: 250px;
         }
     }
@@ -583,7 +585,6 @@ header.home {
 }
 
 @media (max-width: 415px) {
-    // Homepage
     .headerNav {
         h4 {
         margin-left: 20px;
@@ -616,7 +617,7 @@ header.home {
         .headshot {
             width: 130px;
         }
-        span::after {
+        span.developer::after {
             background-size: 220px;
         }
         .arrowDown1 {
