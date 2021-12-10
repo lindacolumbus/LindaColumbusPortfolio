@@ -1267,6 +1267,15 @@ header.home .arrowDown {
   }
 }
 
+@media (max-width: 365px) {
+  .aboutBlurb h2 {
+    font-size: 3.3rem;
+  }
+  .aboutLine3 span.developer::after {
+    background-size: 200px;
+  }
+}
+
 body.about {
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #0081c6), color-stop(50%, #0077bd));
   background: linear-gradient(90deg, #0081c6 50%, #0077bd 50%);
@@ -1538,6 +1547,12 @@ h3:first-of-type {
   main.about .aboutLinks ul li {
     padding: 20px;
     text-align: center;
+  }
+  main.about .aboutLinks .oneLink::after,
+  main.about .aboutLinks .twoLink::after,
+  main.about .aboutLinks .threeLink::after,
+  main.about .aboutLinks .fourLink::after {
+    left: calc(50% - 25px);
   }
 }
 
@@ -1907,6 +1922,9 @@ footer.projects {
   }
   main.projects .weatherScoutInfo h2 {
     font-size: 4.3rem;
+  }
+  main.projects .weatherScoutInfo div p {
+    left: -20px;
   }
   main.projects .deliciousBackground {
     margin-top: -320px;

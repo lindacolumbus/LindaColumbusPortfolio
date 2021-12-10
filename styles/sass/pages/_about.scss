@@ -252,6 +252,12 @@ h3:first-of-type {
                     text-align: center;
                 }
             }
+            .oneLink::after,
+            .twoLink::after,
+            .threeLink::after,
+            .fourLink::after {
+                left:calc(50% - 25px);
+            }
         }
     }
 }

@@ -664,3 +664,12 @@ header.home {
         }
     }
 }
+
+@media (max-width: 365px) {
+    .aboutBlurb h2 {
+        font-size: 3.3rem;
+    }
+    .aboutLine3 span.developer::after {
+        background-size: 200px;
+    }
+}
