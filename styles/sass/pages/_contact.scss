@@ -54,3 +54,193 @@ main.contact {
         }
     }
 }
+
+// Media queries
+@media (max-width: 1280px) {
+    // Contact
+    main.contact {
+        h2 {
+            font-size: 10rem;
+        }
+        h3.email::before {
+            left: 0;
+        }
+        ul {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 1090px) {
+    main.contact {
+        h2 {
+            font-size: 8rem;
+        }
+        div {
+            grid-template-columns: 2fr 1fr;
+        }
+        h3.email::before {
+            width: 50px;
+            height: 50px;
+            background-size: 50px;
+            top: -30px;
+            left: -30px;
+        }
+        ul {
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    // Contact
+    main.contact {
+        .largeDisplay {
+            display: none;
+        }
+        .smallDisplay {
+            display: block;
+            width: 100%;
+        }
+        > h2 {
+            margin: 100px 0 0 0;
+        }
+        h3.email::before {
+            left: -50px;
+        }
+        ul {
+            width: 100%;
+            .oneLink:hover::after,
+            .twoLink:hover::after,
+            .threeLink:hover::after {
+                left: -40px;
+            }
+            .fourLink:hover::after {
+                left: 0;
+            }
+        }
+        p.smallDisplay {
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    main.contact {
+        h3 {
+            font-size: 5rem;
+        }
+        h3.email::before {
+            left: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main.contact {
+        h2 {
+            font-size: 6rem;
+        }
+        h3 {
+            font-size: 4rem;
+        }
+        h3.email::before {
+            left: -5px;
+        }
+        h3.email::after {
+            display: block;
+            position: absolute;
+            content: '';
+            background-color: $happyYellow;
+            height: 2px;
+            width: 80%;
+            bottom: 0;
+            left: 10%;
+            }
+        p.smallDisplay {
+            width: 80%;
+            margin-top: 50px;
+        }
+        ul {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 0;
+            li {
+                text-align: center;
+            }
+            .oneLink:hover::after,
+            .twoLink:hover::after,
+            .threeLink:hover::after,
+            .fourLink:hover::after {
+                display: none;
+            }
+            .oneLink::after,
+            .twoLink::after,
+            .threeLink::after,
+            .fourLink::after {
+                display: block;
+                position: absolute;
+                content: '';
+                background-color: $happyYellow;
+                height: 2px;
+                width: 50px;
+                bottom: -20px;
+                left: calc(50% - 25px);
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    main.contact {
+        h3.email::before {
+            left: -40px;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    main.contact {
+        h3 {
+            font-size: 3.5rem;
+        }
+        p.smallDisplay {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    main.contact {
+        > h2 {
+            margin-top: 70px;
+        }
+        h3 {
+            font-size: 3.2rem;
+        }
+        ul {
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 415px) {
+    main.contact {
+        h2 {
+            font-size: 5rem;
+        }
+        h3.email::before {
+            left: -40px;
+        }
+        h3 {
+            font-size: 2.8rem;
+        }
+        ul {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+    }
+}

@@ -460,6 +460,14 @@ p {
   display: none;
 }
 
+@media (max-width: 940px) {
+  .visible ul li:last-of-type::after {
+    bottom: 20%;
+    height: 300px;
+    width: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .headerNav .largeDisplay {
     display: none;
@@ -478,6 +486,13 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .headerNav ul li:nth-of-type(3)::after {
+    right: -25%;
+  }
+  .headerNav ul li:last-of-type::after {
+    bottom: 30%;
+    left: -30%;
   }
 }
 
@@ -504,6 +519,19 @@ p {
   .visible ul li:nth-child(3),
   .visible ul li:nth-child(4) {
     margin-left: 0;
+  }
+  .visible ul li:nth-of-type(3)::after {
+    top: 0;
+    right: -35%;
+  }
+}
+
+@media (max-width: 450px) {
+  .visible ul li:first-of-type::before {
+    left: -35%;
+  }
+  .visible ul li:nth-of-type(3)::after {
+    right: -70%;
   }
 }
 
@@ -883,6 +911,364 @@ header.home .arrowDown {
   }
 }
 
+@media (max-width: 1090px) {
+  h1 {
+    font-size: 15rem;
+  }
+  h2 {
+    font-size: 9rem;
+  }
+  header.home .yellowCircle {
+    height: 700px;
+    width: 700px;
+    left: -100px;
+  }
+  header.home .arrowDown {
+    right: 10%;
+  }
+  .featuredSlideshow .next {
+    right: 13%;
+  }
+  .featuredSlideshow .arrowRight {
+    right: 11%;
+  }
+  .featuredSlideshow .projectSlideshow2 {
+    height: 400px;
+  }
+  .aboutLine3 span::after {
+    background-size: 450px;
+    left: -20px;
+  }
+}
+
+@media (max-width: 940px) {
+  header.home .arrowDown {
+    right: 6%;
+    bottom: 10%;
+    width: 50px;
+  }
+  h2 {
+    font-size: 8rem;
+  }
+  .aboutLine1 {
+    -ms-grid-columns: 3fr 2.5fr;
+        grid-template-columns: 3fr 2.5fr;
+  }
+  .aboutLine3 .arrowDown1,
+  .aboutLine3 .arrowDown2 {
+    width: 50px;
+  }
+  .featuredSlideshow .projectSlideshow1 {
+    width: 250px;
+    height: 350px;
+  }
+  .featuredSlideshow .projectSlideshow2 {
+    height: 350px;
+    width: auto;
+  }
+  .featuredSlideshow .featuredDescriptions ul {
+    padding-top: 150px;
+  }
+  .featuredWork .featureTitle span::after {
+    background-size: 450px;
+    left: -40px;
+  }
+  footer span::after {
+    background-size: 260px;
+    top: -12px;
+    left: -30px;
+  }
+}
+
+@media (max-width: 880px) {
+  .largeDisplay {
+    display: none;
+  }
+  .smallDisplay {
+    display: block;
+    width: 60%;
+    margin-bottom: 50px;
+  }
+  .aboutLine3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutLine3 h2 {
+    margin-bottom: 50px;
+  }
+  .aboutLine3 p:nth-of-type(2) {
+    text-align: right;
+    margin-right: 200px;
+  }
+  .aboutLine3 a > span:after {
+    background-size: 150px;
+    width: 200px;
+    height: 50px;
+    top: -15px;
+    left: -35px;
+  }
+  .aboutLine3 .headshot {
+    top: 18%;
+    right: -6%;
+  }
+  .featuredWork {
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+  }
+  .featuredSlideshow {
+    padding-top: 0;
+  }
+  .featuredSlideshow .projectSlideshow1 {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  header.home {
+    height: 70vh;
+  }
+  .headerNav h4 {
+    margin-left: 50px;
+  }
+  .headerNav .fa-grip-lines {
+    margin-right: 50px;
+  }
+  h1 {
+    font-size: 12rem;
+  }
+  header.home .yellowCircle {
+    height: 600px;
+    width: 600px;
+  }
+  h2 {
+    font-size: 7rem;
+  }
+  .aboutLine3 .headshot {
+    top: 35%;
+    width: 160px;
+    height: auto;
+  }
+  .aboutLine3 span::after {
+    background-size: 370px;
+    left: -10px;
+    top: -30px;
+  }
+  .featuredWork {
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+  }
+  .featuredWork .featureTitle span::after {
+    background-size: 350px;
+    left: -10px;
+    top: -30px;
+    width: 351px;
+    height: 200px;
+  }
+  .featuredSlideshow {
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+  }
+  .featuredSlideshow .projectSlideshow1 {
+    width: 200px;
+    height: 300px;
+  }
+  .featuredSlideshow .projectSlideshow2 {
+    height: 300px;
+    left: 20%;
+  }
+  .featuredSlideshow .arrowLeft {
+    left: 5%;
+  }
+  .featuredSlideshow .prev {
+    left: 6%;
+  }
+  .featuredSlideshow .arrowRight {
+    right: 5%;
+  }
+  .featuredSlideshow .next {
+    right: 7%;
+  }
+  footer span::after {
+    background-size: 220px;
+  }
+}
+
+@media (max-width: 620px) {
+  header.home .yellowCircle {
+    height: 500px;
+    width: 500px;
+  }
+  header.home .purpleCircle {
+    height: 250px;
+    width: 250px;
+    top: -150px;
+  }
+  header.home .arrowDown {
+    bottom: 30%;
+  }
+  h1 {
+    font-size: 10rem;
+  }
+  h2 {
+    font-size: 6rem;
+  }
+  .aboutLine2 h2 {
+    margin-left: 100px;
+  }
+  .aboutLine3 .arrowDown1 {
+    bottom: 20px;
+    left: 10px;
+  }
+  .aboutLine3 .arrowDown2 {
+    bottom: 0;
+    left: 60px;
+  }
+  .aboutLine3 span::after {
+    background-size: 300px;
+    left: -10px;
+    top: -20px;
+  }
+  .featuredSlideshow .projectSlideshow1 {
+    left: 45%;
+  }
+  .featuredSlideshow .projectSlideshow2 {
+    left: 20%;
+  }
+  footer span::after {
+    background-size: 200px;
+  }
+  footer .footerNav ul {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  .aboutLine3 span::after {
+    background-size: 250px;
+  }
+  .featuredWork {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  .featuredWork .featureTitle span::after {
+    background-size: 250px;
+    top: -20px;
+  }
+  .featuredSlideshow .projectSlideshow1 {
+    left: 40%;
+  }
+  .featuredSlideshow .projectSlideshow2 {
+    height: 250px;
+  }
+  footer .smallDisplayEmail {
+    display: inherit;
+  }
+  footer .largeDisplayEmail {
+    display: none;
+  }
+  footer span::after {
+    background-size: 170px;
+  }
+}
+
+@media (max-width: 450px) {
+  .aboutLine3 .arrowDown1 {
+    bottom: -10px;
+  }
+  .aboutLine3 .arrowDown2 {
+    bottom: -30px;
+  }
+  .aboutLine3 .featuredSlideshow .projectSlideshow1 {
+    width: 150px;
+    height: 250px;
+  }
+  .aboutLine3 footer h2 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 415px) {
+  .headerNav h4 {
+    margin-left: 20px;
+  }
+  .headerNav .fa-grip-lines {
+    margin-right: 20px;
+  }
+  h1 {
+    font-size: 6.3rem;
+  }
+  header.home .yellowCircle {
+    height: 400px;
+    width: 400px;
+  }
+  header.home .purpleCircle {
+    right: 0;
+  }
+  h2 {
+    font-size: 3.9rem;
+  }
+  .aboutLine2 h2 {
+    margin-left: 50px;
+  }
+  .aboutLine3 .headshot {
+    width: 130px;
+  }
+  .aboutLine3 span::after {
+    background-size: 220px;
+  }
+  .aboutLine3 .arrowDown1 {
+    bottom: -30px;
+  }
+  .aboutLine3 .arrowDown2 {
+    bottom: -50px;
+  }
+  .smallDisplay {
+    width: 55%;
+  }
+  .featuredWork .featureTitle span::after {
+    background-size: 200px;
+    top: -15px;
+  }
+  .featuredSlideshow {
+    margin-top: 250px;
+  }
+  .featuredSlideshow .slideshowNum {
+    left: 45%;
+  }
+  .featuredSlideshow .projectSlideshow1 {
+    width: 150px;
+    height: 250px;
+  }
+  .featuredSlideshow .featuredDescriptions ul {
+    gap: 10px;
+  }
+  footer h2 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  footer span::after {
+    background-size: 130px;
+    left: -20px;
+    top: -10px;
+  }
+  footer .footerNav ul {
+    gap: 7px;
+  }
+}
+
 body.about {
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #0081c6), color-stop(50%, #0077bd));
   background: linear-gradient(90deg, #0081c6 50%, #0077bd 50%);
@@ -892,7 +1278,8 @@ body.about {
   border-bottom: 1px solid #FDC87E;
 }
 
-.about .headerNav h4, .about .headerNav .fa-grip-lines {
+.about .headerNav a,
+.about .headerNav .fa-grip-lines {
   color: #FDC87E;
 }
 
@@ -1032,15 +1419,209 @@ h3:first-of-type {
   left: 0px;
 }
 
+@media (max-width: 1280px) {
+  header.about {
+    background-position-y: 300%;
+  }
+  main.about .titleName h2 {
+    font-size: 9rem;
+  }
+  main.about .aboutInfo {
+    width: 80%;
+  }
+  main.about h3 {
+    font-size: 5.5rem;
+  }
+  main.about .aboutLinks ul {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1090px) {
+  main.about {
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+  }
+  main.about .aboutInfo .arrowDown1 {
+    top: 0;
+  }
+  main.about .aboutInfo .arrowDown2 {
+    top: -5%;
+  }
+  main.about .skillList {
+    width: 80%;
+  }
+}
+
+@media (max-width: 940px) {
+  header.about {
+    height: 70vh;
+  }
+  main.about .aboutInfo {
+    width: 90%;
+    -ms-grid-columns: 0.8fr 1fr;
+        grid-template-columns: 0.8fr 1fr;
+  }
+  main.about .aboutInfo .arrowDown1 {
+    top: -15%;
+    right: 25%;
+  }
+  main.about .aboutInfo .arrowDown2 {
+    top: -20%;
+    right: 20%;
+  }
+  main.about .skillList {
+    width: 100%;
+  }
+  main.about h3 {
+    font-size: 4.3rem;
+  }
+}
+
+@media (max-width: 880px) {
+  header.about {
+    height: 70vh;
+  }
+  main.about .aboutInfo .arrowDown1 {
+    top: -30%;
+    right: 5%;
+  }
+  main.about .aboutInfo .arrowDown2 {
+    top: -40%;
+    right: 0;
+  }
+  main.about h3 {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  main.about {
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+  }
+  main.about .aboutInfo {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 2fr auto;
+        grid-template-rows: 2fr auto;
+  }
+  main.about .aboutInfo .arrowDown1 {
+    top: -10%;
+  }
+  main.about .aboutInfo .arrowDown2 {
+    top: -15%;
+  }
+  main.about .aboutInfo img {
+    margin: 0 auto;
+  }
+  main.about .aboutInfo p {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    margin-bottom: 0;
+  }
+  main.about .aboutInfo h3 {
+    font-size: 3.5rem;
+  }
+  main.about .aboutLinks p.fourLink {
+    text-align: center;
+  }
+  main.about .aboutLinks ul {
+    padding-top: 60px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding-top: 40px;
+  }
+  main.about .aboutLinks ul li {
+    padding: 20px;
+    text-align: center;
+  }
+  main.about .aboutLinks .oneLink:hover::after,
+  main.about .aboutLinks .twoLink:hover::after,
+  main.about .aboutLinks .threeLink:hover::after,
+  main.about .aboutLinks .fourLink:hover::after {
+    display: none;
+  }
+  main.about .aboutLinks .oneLink::after,
+  main.about .aboutLinks .twoLink::after,
+  main.about .aboutLinks .threeLink::after,
+  main.about .aboutLinks .fourLink::after {
+    position: absolute;
+    content: '';
+    background-color: #FDC87E;
+    height: 2px;
+    width: 50px;
+    bottom: -8px;
+    left: calc(50% - 25px);
+    display: block;
+  }
+}
+
+@media (max-width: 620px) {
+  .titleName {
+    padding-top: 100px;
+  }
+  .aboutInfo img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 540px) {
+  header.about {
+    height: 80vh;
+  }
+  main.about {
+    margin-top: -500px;
+  }
+  main.about .titleName h2 {
+    font-size: 8rem;
+  }
+  .skillList li {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  main.about h3 {
+    font-size: 4rem;
+  }
+  main.about .aboutLinks ul {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 415px) {
+  main.about .titleName h2 {
+    font-size: 6.5rem;
+  }
+  main.about .aboutInfo .arrowDown1 {
+    top: -5%;
+  }
+  main.about .aboutInfo .arrowDown2 {
+    top: -8%;
+  }
+  main.about h3 {
+    font-size: 3.8rem;
+  }
+}
+
 body.projects {
   background-color: #F3E0D6;
 }
 
 .projectIntro {
-  width: 60%;
+  width: 70%;
   margin-top: 70px;
   text-align: center;
   position: relative;
+  margin-bottom: 500px;
+}
+
+.projectIntro h2 {
+  font-size: 11rem;
 }
 
 .projectIntro img {
@@ -1053,10 +1634,6 @@ body.projects {
   z-index: -1;
   top: 5%;
   left: calc(50% - 350px);
-}
-
-.projectIntro :nth-child(3) {
-  margin-top: 450px;
 }
 
 .tasteMakerBackground {
@@ -1210,6 +1787,172 @@ footer.projects {
   margin-top: -200px;
 }
 
+@media (max-width: 1280px) {
+  main.projects h2 {
+    font-size: 9rem;
+  }
+  main.projects .projectIntro img {
+    top: 0;
+    height: 600px;
+    left: calc(50% - 300px);
+  }
+  main.projects > section {
+    margin-top: -650px;
+  }
+  main.projects .weatherScoutBackground,
+  main.projects .deliciousBackground {
+    margin-top: -250px;
+  }
+  main.projects .deliciousBackground {
+    background-size: contain;
+  }
+  footer.projects {
+    margin-top: -250px;
+  }
+}
+
+@media (max-width: 1090px) {
+  main.projects .projectIntro {
+    width: 80%;
+  }
+  main.projects .projectIntro h2 {
+    font-size: 8rem;
+  }
+  main.projects .tasteMakerInfo p:nth-child(3),
+  main.projects .weatherScoutInfo p:nth-child(3),
+  main.projects .deliciousInfo p:nth-child(3) {
+    width: 60%;
+  }
+  main.projects .tasteMakerInfo div p,
+  main.projects .weatherScoutInfo div p,
+  main.projects .deliciousInfo div p {
+    left: -30px;
+  }
+}
+
+@media (max-width: 940px) {
+  main.projects .projectIntro {
+    width: 90%;
+  }
+  main.projects .projectIntro img {
+    width: 500px;
+    left: calc(50% - 250px);
+  }
+  main.projects .projectIntro :nth-child(3) {
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 880px) {
+  main.projects .projectIntro h2 {
+    font-size: 7rem;
+  }
+  main.projects .tasteMakerInfo,
+  main.projects .weatherScoutInfo,
+  main.projects .deliciousInfo {
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  main.projects ul.tagline {
+    width: 80%;
+  }
+  main.projects .linkOne:hover::after,
+  main.projects .linkTwo:hover::after {
+    display: none;
+  }
+  main.projects .linkOne::after,
+  main.projects .linkTwo::after {
+    display: block;
+    position: absolute;
+    content: '';
+    background-color: #FDC87E;
+    height: 2px;
+    width: 50px;
+    bottom: -8px;
+    left: calc(50% - 25px);
+  }
+}
+
+@media (max-width: 620px) {
+  main.projects .projectIntro {
+    margin-bottom: 400px;
+  }
+  main.projects .projectIntro h2 {
+    font-size: 5rem;
+  }
+  main.projects .projectIntro img {
+    width: 400px;
+    height: 500px;
+    left: calc(50% - 200px);
+    top: -50px;
+  }
+  main.projects .projectIntro :nth-child(3) {
+    margin-top: 200px;
+  }
+  main.projects .tasteMakerInfo ul.tagline {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  main.projects .projectIntro {
+    width: 90%;
+  }
+  main.projects .projectIntro :nth-child(3) {
+    margin-top: 260px;
+  }
+  main.projects h2 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  main.projects .projectIntro img {
+    width: 350px;
+    left: calc(50% - 175px);
+    height: 450px;
+    top: 0;
+  }
+}
+
+@media (max-width: 415px) {
+  main.projects .projectIntro {
+    margin-bottom: 320px;
+  }
+  main.projects .projectIntro img {
+    width: 300px;
+    height: 400px;
+    left: calc(50% - 150px);
+    top: 40px;
+  }
+  main.projects .projectIntro :nth-child(3) {
+    margin-top: 170px;
+  }
+  main.projects .tasteMakerInfo,
+  main.projects .weatherScoutInfo,
+  main.projects .deliciousInfo {
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+  }
+  main.projects .weatherScoutInfo ul.tagline {
+    width: 90%;
+  }
+  main.projects .weatherScoutInfo h2 {
+    font-size: 4.3rem;
+  }
+  main.projects .deliciousBackground {
+    margin-top: -320px;
+  }
+  footer.projects {
+    margin-top: -320px;
+  }
+}
+
 .contact {
   background-color: #F3E0D6;
 }
@@ -1278,46 +2021,6 @@ main.contact ul .fourLink:hover::after {
 }
 
 @media (max-width: 1280px) {
-  .headshot {
-    right: -10%;
-  }
-  footer h2 {
-    width: 70%;
-  }
-  header.about {
-    background-position-y: 300%;
-  }
-  main.about .titleName h2 {
-    font-size: 9rem;
-  }
-  main.about .aboutInfo {
-    width: 80%;
-  }
-  main.about h3 {
-    font-size: 5.5rem;
-  }
-  main.about .aboutLinks ul {
-    width: 70%;
-  }
-  main.projects h2 {
-    font-size: 10rem;
-  }
-  main.projects .projectIntro img {
-    top: 0;
-  }
-  main.projects > section {
-    margin-top: -650px;
-  }
-  main.projects .weatherScoutBackground,
-  main.projects .deliciousBackground {
-    margin-top: -250px;
-  }
-  main.projects .deliciousBackground {
-    background-size: contain;
-  }
-  footer.projects {
-    margin-top: -250px;
-  }
   main.contact h2 {
     font-size: 10rem;
   }
@@ -1330,58 +2033,6 @@ main.contact ul .fourLink:hover::after {
 }
 
 @media (max-width: 1090px) {
-  h1 {
-    font-size: 15rem;
-  }
-  h2 {
-    font-size: 9rem;
-  }
-  header.home .yellowCircle {
-    height: 700px;
-    width: 700px;
-    left: -100px;
-  }
-  header.home .arrowDown {
-    right: 10%;
-  }
-  .featuredSlideshow .next {
-    right: 13%;
-  }
-  .featuredSlideshow .arrowRight {
-    right: 11%;
-  }
-  .featuredSlideshow .projectSlideshow2 {
-    height: 400px;
-  }
-  .visible ul li:last-child h2:first-child:hover::before {
-    left: 320px;
-  }
-  main.about {
-    border-top-left-radius: 40%;
-    border-top-right-radius: 40%;
-  }
-  main.about .aboutInfo .arrowDown1 {
-    top: 0;
-  }
-  main.about .aboutInfo .arrowDown2 {
-    top: -5%;
-  }
-  main.about .skillList {
-    width: 80%;
-  }
-  main.projects .projectIntro {
-    width: 80%;
-  }
-  main.projects .tasteMakerInfo p:nth-child(3),
-  main.projects .weatherScoutInfo p:nth-child(3),
-  main.projects .deliciousInfo p:nth-child(3) {
-    width: 60%;
-  }
-  main.projects .tasteMakerInfo div p,
-  main.projects .weatherScoutInfo div p,
-  main.projects .deliciousInfo div p {
-    left: -30px;
-  }
   main.contact h2 {
     font-size: 8rem;
   }
@@ -1402,89 +2053,6 @@ main.contact ul .fourLink:hover::after {
 }
 
 @media (max-width: 940px) {
-  header.home .arrowDown {
-    right: 6%;
-    bottom: 10%;
-    width: 50px;
-  }
-  h2 {
-    font-size: 8rem;
-  }
-  .aboutLine1 {
-    -ms-grid-columns: 3fr 2.5fr;
-        grid-template-columns: 3fr 2.5fr;
-  }
-  .aboutLine3 .arrowDown1,
-  .aboutLine3 .arrowDown2 {
-    width: 50px;
-  }
-  .aboutLine3 span::after {
-    background-size: 450px;
-    left: -20px;
-  }
-  .featuredSlideshow .projectSlideshow1 {
-    width: 250px;
-    height: 350px;
-  }
-  .featuredSlideshow .projectSlideshow2 {
-    height: 350px;
-    width: auto;
-  }
-  .featuredSlideshow .featuredDescriptions ul {
-    padding-top: 150px;
-  }
-  .featuredWork .featureTitle span::after {
-    background-size: 450px;
-    left: -40px;
-  }
-  footer span::after {
-    background-size: 260px;
-    top: -12px;
-    left: -30px;
-  }
-  .visible ul li:first-child h2:first-child:hover::after {
-    left: 20%;
-  }
-  .visible ul li:nth-child(3) h2:first-child:hover::before {
-    top: 50%;
-  }
-  .visible ul li:last-of-type::after {
-    bottom: 20%;
-    height: 300px;
-    width: 300px;
-  }
-  header.about {
-    height: 70vh;
-  }
-  main.about .aboutInfo {
-    width: 90%;
-    -ms-grid-columns: 0.8fr 1fr;
-        grid-template-columns: 0.8fr 1fr;
-  }
-  main.about .aboutInfo .arrowDown1 {
-    top: -15%;
-    right: 25%;
-  }
-  main.about .aboutInfo .arrowDown2 {
-    top: -20%;
-    right: 20%;
-  }
-  main.about .skillList {
-    width: 100%;
-  }
-  main.about h3 {
-    font-size: 4.3rem;
-  }
-  main.projects h2 {
-    font-size: 9rem;
-  }
-  main.projects .projectIntro img {
-    width: 500px;
-    left: calc(50% - 250px);
-  }
-  main.projects .projectIntro :nth-child(3) {
-    margin-top: 300px;
-  }
   main.contact .largeDisplay {
     display: none;
   }
@@ -1518,76 +2086,6 @@ main.contact ul .fourLink:hover::after {
 }
 
 @media (max-width: 880px) {
-  .largeDisplay {
-    display: none;
-  }
-  .smallDisplay {
-    display: block;
-    width: 60%;
-    margin-bottom: 50px;
-  }
-  .aboutLine3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .aboutLine3 h2 {
-    margin-bottom: 50px;
-  }
-  .aboutLine3 p:nth-of-type(2) {
-    text-align: right;
-    margin-right: 200px;
-  }
-  .aboutLine3 a > span:after {
-    background-size: 150px;
-    width: 200px;
-    height: 50px;
-    top: -15px;
-    left: -35px;
-  }
-  .aboutLine3 .headshot {
-    top: 18%;
-    right: -6%;
-  }
-  .featuredWork {
-    border-top-left-radius: 40%;
-    border-top-right-radius: 40%;
-  }
-  .featuredSlideshow {
-    padding-top: 0;
-  }
-  .featuredSlideshow .projectSlideshow1 {
-    width: 250px;
-    height: 350px;
-  }
-  .visible ul li:last-child h2:first-child:hover::before {
-    left: 70%;
-  }
-  header.about {
-    height: 70vh;
-  }
-  main.about .aboutInfo .arrowDown1 {
-    top: -30%;
-    right: 5%;
-  }
-  main.about .aboutInfo .arrowDown2 {
-    top: -40%;
-    right: 0;
-  }
-  main.about h3 {
-    width: 100%;
-    margin-bottom: 0;
-  }
-  main.projects .tasteMakerInfo,
-  main.projects .weatherScoutInfo,
-  main.projects .deliciousInfo {
-    border-top-left-radius: 150px;
-    border-top-right-radius: 150px;
-  }
   main.contact h3 {
     font-size: 5rem;
   }
@@ -1597,157 +2095,6 @@ main.contact ul .fourLink:hover::after {
 }
 
 @media (max-width: 768px) {
-  .headerNav h4 {
-    margin-left: 50px;
-  }
-  .headerNav .fa-grip-lines {
-    margin-right: 50px;
-  }
-  h1 {
-    font-size: 12rem;
-  }
-  header.home .yellowCircle {
-    height: 600px;
-    width: 600px;
-  }
-  h2 {
-    font-size: 7rem;
-  }
-  .aboutLine3 .headshot {
-    top: 35%;
-    width: 160px;
-    height: auto;
-  }
-  .aboutLine3 span::after {
-    background-size: 370px;
-    left: -10px;
-    top: -30px;
-  }
-  .featuredWork {
-    border-top-left-radius: 30%;
-    border-top-right-radius: 30%;
-  }
-  .featuredWork .featureTitle span::after {
-    background-size: 350px;
-    left: -10px;
-    top: -30px;
-    width: 351px;
-    height: 200px;
-  }
-  .featuredSlideshow {
-    border-top-left-radius: 20%;
-    border-top-right-radius: 20%;
-  }
-  .featuredSlideshow .projectSlideshow1 {
-    width: 200px;
-    height: 300px;
-  }
-  .featuredSlideshow .projectSlideshow2 {
-    height: 300px;
-    left: 20%;
-  }
-  .featuredSlideshow .arrowLeft {
-    left: 5%;
-  }
-  .featuredSlideshow .prev {
-    left: 6%;
-  }
-  .featuredSlideshow .arrowRight {
-    right: 5%;
-  }
-  .featuredSlideshow .next {
-    right: 7%;
-  }
-  footer span::after {
-    background-size: 220px;
-  }
-  .visible ul li:first-child h2:first-child:hover::after,
-  .visible ul li:nth-child(2) h2:first-child:hover::before,
-  .visible ul li:nth-child(3) h2:first-child:hover::before,
-  .visible ul li:last-child h2:first-child:hover::before {
-    display: none;
-  }
-  .visible ul li:nth-of-type(3)::after {
-    right: -25%;
-  }
-  .visible ul li:last-of-type::after {
-    bottom: 30%;
-    left: -30%;
-  }
-  main.about {
-    border-top-left-radius: 200px;
-    border-top-right-radius: 200px;
-  }
-  main.about .aboutInfo {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 2fr auto;
-        grid-template-rows: 2fr auto;
-  }
-  main.about .aboutInfo .arrowDown1 {
-    top: -10%;
-  }
-  main.about .aboutInfo .arrowDown2 {
-    top: -15%;
-  }
-  main.about .aboutInfo img {
-    margin: 0 auto;
-  }
-  main.about .aboutInfo p {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    margin-bottom: 0;
-  }
-  main.about .aboutInfo h3 {
-    font-size: 3.5rem;
-  }
-  main.about .aboutLinks p.fourLink {
-    text-align: center;
-  }
-  main.about .aboutLinks ul {
-    padding-top: 60px;
-  }
-  main.about .aboutLinks .oneLink:hover::after,
-  main.about .aboutLinks .twoLink:hover::after,
-  main.about .aboutLinks .threeLink:hover::after,
-  main.about .aboutLinks .fourLink:hover::after {
-    display: none;
-  }
-  main.about .aboutLinks .oneLink::after,
-  main.about .aboutLinks .twoLink::after,
-  main.about .aboutLinks .threeLink::after,
-  main.about .aboutLinks .fourLink::after {
-    position: absolute;
-    content: '';
-    background-color: #FDC87E;
-    height: 2px;
-    width: 50px;
-    bottom: -8px;
-    left: calc(50% - 25px);
-    display: block;
-  }
-  main.projects h2 {
-    font-size: 7rem;
-  }
-  main.projects ul.tagline {
-    width: 80%;
-  }
-  main.projects .linkOne:hover::after,
-  main.projects .linkTwo:hover::after {
-    display: none;
-  }
-  main.projects .linkOne::after,
-  main.projects .linkTwo::after {
-    display: block;
-    position: absolute;
-    content: '';
-    background-color: #FDC87E;
-    height: 2px;
-    width: 50px;
-    bottom: -8px;
-    left: calc(50% - 25px);
-  }
   main.contact h2 {
     font-size: 6rem;
   }
@@ -1802,143 +2149,12 @@ main.contact ul .fourLink:hover::after {
 }
 
 @media (max-width: 620px) {
-  header.home .yellowCircle {
-    height: 500px;
-    width: 500px;
-  }
-  header.home .purpleCircle {
-    height: 250px;
-    width: 250px;
-    top: -150px;
-  }
-  header.home .arrowDown {
-    bottom: 30%;
-  }
-  h1 {
-    font-size: 10rem;
-  }
-  h2 {
-    font-size: 6rem;
-  }
-  .aboutLine2 h2 {
-    margin-left: 100px;
-  }
-  .aboutLine3 .arrowDown1 {
-    bottom: 20px;
-    left: 10px;
-  }
-  .aboutLine3 .arrowDown2 {
-    bottom: 0;
-    left: 60px;
-  }
-  .aboutLine3 span::after {
-    background-size: 300px;
-    left: -10px;
-    top: -20px;
-  }
-  .featuredSlideshow .projectSlideshow1 {
-    left: 45%;
-  }
-  .featuredSlideshow .projectSlideshow2 {
-    left: 20%;
-  }
-  footer span::after {
-    background-size: 200px;
-  }
-  footer .footerNav ul {
-    gap: 10px;
-  }
-  .titleName {
-    padding-top: 100px;
-  }
-  .aboutInfo img {
-    width: 300px;
-  }
-  .aboutLinks ul {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    padding-top: 40px;
-  }
-  .aboutLinks ul li {
-    padding: 20px;
-    text-align: center;
-  }
-  main.projects .projectIntro img {
-    width: 400px;
-    left: calc(50% - 200px);
-  }
-  main.projects .projectIntro :nth-child(3) {
-    margin-top: 200px;
-  }
-  main.projects .tasteMakerInfo ul.tagline {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
   main.contact h3.email::before {
     left: -40px;
   }
 }
 
 @media (max-width: 540px) {
-  h1 {
-    font-size: 8rem;
-  }
-  h2 {
-    font-size: 5rem;
-  }
-  .aboutLine3 span::after {
-    background-size: 250px;
-  }
-  .featuredWork {
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-  }
-  .featuredWork .featureTitle span::after {
-    background-size: 250px;
-    top: -20px;
-  }
-  .featuredSlideshow .projectSlideshow1 {
-    left: 40%;
-  }
-  .featuredSlideshow .projectSlideshow2 {
-    height: 250px;
-  }
-  footer .smallDisplayEmail {
-    display: inherit;
-  }
-  footer .largeDisplayEmail {
-    display: none;
-  }
-  footer span::after {
-    background-size: 170px;
-  }
-  .visible ul li:nth-of-type(3)::after {
-    top: 0;
-    right: -35%;
-  }
-  header.about {
-    height: 80vh;
-  }
-  main.about {
-    margin-top: -500px;
-  }
-  main.about .titleName h2 {
-    font-size: 8rem;
-  }
-  .skillList li {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  main.projects .projectIntro {
-    width: 90%;
-  }
-  main.projects .projectIntro :nth-child(3) {
-    margin-top: 260px;
-  }
-  main.projects h2 {
-    font-size: 5rem;
-  }
   main.contact h3 {
     font-size: 3.5rem;
   }
@@ -1948,39 +2164,6 @@ main.contact ul .fourLink:hover::after {
 }
 
 @media (max-width: 450px) {
-  header.home {
-    height: 70vh;
-  }
-  .aboutLine3 .arrowDown1 {
-    bottom: -10px;
-  }
-  .aboutLine3 .arrowDown2 {
-    bottom: -30px;
-  }
-  .aboutLine3 .featuredSlideshow .projectSlideshow1 {
-    width: 150px;
-    height: 250px;
-  }
-  .aboutLine3 footer h2 {
-    padding-top: 50px;
-    padding-bottom: 100px;
-  }
-  .visible ul li:first-of-type::before {
-    left: -35%;
-  }
-  .visible ul li:nth-of-type(3)::after {
-    right: -70%;
-  }
-  main.about h3 {
-    font-size: 4rem;
-  }
-  main.about .aboutLinks ul {
-    padding-top: 40px;
-  }
-  main.projects .projectIntro img {
-    width: 350px;
-    left: calc(50% - 175px);
-  }
   main.contact > h2 {
     margin-top: 70px;
   }
@@ -1993,109 +2176,6 @@ main.contact ul .fourLink:hover::after {
 }
 
 @media (max-width: 415px) {
-  .headerNav h4 {
-    margin-left: 20px;
-  }
-  .headerNav .fa-grip-lines {
-    margin-right: 20px;
-  }
-  h1 {
-    font-size: 6.3rem;
-  }
-  header.home .yellowCircle {
-    height: 400px;
-    width: 400px;
-  }
-  header.home .purpleCircle {
-    right: 0;
-  }
-  h2 {
-    font-size: 3.9rem;
-  }
-  .aboutLine2 h2 {
-    margin-left: 50px;
-  }
-  .aboutLine3 .headshot {
-    width: 130px;
-  }
-  .aboutLine3 span::after {
-    background-size: 220px;
-  }
-  .aboutLine3 .arrowDown1 {
-    bottom: -30px;
-  }
-  .aboutLine3 .arrowDown2 {
-    bottom: -50px;
-  }
-  .smallDisplay {
-    width: 55%;
-  }
-  .featuredWork .featureTitle span::after {
-    background-size: 200px;
-    top: -15px;
-  }
-  .featuredSlideshow {
-    margin-top: 250px;
-  }
-  .featuredSlideshow .slideshowNum {
-    left: 45%;
-  }
-  .featuredSlideshow .projectSlideshow1 {
-    width: 150px;
-    height: 250px;
-  }
-  .featuredSlideshow .featuredDescriptions ul {
-    gap: 10px;
-  }
-  footer h2 {
-    padding-top: 50px;
-    padding-bottom: 100px;
-  }
-  footer span::after {
-    background-size: 130px;
-    left: -20px;
-    top: -10px;
-  }
-  footer .footerNav ul {
-    gap: 7px;
-  }
-  main.about .titleName h2 {
-    font-size: 6.5rem;
-  }
-  main.about .aboutInfo .arrowDown1 {
-    top: -5%;
-  }
-  main.about .aboutInfo .arrowDown2 {
-    top: -8%;
-  }
-  main.about h3 {
-    font-size: 3.8rem;
-  }
-  main.projects .projectIntro img {
-    width: 300px;
-    left: calc(50% - 150px);
-  }
-  main.projects .projectIntro :nth-child(3) {
-    margin-top: 170px;
-  }
-  main.projects .tasteMakerInfo,
-  main.projects .weatherScoutInfo,
-  main.projects .deliciousInfo {
-    border-top-left-radius: 100px;
-    border-top-right-radius: 100px;
-  }
-  main.projects .weatherScoutInfo ul.tagline {
-    width: 90%;
-  }
-  main.projects .weatherScoutInfo h2 {
-    font-size: 4.3rem;
-  }
-  main.projects .deliciousBackground {
-    margin-top: -320px;
-  }
-  footer.projects {
-    margin-top: -320px;
-  }
   main.contact h2 {
     font-size: 5rem;
   }

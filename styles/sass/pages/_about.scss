@@ -4,7 +4,8 @@ body.about {
 
 .about .headerNav {
     border-bottom: 1px solid $happyYellow;
-    h4, .fa-grip-lines {
+    a,
+    .fa-grip-lines {
         color: $happyYellow;
     }
 }
@@ -119,5 +120,213 @@ h3:first-of-type {
     }
     .fourLink::after {
         left: 0px;
+    }
+}
+
+// Media queries
+@media (max-width: 1280px) {
+    header.about {
+        background-position-y: 300%;
+    }
+    main.about {
+        .titleName {
+            h2 {
+                font-size: 9rem;
+            }
+        }
+        .aboutInfo {
+        width: 80%;
+        }
+        h3 {
+            font-size: 5.5rem;
+        }
+        .aboutLinks ul {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 1090px) {
+    main.about {
+        border-top-left-radius: 40%;
+        border-top-right-radius: 40%;
+        .aboutInfo {
+            .arrowDown1 {
+                top: 0;
+            }
+            .arrowDown2 {
+                top: -5%;
+            }
+        }
+        .skillList {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    header.about {
+        height: 70vh;
+    }
+    main.about {
+        .aboutInfo {
+            width: 90%;
+            grid-template-columns: 0.8fr 1fr;
+            .arrowDown1 {
+                top: -15%;
+                right: 25%;
+            }
+            .arrowDown2 {
+                top: -20%;
+                right: 20%;
+            }
+        }
+        .skillList {
+            width: 100%;
+        }
+        h3 {
+            font-size: 4.3rem;
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    // About
+    header.about {
+        height: 70vh;
+    }
+    main.about {
+        .aboutInfo {
+            .arrowDown1 {
+                top: -30%;
+                right: 5%;
+            }
+            .arrowDown2 {
+                top: -40%;
+                right: 0;
+            }
+        }
+        h3 {
+            width: 100%;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main.about {
+        border-top-left-radius: 200px;
+        border-top-right-radius: 200px;
+        .aboutInfo {
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr auto;
+            .arrowDown1 {
+                top: -10%;
+            }
+            .arrowDown2 {
+                top: -15%;
+            }
+            img {
+                margin: 0 auto;
+            }
+            p {
+                align-items: start;
+                margin-bottom: 0;
+            }
+            h3 {
+                font-size: 3.5rem;
+            }
+        }
+        .aboutLinks {
+            p.fourLink {
+                text-align: center;
+            }
+            ul {
+                padding-top: 60px;
+                grid-template-columns: repeat(2, 1fr);
+                padding-top: 40px;
+                li {
+                    padding: 20px;
+                    text-align: center;
+                }
+            }
+            .oneLink:hover::after,
+            .twoLink:hover::after,
+            .threeLink:hover::after,
+            .fourLink:hover::after {
+                display: none;
+            }
+            .oneLink::after,
+            .twoLink::after,
+            .threeLink::after,
+            .fourLink::after {
+                position: absolute;
+                content: '';
+                background-color: $happyYellow;
+                height: 2px;
+                width: 50px;
+                bottom: -8px;
+                left: calc(50% - 25px);
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .titleName {
+        padding-top: 100px;
+    }
+    .aboutInfo {
+        img {
+            width: 300px;
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    header.about {
+        height: 80vh;
+    }
+    main.about {
+        margin-top: -500px;
+        .titleName h2 {
+            font-size: 8rem;
+        }
+    }
+    .skillList {
+        li {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    main.about {
+        h3 {
+            font-size: 4rem;
+        }
+        .aboutLinks ul {
+            padding-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 415px) {
+    main.about {
+        .titleName h2 {
+            font-size: 6.5rem;
+        }
+        .aboutInfo {
+            .arrowDown1 {
+                top: -5%;
+            }
+            .arrowDown2 {
+                top: -8%;
+            }
+        }
+        h3 {
+            font-size: 3.8rem;
+        }
     }
 }

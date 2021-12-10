@@ -108,10 +108,22 @@
         }
 }
 
-// Nav bar media queries
+// Nav bar & modal media queries
 .headerNav .smallDisplay {
     display: none;
 }
+
+@media (max-width: 940px) {
+    // Modal
+    .visible ul {
+        li:last-of-type::after {
+            bottom: 20%;
+            height: 300px;
+            width: 300px;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .headerNav {
         .largeDisplay {
@@ -125,6 +137,13 @@
         }
         ul {
             display: flex;
+            li:nth-of-type(3)::after {
+            right: -25%;
+            }
+            li:last-of-type::after {
+                bottom: 30%;
+                left: -30%;
+            }
         }
     }
 }
@@ -155,6 +174,21 @@
             li:nth-child(4) {
                 margin-left: 0;
             }
+            li:nth-of-type(3)::after {
+            top: 0;
+            right: -35%;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .visible ul {
+        li:first-of-type::before {
+            left: -35%;
+        }
+        li:nth-of-type(3)::after {
+            right: -70%;
         }
     }
 }
