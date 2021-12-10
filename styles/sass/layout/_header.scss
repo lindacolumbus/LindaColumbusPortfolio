@@ -187,7 +187,10 @@
             left: -35%;
         }
         li:nth-of-type(3)::after {
-            right: -70%;
+            right: -90%;
+        }
+        li:last-of-type::after {
+            left: -60%;
         }
     }
 }

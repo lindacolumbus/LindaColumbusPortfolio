@@ -526,7 +526,10 @@ p {
     left: -35%;
   }
   .visible ul li:nth-of-type(3)::after {
-    right: -70%;
+    right: -90%;
+  }
+  .visible ul li:last-of-type::after {
+    left: -60%;
   }
 }
 
