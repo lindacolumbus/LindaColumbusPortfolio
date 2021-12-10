@@ -110,19 +110,16 @@ body.projects {
         p {
             position: relative;
         }
-        .linkOne:hover::after {
-        content:url('../assets/Circle.svg');
-        display: block;
-        position: absolute;
-        top: -15px;
-        left: -40px;
-        }
-        .linkTwo:hover::after {
-            content:url('../assets/Circle.svg');
-            display: block;
+        .linkOne::after,
+        .linkTwo::after {
             position: absolute;
-            top: -15px;
-            left: -40px;
+            content: '';
+            background-color: $happyYellow;
+            height: 2px;
+            width: 50px;
+            bottom: -10px;
+            left: 2px;
+            display: block;
         }
     }
 }
@@ -214,21 +211,6 @@ footer.projects {
     main.projects {
         ul.tagline {
             width: 80%;
-        }
-        .linkOne:hover::after,
-        .linkTwo:hover::after {
-            display: none;
-        }
-        .linkOne::after,
-        .linkTwo::after {
-            display: block;
-            position: absolute;
-            content: '';
-            background-color: $happyYellow;
-            height: 2px;
-            width: 50px;
-            bottom: -8px;
-            left: calc(50% - 25px);
         }
     }
 }

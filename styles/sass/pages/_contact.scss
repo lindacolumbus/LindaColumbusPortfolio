@@ -18,18 +18,28 @@ main.contact {
         text-align: center;
         position: relative;
     }
-    h3.email::before {
+    h3.email::before,
+    h3.email::after {
         content: '';
         position: absolute;
+        display: block;
+    }
+    h3.email::before {
         background-image: url('../assets/ArrowPointRight.svg');
         background-repeat: no-repeat;
-        display: block;
         width: 100px;
         height: 100px;
         top: -50px;
         left: 80px;
         background-size: 80px;
         transform: scaleX(-1) rotate(90deg);
+    }
+    h3.email::after {
+        background-color: $happyYellow;
+        height: 2px;
+        width: 60%;
+        bottom: 0;
+        left: 20%;
     }
     ul {
         display: grid;
@@ -39,25 +49,27 @@ main.contact {
         text-align: center;
         margin-top: 90px;
         margin-bottom: 20px;
-        a {
+        li {
             position: relative;
         }
-        .oneLink:hover::after,
-        .twoLink:hover::after,
-        .threeLink:hover::after,
-        .fourLink:hover::after {
-            content:url('../assets/Circle.svg');
-            display: block;
+        .oneLink::after,
+        .twoLink::after,
+        .threeLink::after,
+        .fourLink::after {
             position: absolute;
-            top: -8px;
-            left: -70px;
+            content: '';
+            background-color: $happyYellow;
+            height: 2px;
+            width: 50px;
+            bottom: -5px;
+            left: calc(50% - 25px);
+            display: block;
         }
     }
 }
 
 // Media queries
 @media (max-width: 1280px) {
-    // Contact
     main.contact {
         h2 {
             font-size: 10rem;
@@ -86,14 +98,10 @@ main.contact {
             top: -30px;
             left: -30px;
         }
-        ul {
-            text-align: left;
-        }
     }
 }
 
 @media (max-width: 940px) {
-    // Contact
     main.contact {
         .largeDisplay {
             display: none;
@@ -110,14 +118,6 @@ main.contact {
         }
         ul {
             width: 100%;
-            .oneLink:hover::after,
-            .twoLink:hover::after,
-            .threeLink:hover::after {
-                left: -40px;
-            }
-            .fourLink:hover::after {
-                left: 0;
-            }
         }
         p.smallDisplay {
             width: 50%;
@@ -151,15 +151,9 @@ main.contact {
             left: -5px;
         }
         h3.email::after {
-            display: block;
-            position: absolute;
-            content: '';
-            background-color: $happyYellow;
-            height: 2px;
-            width: 80%;
             bottom: 0;
             left: 10%;
-            }
+        }
         p.smallDisplay {
             width: 80%;
             margin-top: 50px;
@@ -170,25 +164,6 @@ main.contact {
             margin-bottom: 0;
             li {
                 text-align: center;
-            }
-            .oneLink:hover::after,
-            .twoLink:hover::after,
-            .threeLink:hover::after,
-            .fourLink:hover::after {
-                display: none;
-            }
-            .oneLink::after,
-            .twoLink::after,
-            .threeLink::after,
-            .fourLink::after {
-                display: block;
-                position: absolute;
-                content: '';
-                background-color: $happyYellow;
-                height: 2px;
-                width: 50px;
-                bottom: -20px;
-                left: calc(50% - 25px);
             }
         }
     }

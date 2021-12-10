@@ -254,8 +254,7 @@ a {
   color: #4f6e6c;
 }
 
-footer a:hover,
-.contact a:hover {
+footer a:hover {
   color: white;
 }
 
@@ -295,6 +294,7 @@ h1, h2, h3, h4, p {
 h1, h2, h3, h4 {
   font-family: 'Doppelganger', serif;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 h1 {
@@ -655,16 +655,14 @@ header.home .arrowDown {
 }
 
 .aboutLine1 span::after {
-  content: '';
   position: absolute;
-  background-image: url("../assets/Circle.svg");
-  background-repeat: no-repeat;
+  content: '';
+  background-color: #FDC87E;
+  height: 2px;
+  width: 50px;
+  bottom: -8px;
+  left: calc(50% - 25px);
   display: block;
-  width: 200px;
-  height: 400px;
-  top: -15px;
-  left: -35px;
-  background-size: 160px;
 }
 
 .aboutLine1 p:last-of-type {
@@ -890,14 +888,13 @@ header.home .arrowDown {
 .featuredSlideshow p span::after {
   content: '';
   position: absolute;
-  background-image: url("../assets/Circle.svg");
-  background-repeat: no-repeat;
+  content: '';
+  background-color: #FDC87E;
+  height: 2px;
+  width: 50px;
+  bottom: -8px;
+  left: calc(50% - 25px);
   display: block;
-  width: 200px;
-  height: 120px;
-  top: -15px;
-  left: -40px;
-  background-size: 160px;
 }
 
 @media (max-width: 1280px) {
@@ -1402,19 +1399,22 @@ h3:first-of-type {
   position: relative;
 }
 
-.aboutLinks .oneLink:hover::after,
-.aboutLinks .twoLink:hover::after,
-.aboutLinks .threeLink:hover::after,
-.aboutLinks .fourLink:hover::after {
-  content: url("../assets/Circle.svg");
-  display: block;
+.aboutLinks .oneLink::after,
+.aboutLinks .twoLink::after,
+.aboutLinks .threeLink::after,
+.aboutLinks .fourLink::after {
   position: absolute;
-  top: -15px;
-  left: -40px;
+  content: '';
+  background-color: #FDC87E;
+  height: 2px;
+  width: 50px;
+  bottom: -10px;
+  left: 2px;
+  display: block;
 }
 
 .aboutLinks .fourLink::after {
-  left: 0px;
+  left: 50px;
 }
 
 @media (max-width: 1280px) {
@@ -1535,25 +1535,6 @@ h3:first-of-type {
   main.about .aboutLinks ul li {
     padding: 20px;
     text-align: center;
-  }
-  main.about .aboutLinks .oneLink:hover::after,
-  main.about .aboutLinks .twoLink:hover::after,
-  main.about .aboutLinks .threeLink:hover::after,
-  main.about .aboutLinks .fourLink:hover::after {
-    display: none;
-  }
-  main.about .aboutLinks .oneLink::after,
-  main.about .aboutLinks .twoLink::after,
-  main.about .aboutLinks .threeLink::after,
-  main.about .aboutLinks .fourLink::after {
-    position: absolute;
-    content: '';
-    background-color: #FDC87E;
-    height: 2px;
-    width: 50px;
-    bottom: -8px;
-    left: calc(50% - 25px);
-    display: block;
   }
 }
 
@@ -1761,24 +1742,20 @@ body.projects {
   position: relative;
 }
 
-.tasteMakerInfo ul:nth-of-type(2) .linkOne:hover::after,
-.weatherScoutInfo ul:nth-of-type(2) .linkOne:hover::after,
-.deliciousInfo ul:nth-of-type(2) .linkOne:hover::after {
-  content: url("../assets/Circle.svg");
-  display: block;
+.tasteMakerInfo ul:nth-of-type(2) .linkOne::after,
+.tasteMakerInfo ul:nth-of-type(2) .linkTwo::after,
+.weatherScoutInfo ul:nth-of-type(2) .linkOne::after,
+.weatherScoutInfo ul:nth-of-type(2) .linkTwo::after,
+.deliciousInfo ul:nth-of-type(2) .linkOne::after,
+.deliciousInfo ul:nth-of-type(2) .linkTwo::after {
   position: absolute;
-  top: -15px;
-  left: -40px;
-}
-
-.tasteMakerInfo ul:nth-of-type(2) .linkTwo:hover::after,
-.weatherScoutInfo ul:nth-of-type(2) .linkTwo:hover::after,
-.deliciousInfo ul:nth-of-type(2) .linkTwo:hover::after {
-  content: url("../assets/Circle.svg");
+  content: '';
+  background-color: #FDC87E;
+  height: 2px;
+  width: 50px;
+  bottom: -10px;
+  left: 2px;
   display: block;
-  position: absolute;
-  top: -15px;
-  left: -40px;
 }
 
 footer.projects {
@@ -1856,21 +1833,6 @@ footer.projects {
 @media (max-width: 768px) {
   main.projects ul.tagline {
     width: 80%;
-  }
-  main.projects .linkOne:hover::after,
-  main.projects .linkTwo:hover::after {
-    display: none;
-  }
-  main.projects .linkOne::after,
-  main.projects .linkTwo::after {
-    display: block;
-    position: absolute;
-    content: '';
-    background-color: #FDC87E;
-    height: 2px;
-    width: 50px;
-    bottom: -8px;
-    left: calc(50% - 25px);
   }
 }
 
@@ -1976,12 +1938,16 @@ main.contact h3.email {
   position: relative;
 }
 
-main.contact h3.email::before {
+main.contact h3.email::before,
+main.contact h3.email::after {
   content: '';
   position: absolute;
+  display: block;
+}
+
+main.contact h3.email::before {
   background-image: url("../assets/ArrowPointRight.svg");
   background-repeat: no-repeat;
-  display: block;
   width: 100px;
   height: 100px;
   top: -50px;
@@ -1989,6 +1955,14 @@ main.contact h3.email::before {
   background-size: 80px;
   -webkit-transform: scaleX(-1) rotate(90deg);
           transform: scaleX(-1) rotate(90deg);
+}
+
+main.contact h3.email::after {
+  background-color: #FDC87E;
+  height: 2px;
+  width: 60%;
+  bottom: 0;
+  left: 20%;
 }
 
 main.contact ul {
@@ -2003,19 +1977,22 @@ main.contact ul {
   margin-bottom: 20px;
 }
 
-main.contact ul a {
+main.contact ul li {
   position: relative;
 }
 
-main.contact ul .oneLink:hover::after,
-main.contact ul .twoLink:hover::after,
-main.contact ul .threeLink:hover::after,
-main.contact ul .fourLink:hover::after {
-  content: url("../assets/Circle.svg");
-  display: block;
+main.contact ul .oneLink::after,
+main.contact ul .twoLink::after,
+main.contact ul .threeLink::after,
+main.contact ul .fourLink::after {
   position: absolute;
-  top: -8px;
-  left: -70px;
+  content: '';
+  background-color: #FDC87E;
+  height: 2px;
+  width: 50px;
+  bottom: -5px;
+  left: calc(50% - 25px);
+  display: block;
 }
 
 @media (max-width: 1280px) {
@@ -2045,9 +2022,6 @@ main.contact ul .fourLink:hover::after {
     top: -30px;
     left: -30px;
   }
-  main.contact ul {
-    text-align: left;
-  }
 }
 
 @media (max-width: 940px) {
@@ -2066,14 +2040,6 @@ main.contact ul .fourLink:hover::after {
   }
   main.contact ul {
     width: 100%;
-  }
-  main.contact ul .oneLink:hover::after,
-  main.contact ul .twoLink:hover::after,
-  main.contact ul .threeLink:hover::after {
-    left: -40px;
-  }
-  main.contact ul .fourLink:hover::after {
-    left: 0;
   }
   main.contact p.smallDisplay {
     width: 50%;
@@ -2103,12 +2069,6 @@ main.contact ul .fourLink:hover::after {
     left: -5px;
   }
   main.contact h3.email::after {
-    display: block;
-    position: absolute;
-    content: '';
-    background-color: #FDC87E;
-    height: 2px;
-    width: 80%;
     bottom: 0;
     left: 10%;
   }
@@ -2124,25 +2084,6 @@ main.contact ul .fourLink:hover::after {
   }
   main.contact ul li {
     text-align: center;
-  }
-  main.contact ul .oneLink:hover::after,
-  main.contact ul .twoLink:hover::after,
-  main.contact ul .threeLink:hover::after,
-  main.contact ul .fourLink:hover::after {
-    display: none;
-  }
-  main.contact ul .oneLink::after,
-  main.contact ul .twoLink::after,
-  main.contact ul .threeLink::after,
-  main.contact ul .fourLink::after {
-    display: block;
-    position: absolute;
-    content: '';
-    background-color: #FDC87E;
-    height: 2px;
-    width: 50px;
-    bottom: -20px;
-    left: calc(50% - 25px);
   }
 }
 

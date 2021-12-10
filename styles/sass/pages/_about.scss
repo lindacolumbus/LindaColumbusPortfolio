@@ -23,7 +23,6 @@ header.about {
 // Main
 main.about {
     background-color: $babyLilac;
-    // height: 800px;
     border-top-left-radius: 100%;
     border-top-right-radius: 100%;
     margin-top: -300px;
@@ -108,18 +107,21 @@ h3:first-of-type {
     .fourLink {
         position: relative;
     }
-    .oneLink:hover::after,
-    .twoLink:hover::after,
-    .threeLink:hover::after,
-    .fourLink:hover::after {
-        content:url('../assets/Circle.svg');
-        display: block;
+    .oneLink::after,
+    .twoLink::after,
+    .threeLink::after,
+    .fourLink::after {
         position: absolute;
-        top: -15px;
-        left: -40px;
+        content: '';
+        background-color: $happyYellow;
+        height: 2px;
+        width: 50px;
+        bottom: -10px;
+        left: 2px;
+        display: block;
     }
     .fourLink::after {
-        left: 0px;
+        left: 50px;
     }
 }
 
@@ -249,25 +251,6 @@ h3:first-of-type {
                     padding: 20px;
                     text-align: center;
                 }
-            }
-            .oneLink:hover::after,
-            .twoLink:hover::after,
-            .threeLink:hover::after,
-            .fourLink:hover::after {
-                display: none;
-            }
-            .oneLink::after,
-            .twoLink::after,
-            .threeLink::after,
-            .fourLink::after {
-                position: absolute;
-                content: '';
-                background-color: $happyYellow;
-                height: 2px;
-                width: 50px;
-                bottom: -8px;
-                left: calc(50% - 25px);
-                display: block;
             }
         }
     }

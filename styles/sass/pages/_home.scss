@@ -49,16 +49,14 @@ header.home {
         position: relative;
     }
     span::after {
-        content: '';
         position: absolute;
-        background-image: url('../assets/Circle.svg');
-        background-repeat: no-repeat;
+        content: '';
+        background-color: $happyYellow;
+        height: 2px;
+        width: 50px;
+        bottom: -8px;
+        left: calc(50% - 25px);
         display: block;
-        width: 200px;
-        height: 400px;
-        top: -15px;
-        left: -35px;
-        background-size: 160px;
     }
     p:last-of-type {
         grid-column-start: 1;
@@ -241,16 +239,15 @@ header.home {
             position: relative;
         }
         span::after {
-        content: '';
-        position: absolute;
-        background-image: url('../assets/Circle.svg');
-        background-repeat: no-repeat;
-        display: block;
-        width: 200px;
-        height: 120px;
-        top: -15px;
-        left: -40px;
-        background-size: 160px;
+            content: '';
+            position: absolute;
+            content: '';
+            background-color: $happyYellow;
+            height: 2px;
+            width: 50px;
+            bottom: -8px;
+            left: calc(50% - 25px);
+            display: block;
         }
     }
 }
