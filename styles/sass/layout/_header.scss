@@ -31,7 +31,7 @@
     display: block;
     height: 100vh;
     width: 100vw;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 500;
@@ -126,20 +126,22 @@
         }
         .smallDisplay {
             width: 100%;
-            display: flex;
+            display: grid;
             justify-content: end;
             margin: auto 0;
         }
         ul {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            li:nth-of-type(3)::after {
+        }
+    }
+    .visible ul {
+        li:nth-of-type(3)::after {
             right: -25%;
-            }
-            li:last-of-type::after {
-                bottom: 30%;
-                left: -30%;
-            }
+        }
+        li:last-of-type::after {
+            bottom: 30%;
+            left: -30%;
         }
     }
 }
