@@ -254,3 +254,13 @@ header.home {
         }
     }
 }
+
+// Media queries
+@media (max-width: 1280px) {
+    .headshot {
+        right: -10%;
+    }
+    footer h2 {
+        width: 70%;
+    }
+}

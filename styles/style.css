@@ -333,8 +333,8 @@ p {
   height: 60px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 5fr (1fr)[4];
+      grid-template-columns: 5fr repeat(4, 1fr);
   border-bottom: 1px solid #4f6e6c;
 }
 
@@ -350,18 +350,6 @@ p {
 
 .headerNav h4 {
   margin-left: 100px;
-}
-
-.headerNav li:nth-child(2) {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.headerNav li:last-child {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .fa-circle-notch {
@@ -412,22 +400,39 @@ p {
 
 .visible ul {
   margin: 50px 0 0 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  gap: 50px;
 }
 
-.visible ul h2 {
+.visible ul li:nth-child(2) {
+  margin-left: 100px;
+}
+
+.visible ul li:nth-child(3) {
+  margin-left: 200px;
+}
+
+.visible ul li:nth-child(4) {
+  margin-left: 300px;
+}
+
+.visible h2 {
   position: relative;
 }
 
-.visible ul li:first-of-type::before,
-.visible ul li:last-of-type::after,
-.visible ul li:nth-of-type(3)::after {
+.visible li:first-of-type::before,
+.visible li:last-of-type::after,
+.visible li:nth-of-type(3)::after {
   content: '';
   position: absolute;
   border-radius: 100%;
   z-index: -1;
 }
 
-.visible ul li:first-of-type::before {
+.visible li:first-of-type::before {
   height: 300px;
   width: 300px;
   background-color: #DAE7D9;
@@ -435,7 +440,7 @@ p {
   left: -5%;
 }
 
-.visible ul li:nth-of-type(3)::after {
+.visible li:nth-of-type(3)::after {
   height: 500px;
   width: 500px;
   background-color: #D8BBB6;
@@ -443,7 +448,7 @@ p {
   right: -5%;
 }
 
-.visible ul li:last-of-type::after {
+.visible li:last-of-type::after {
   height: 400px;
   width: 400px;
   background-color: #F1E3FF;
@@ -451,58 +456,55 @@ p {
   left: 10%;
 }
 
-.visible ul li:first-child h2:first-child:hover::after,
-.visible ul li:nth-child(2) h2:first-child:hover::before,
-.visible ul li:nth-child(3) h2:first-child:hover::before,
-.visible ul li:last-child h2:first-child:hover::before {
-  content: '';
-  position: absolute;
-  background-image: url("../assets/ArrowPointRight.svg");
-  background-repeat: no-repeat;
-  display: block;
-  width: 100px;
-  height: 100px;
-  background-size: 80px;
+.headerNav .smallDisplay {
+  display: none;
 }
 
-.visible ul li:first-child h2:first-child:hover::after {
-  top: -40px;
-  left: 220px;
-  -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
+@media (max-width: 768px) {
+  .headerNav .largeDisplay {
+    display: none;
+  }
+  .headerNav .smallDisplay {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    margin: auto 0;
+  }
+  .headerNav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.visible ul li:nth-child(2) h2:first-child:hover::before {
-  top: 20px;
-  left: -100px;
-  -webkit-transform: rotate(290deg);
-          transform: rotate(290deg);
+@media (max-width: 620px) {
+  .visible ul li:nth-child(2) {
+    margin-left: 50px;
+  }
+  .visible ul li:nth-child(3) {
+    margin-left: 150px;
+  }
+  .visible ul li:nth-child(4) {
+    margin-left: 200px;
+  }
 }
 
-.visible ul li:nth-child(3) h2:first-child:hover::before {
-  top: 65px;
-  left: -80px;
-  -webkit-transform: scaleX(-1) rotate(180deg);
-          transform: scaleX(-1) rotate(180deg);
-}
-
-.visible ul li:last-child h2:first-child:hover::before {
-  top: -50px;
-  left: 400px;
-  -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
-}
-
-.visible ul li:nth-of-type(2) {
-  margin-left: 15%;
-}
-
-.visible ul li:nth-of-type(3) {
-  margin-left: 30%;
-}
-
-.visible ul li:last-of-type {
-  margin-left: 50%;
+@media (max-width: 540px) {
+  .visible h2 {
+    font-size: 6rem;
+  }
+  .visible ul {
+    margin-top: 100px;
+  }
+  .visible ul li:nth-child(2),
+  .visible ul li:nth-child(3),
+  .visible ul li:nth-child(4) {
+    margin-left: 0;
+  }
 }
 
 footer {
@@ -870,6 +872,15 @@ header.home .arrowDown {
   top: -15px;
   left: -40px;
   background-size: 160px;
+}
+
+@media (max-width: 1280px) {
+  .headshot {
+    right: -10%;
+  }
+  footer h2 {
+    width: 70%;
+  }
 }
 
 body.about {
