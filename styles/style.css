@@ -352,11 +352,6 @@ p {
   margin-left: 100px;
 }
 
-.fa-circle-notch {
-  color: #FDC87E;
-  font-size: 2.2rem;
-}
-
 .fa-grip-lines {
   color: #4f6e6c;
   font-size: 2.5rem;
@@ -372,7 +367,7 @@ p {
   display: block;
   height: 100vh;
   width: 100vw;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   z-index: 500;
@@ -473,24 +468,24 @@ p {
     display: none;
   }
   .headerNav .smallDisplay {
+    display: block;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
     margin: auto 0;
+    text-align: right;
   }
   .headerNav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
-  .headerNav ul li:nth-of-type(3)::after {
+  .visible ul li:nth-of-type(3)::after {
     right: -25%;
   }
-  .headerNav ul li:last-of-type::after {
+  .visible ul li:last-of-type::after {
     bottom: 30%;
     left: -30%;
   }
