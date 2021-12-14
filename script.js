@@ -5,6 +5,7 @@ portfolio.slideshowImage1 = document.getElementsByClassName('projectSlideshow1')
 portfolio.slideshowImage2 = document.getElementsByClassName('projectSlideshow2');
 portfolio.skillsList = document.getElementsByClassName('featuredDescriptions');
 portfolio.projectTitle = document.getElementsByClassName('projectTitle');
+portfolio.projectDesc = document.getElementsByClassName('projectDesc');
 portfolio.menuButton = document.getElementsByClassName('fas fa-grip-lines');
 portfolio.modal = document.getElementsByClassName('modal');
 portfolio.closeModal = document.getElementsByClassName('closeModal');
@@ -19,7 +20,8 @@ portfolio.projects = [
     srcImage2: './assets/Taste Maker2.png',
     alt2: 'Music recommendation of BORNS based off of a Glass Animals musician search query',
     skillsHTML: '<ul><li><p class="tagline">HTML5</p></li><li><p class="tagline">CSS</p></li><li><p class="tagline">JavaScript</p></li><li><p class="tagline">API</p></li><li><p class="tagline">React</p></li><li><p class="tagline">Firebase</p></li></ul>',
-    title: 'Taste Maker'
+    title: 'Taste Maker',
+    description: `Music recommendation generator made with React, using an API call to fetch data and Firebase to store the user's search history.`
     },
 
     weatherScout = {
@@ -29,7 +31,8 @@ portfolio.projects = [
     srcImage2: './assets/Weather Scout2.png',
     alt2: 'Screenshot of form prompting user for a city name for a weather forecast',
     skillsHTML: '<ul><li><p class="tagline">HTML5</p></li><li><p class="tagline">CSS</p></li><li><p class="tagline">SCSS</p></li><li><p class="tagline">JavaScript</p></li><li><p class="tagline">API</p></li></ul>',
-    title: 'Weather Scout'
+    title: 'Weather Scout',
+    description: 'Through pair programming, created an app that uses two API calls to return current and future weather data.'
     },
 
     delicious = {
@@ -39,7 +42,8 @@ portfolio.projects = [
         srcImage2: './assets/Delicious2.png',
         alt2: 'Screenshot of a blog page with related posts and comments',
         skillsHTML: '<ul class="shortSkillList"><li><p class="tagline">HTML5</p></li><li><p class="tagline">CSS</p></li><li><p class="tagline">SCSS</p></li></ul>',
-        title: 'Delicious'
+        title: 'Delicious',
+        description: 'Was provided a design and was tasked to convert into a three-page, functional, responsive website.'
     }
 ]
 
@@ -56,8 +60,9 @@ portfolio.startEventListener = () => {
         portfolio.slideshowImage1[0].alt = `${portfolio.projects[value].alt1}`;
         portfolio.slideshowImage2[0].src = `${portfolio.projects[value].srcImage2}`;
         portfolio.slideshowImage2[0].alt = `${portfolio.projects[value].alt2}`;
-        portfolio.skillsList[0].innerHTML = `${portfolio.projects[value].skillsHTML}`
-        portfolio.projectTitle[0].textContent = `${portfolio.projects[value].title}`
+        portfolio.skillsList[0].innerHTML = `${portfolio.projects[value].skillsHTML}`;
+        portfolio.projectTitle[0].textContent = `${portfolio.projects[value].title}`;
+        portfolio.projectDesc[0].textContent = `${portfolio.projects[value].description}`
     }
 
     nextButton[0].addEventListener('click', function(event) {

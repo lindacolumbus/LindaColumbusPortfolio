@@ -233,8 +233,14 @@ header.home {
             grid-template-columns: repeat(3, auto);
         }
     }
+    .projectDesc {
+        width: 50%;
+        margin: 0 auto;
+    }
+    p:last-child {
+        margin-top: 60px;
+    }
     p {
-        margin-top: 40px;
         span {
             position: relative;
         }
@@ -510,6 +516,9 @@ header.home {
         }
         .projectSlideshow2 {
             left: 20%;
+        }
+        .projectDesc {
+            width: 70%;
         }
     }
     footer {

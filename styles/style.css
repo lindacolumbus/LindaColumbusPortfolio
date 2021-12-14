@@ -877,8 +877,13 @@ header.home .arrowDown {
       grid-template-columns: repeat(3, auto);
 }
 
-.featuredSlideshow p {
-  margin-top: 40px;
+.featuredSlideshow .projectDesc {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.featuredSlideshow p:last-child {
+  margin-top: 60px;
 }
 
 .featuredSlideshow p span {
@@ -1137,6 +1142,9 @@ header.home .arrowDown {
   }
   .featuredSlideshow .projectSlideshow2 {
     left: 20%;
+  }
+  .featuredSlideshow .projectDesc {
+    width: 70%;
   }
   footer span::after {
     background-size: 200px;
