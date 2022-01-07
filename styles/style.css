@@ -643,11 +643,26 @@ header.home .arrowDown {
 .aboutLine1, .aboutLine2 {
   display: -ms-grid;
   display: grid;
+  gap: 10px;
 }
 
 .aboutLine1 {
   -ms-grid-columns: 3fr 1.75fr;
       grid-template-columns: 3fr 1.75fr;
+}
+
+.aboutLine1 p:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.aboutLine1 .tagline {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
 }
 
 .aboutLine1 span {
@@ -987,7 +1002,9 @@ header.home .arrowDown {
   .smallDisplay {
     display: block;
     width: 60%;
-    margin-bottom: 50px;
+  }
+  .aboutLine1 p:first-of-type {
+    display: none;
   }
   .aboutLine3 {
     display: -webkit-box;
@@ -1002,6 +1019,9 @@ header.home .arrowDown {
     margin-bottom: 50px;
   }
   .aboutLine3 p:nth-of-type(2) {
+    margin: 10px 0 50px 0;
+  }
+  .aboutLine3 p:nth-of-type(3) {
     text-align: right;
     margin-right: 200px;
   }
@@ -1125,12 +1145,12 @@ header.home .arrowDown {
     margin-left: 100px;
   }
   .aboutLine3 .arrowDown1 {
-    bottom: 20px;
-    left: 10px;
+    bottom: 1px;
+    right: 10px;
   }
   .aboutLine3 .arrowDown2 {
-    bottom: 0;
-    left: 60px;
+    bottom: -20px;
+    right: 40px;
   }
   .aboutLine3 span.developer::after {
     background-size: 300px;
