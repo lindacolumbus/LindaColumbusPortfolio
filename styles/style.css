@@ -1260,6 +1260,7 @@ header.home .arrowDown {
   }
   .featuredSlideshow .featuredDescriptions ul {
     gap: 10px;
+    padding-top: 100px;
   }
   footer h2 {
     padding-top: 50px;
