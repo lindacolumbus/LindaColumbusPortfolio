@@ -14,9 +14,9 @@ portfolio.closeModal = document.getElementsByClassName('closeModal');
 portfolio.projects = [
 
     tasteMaker = {
-    projectNum: '01 / 03',
+    projectNum: '01 / 04',
     srcImage1: './assets/Taste Maker1.png',
-    alt1: 'Pink headphones on a pink and teal backdrop" class="projectSlideshow1',
+    alt1: 'Pink headphones on a pink and teal backdrop',
     srcImage2: './assets/Taste Maker2.png',
     alt2: 'Music recommendation of BORNS based off of a Glass Animals musician search query',
     skillsHTML: '<ul><li><p class="tagline">HTML5</p></li><li><p class="tagline">CSS</p></li><li><p class="tagline">JavaScript</p></li><li><p class="tagline">API</p></li><li><p class="tagline">React</p></li><li><p class="tagline">Firebase</p></li></ul>',
@@ -24,8 +24,19 @@ portfolio.projects = [
     description: `Music recommendation generator made with React, using an API call to fetch data and Firebase to store the user's search history.`
     },
 
+    doSomething = {
+    projectNum: '02 / 04',
+    srcImage1: './assets/Do Something1.png',
+    alt1: 'Woman lying on ground with a book covering her face',
+    srcImage2: './assets/Do Something2.png',
+    alt2: 'Screenshot of form prompting user the choose number of participants for an activity recommendation',
+    skillsHTML: '<ul><li><p class="tagline">HTML5</p></li><li><p class="tagline">CSS</p></li><li><p class="tagline">JavaScript</p></li><li><p class="tagline">API</p></li>',
+    title: 'Do Something',
+    description: `Activity generator app integrating three API calls to work dynamically together with user input.`
+    },
+
     weatherScout = {
-    projectNum: '02 / 03',
+    projectNum: '03 / 04',
     srcImage1: './assets/Weather Scout1.png',
     alt1: 'Pink and cream coloured clouds on a purple sky',
     srcImage2: './assets/Weather Scout2.png',
@@ -36,7 +47,7 @@ portfolio.projects = [
     },
 
     delicious = {
-        projectNum: '03 / 03',
+        projectNum: '04 / 04',
         srcImage1: './assets/Delicious 1.jpeg',
         alt1: 'Top down view of two pink coloured drinks, garnished with blueberries and a lime slice',
         srcImage2: './assets/Delicious2.png',

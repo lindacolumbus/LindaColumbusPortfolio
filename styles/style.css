@@ -1647,6 +1647,12 @@ body.projects {
   margin-top: 80px;
 }
 
+.doSomethingBackground {
+  background-image: url("https://images.unsplash.com/photo-1551818567-d49550a81408?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
+  background-position: 0 85%;
+  margin-top: -200px;
+}
+
 .weatherScoutBackground {
   background-image: url("https://images.unsplash.com/photo-1496450681664-3df85efbd29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
   background-position: bottom;
@@ -1659,6 +1665,7 @@ body.projects {
 }
 
 .tasteMakerBackground,
+.doSomethingBackground,
 .weatherScoutBackground,
 .deliciousBackground {
   background-size: cover;
@@ -1676,8 +1683,18 @@ body.projects {
   width: 50%;
 }
 
-.weatherScoutInfo {
+.doSomethingInfo {
   background-color: #DAE7D9;
+}
+
+.doSomethingInfo ul.tagline {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  width: 50%;
+}
+
+.weatherScoutInfo {
+  background-color: #F3E0D6;
 }
 
 .weatherScoutInfo ul.tagline {
@@ -1687,7 +1704,7 @@ body.projects {
 }
 
 .deliciousInfo {
-  background-color: #F3E0D6;
+  background-color: #F1E3FF;
 }
 
 .deliciousInfo ul.tagline {
@@ -1697,6 +1714,7 @@ body.projects {
 }
 
 .tasteMakerInfo,
+.doSomethingInfo,
 .weatherScoutInfo,
 .deliciousInfo {
   height: 950px;
@@ -1716,6 +1734,7 @@ body.projects {
 }
 
 .tasteMakerInfo ul.tagline,
+.doSomethingInfo ul.tagline,
 .weatherScoutInfo ul.tagline,
 .deliciousInfo ul.tagline {
   padding-top: 120px;
@@ -1725,12 +1744,14 @@ body.projects {
 }
 
 .tasteMakerInfo div,
+.doSomethingInfo div,
 .weatherScoutInfo div,
 .deliciousInfo div {
   position: relative;
 }
 
 .tasteMakerInfo div p,
+.doSomethingInfo div p,
 .weatherScoutInfo div p,
 .deliciousInfo div p {
   position: absolute;
@@ -1739,12 +1760,14 @@ body.projects {
 }
 
 .tasteMakerInfo h2,
+.doSomethingInfo h2,
 .weatherScoutInfo h2,
 .deliciousInfo h2 {
   margin: 50px 0 30px 0;
 }
 
 .tasteMakerInfo p:nth-child(3),
+.doSomethingInfo p:nth-child(3),
 .weatherScoutInfo p:nth-child(3),
 .deliciousInfo p:nth-child(3) {
   width: 30%;
@@ -1752,12 +1775,14 @@ body.projects {
 }
 
 .tasteMakerInfo ul:nth-of-type(2),
+.doSomethingInfo ul:nth-of-type(2),
 .weatherScoutInfo ul:nth-of-type(2),
 .deliciousInfo ul:nth-of-type(2) {
   margin: 50px 0;
 }
 
 .tasteMakerInfo ul:nth-of-type(3),
+.doSomethingInfo ul:nth-of-type(3),
 .weatherScoutInfo ul:nth-of-type(3),
 .deliciousInfo ul:nth-of-type(3) {
   display: -ms-grid;
@@ -1769,6 +1794,7 @@ body.projects {
 }
 
 .tasteMakerInfo ul:nth-of-type(3) p,
+.doSomethingInfo ul:nth-of-type(3) p,
 .weatherScoutInfo ul:nth-of-type(3) p,
 .deliciousInfo ul:nth-of-type(3) p {
   position: relative;
@@ -1776,6 +1802,8 @@ body.projects {
 
 .tasteMakerInfo ul:nth-of-type(3) .linkOne::after,
 .tasteMakerInfo ul:nth-of-type(3) .linkTwo::after,
+.doSomethingInfo ul:nth-of-type(3) .linkOne::after,
+.doSomethingInfo ul:nth-of-type(3) .linkTwo::after,
 .weatherScoutInfo ul:nth-of-type(3) .linkOne::after,
 .weatherScoutInfo ul:nth-of-type(3) .linkTwo::after,
 .deliciousInfo ul:nth-of-type(3) .linkOne::after,
@@ -1806,12 +1834,16 @@ footer.projects {
   main.projects > section {
     margin-top: -650px;
   }
+  main.projects .doSomethingBackground,
   main.projects .weatherScoutBackground,
   main.projects .deliciousBackground {
     margin-top: -250px;
   }
   main.projects .deliciousBackground {
     background-size: contain;
+  }
+  main.projects .doSomethingBackground {
+    background-position: bottom;
   }
   footer.projects {
     margin-top: -250px;
@@ -1826,11 +1858,13 @@ footer.projects {
     font-size: 8rem;
   }
   main.projects .tasteMakerInfo p:nth-child(3),
+  main.projects .doSomethingInfo p:nth-child(3),
   main.projects .weatherScoutInfo p:nth-child(3),
   main.projects .deliciousInfo p:nth-child(3) {
     width: 60%;
   }
   main.projects .tasteMakerInfo div p,
+  main.projects .doSomethingInfo div p,
   main.projects .weatherScoutInfo div p,
   main.projects .deliciousInfo div p {
     left: -30px;
@@ -1854,7 +1888,11 @@ footer.projects {
   main.projects .projectIntro h2 {
     font-size: 7rem;
   }
+  main.projects .doSomethingBackground {
+    background-position: top;
+  }
   main.projects .tasteMakerInfo,
+  main.projects .doSomethingInfo,
   main.projects .weatherScoutInfo,
   main.projects .deliciousInfo {
     border-top-left-radius: 150px;
@@ -1867,11 +1905,13 @@ footer.projects {
     width: 80%;
   }
   .tasteMakerInfo ul:nth-of-type(2),
+  .doSomethingInfo ul:nth-of-type(2),
   .weatherScoutInfo ul:nth-of-type(2),
   .deliciousInfo ul:nth-of-type(2) {
     width: 80%;
   }
   .tasteMakerInfo ul:nth-of-type(3),
+  .doSomethingInfo ul:nth-of-type(3),
   .weatherScoutInfo ul:nth-of-type(3),
   .deliciousInfo ul:nth-of-type(3) {
     margin: 0;
@@ -1882,6 +1922,7 @@ footer.projects {
   main.projects h2 {
     font-size: 5rem;
   }
+  main.projects .weatherScoutBackground,
   main.projects .deliciousBackground {
     margin-top: -300px;
   }
@@ -1917,10 +1958,14 @@ footer.projects {
   main.projects .projectIntro :nth-child(3) {
     margin-top: 260px;
   }
-  main.projects .weatherScoutBackground {
+  main.projects .doSomethingBackground {
     margin-top: -200px;
   }
+  main.projects .weatherScoutBackground {
+    margin-top: -275px;
+  }
   .tasteMakerInfo ul:nth-of-type(2) li,
+  .doSomethingInfo ul:nth-of-type(2) li,
   .weatherScoutInfo ul:nth-of-type(2) li,
   .deliciousInfo ul:nth-of-type(2) li {
     margin: 10px 0;
@@ -1933,6 +1978,9 @@ footer.projects {
     left: calc(50% - 175px);
     height: 450px;
     top: 0;
+  }
+  main.projects .doSomethingBackground {
+    margin-top: -175px;
   }
 }
 
@@ -1950,22 +1998,29 @@ footer.projects {
     margin-top: 170px;
   }
   main.projects .tasteMakerInfo,
+  main.projects .doSomethingInfo,
   main.projects .weatherScoutInfo,
   main.projects .deliciousInfo {
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
   }
+  main.projects .doSomethingBackground {
+    margin-top: -125px;
+  }
+  main.projects .doSomethingInfo h2 {
+    font-size: 4rem;
+  }
   main.projects .weatherScoutInfo ul.tagline {
     width: 90%;
   }
   main.projects .weatherScoutInfo h2 {
-    font-size: 4.3rem;
+    font-size: 3.9rem;
   }
   main.projects .weatherScoutInfo div p {
     left: -20px;
   }
   main.projects .weatherScoutBackground {
-    margin-top: -150px;
+    margin-top: -225px;
   }
   main.projects .deliciousBackground {
     margin-top: -280px;
