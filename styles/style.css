@@ -228,14 +228,25 @@ html {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
-body, h1, h2, h3, h4, p, nav, ul, li, button {
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+nav,
+ul,
+li,
+button {
   margin: 0;
   padding: 0;
 }
@@ -268,7 +279,11 @@ body {
   background-color: #EEEBE5;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   color: #4f6e6c;
 }
 
@@ -381,7 +396,7 @@ p {
 }
 
 .visible .closeModal::before {
-  content: '';
+  content: "";
   position: absolute;
   background-image: url("../assets/Circle.svg");
   background-repeat: no-repeat;
@@ -421,7 +436,7 @@ p {
 .visible li:first-of-type::before,
 .visible li:last-of-type::after,
 .visible li:nth-of-type(3)::after {
-  content: '';
+  content: "";
   position: absolute;
   border-radius: 100%;
   z-index: -1;
@@ -635,12 +650,17 @@ header.home .arrowDown {
   bottom: 5%;
 }
 
+.title .tagline {
+  font-size: 2rem;
+}
+
 .aboutBlurb {
   margin-top: 30%;
   margin-bottom: 18%;
 }
 
-.aboutLine1, .aboutLine2 {
+.aboutLine1,
+.aboutLine2 {
   display: -ms-grid;
   display: grid;
   gap: 10px;
@@ -671,7 +691,7 @@ header.home .arrowDown {
 
 .aboutLine1 span.readMore::after {
   position: absolute;
-  content: '';
+  content: "";
   background-color: #FDC87E;
   height: 2px;
   width: 50px;
@@ -717,7 +737,7 @@ header.home .arrowDown {
 }
 
 .aboutLine3 span.developer::after {
-  content: '';
+  content: "";
   position: absolute;
   background-image: url("../assets/Circle.svg");
   background-repeat: no-repeat;
@@ -776,7 +796,7 @@ header.home .arrowDown {
 }
 
 .featuredWork .featureTitle span::after {
-  content: '';
+  content: "";
   position: absolute;
   background-image: url("../assets/Circle.svg");
   background-repeat: no-repeat;
@@ -906,9 +926,9 @@ header.home .arrowDown {
 }
 
 .featuredSlideshow p span::after {
-  content: '';
+  content: "";
   position: absolute;
-  content: '';
+  content: "";
   background-color: #FDC87E;
   height: 2px;
   width: 50px;
@@ -1027,7 +1047,7 @@ header.home .arrowDown {
   }
   .aboutLine3 span.readMore::after {
     position: absolute;
-    content: '';
+    content: "";
     background-color: #FDC87E;
     height: 2px;
     width: 50px;
@@ -1134,6 +1154,9 @@ header.home .arrowDown {
   }
   header.home .arrowDown {
     bottom: 30%;
+  }
+  .title .tagline {
+    font-size: 1.6rem;
   }
   h1 {
     font-size: 10rem;
@@ -1830,13 +1853,26 @@ body.projects {
 .deliciousInfo ul:nth-of-type(3) .linkOne::after,
 .deliciousInfo ul:nth-of-type(3) .linkTwo::after {
   position: absolute;
-  content: '';
+  content: "";
   background-color: #FDC87E;
   height: 2px;
   width: 50px;
   bottom: -10px;
-  left: 2px;
   display: block;
+}
+
+.tasteMakerInfo ul:nth-of-type(3) .linkOne::after,
+.doSomethingInfo ul:nth-of-type(3) .linkOne::after,
+.weatherScoutInfo ul:nth-of-type(3) .linkOne::after,
+.deliciousInfo ul:nth-of-type(3) .linkOne::after {
+  left: 2px;
+}
+
+.tasteMakerInfo ul:nth-of-type(3) .linkTwo::after,
+.doSomethingInfo ul:nth-of-type(3) .linkTwo::after,
+.weatherScoutInfo ul:nth-of-type(3) .linkTwo::after,
+.deliciousInfo ul:nth-of-type(3) .linkTwo::after {
+  left: 30%;
 }
 
 footer.projects {
@@ -2002,6 +2038,12 @@ footer.projects {
   }
   main.projects .doSomethingBackground {
     margin-top: -175px;
+  }
+  .tasteMakerInfo ul:nth-of-type(3),
+  .doSomethingInfo ul:nth-of-type(3),
+  .weatherScoutInfo ul:nth-of-type(3),
+  .deliciousInfo ul:nth-of-type(3) {
+    gap: 0;
   }
 }
 

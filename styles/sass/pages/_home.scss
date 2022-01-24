@@ -1,700 +1,709 @@
-@import '../layout/header';
-@import '../layout/footer';
+@import "../layout/header";
+@import "../layout/footer";
 
 // Title landing
 header.home {
-    height: 100vh;
-    h1 {
+  height: 100vh;
+  h1 {
     margin-top: 25vh;
-    }
-    .purpleCircle,
-    .yellowCircle {
+  }
+  .purpleCircle,
+  .yellowCircle {
     border-radius: 50%;
     position: absolute;
     z-index: -1;
-    }
-    .purpleCircle {
+  }
+  .purpleCircle {
     background-color: $babyLilac;
     height: 350px;
     width: 350px;
     top: -190px;
     right: 100px;
-    }
-    .yellowCircle {
+  }
+  .yellowCircle {
     background-color: $happyYellow;
     height: 1000px;
     width: 1000px;
     top: 100px;
     left: -200px;
-    }
-    .arrowDown {
+  }
+  .arrowDown {
     position: absolute;
     height: 70px;
     right: 15%;
     bottom: 5%;
-    }
+  }
+}
+
+.title .tagline {
+  font-size: 2rem;
 }
 
 // About blurb
 .aboutBlurb {
-    margin-top: 30%;
-    margin-bottom: 18%;
+  margin-top: 30%;
+  margin-bottom: 18%;
 }
-.aboutLine1, .aboutLine2 {
-    display: grid;
-    gap: 10px
+.aboutLine1,
+.aboutLine2 {
+  display: grid;
+  gap: 10px;
 }
 .aboutLine1 {
-    grid-template-columns: 3fr 1.75fr;
-    p:first-of-type {
-        display: flex;
-        align-items: flex-end;
-    }
-    .tagline {
-        grid-column-start: 2;
-    }
-    span {
-        position: relative;
-    }
-    span.readMore::after {
-        position: absolute;
-        content: '';
-        background-color: $happyYellow;
-        height: 2px;
-        width: 50px;
-        bottom: -8px;
-        left: calc(50% - 25px);
-        display: block;
-    }
-    p:last-of-type {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        text-align: right;
-        margin-right: 40px;
-    }
+  grid-template-columns: 3fr 1.75fr;
+  p:first-of-type {
+    display: flex;
+    align-items: flex-end;
+  }
+  .tagline {
+    grid-column-start: 2;
+  }
+  span {
+    position: relative;
+  }
+  span.readMore::after {
+    position: absolute;
+    content: "";
+    background-color: $happyYellow;
+    height: 2px;
+    width: 50px;
+    bottom: -8px;
+    left: calc(50% - 25px);
+    display: block;
+  }
+  p:last-of-type {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: right;
+    margin-right: 40px;
+  }
 }
 .aboutLine2 {
-    position: relative;
-    gap: 100px;
-    margin: 10px 0;
-    h2 {
-        margin-left: 160px;
-    }
-    .arc {
-        position: absolute;
-        width: 80px;
-        height: 100px;
-        right: 5%;
-        top: -5%;
-        transform: rotate(-20deg);
-    }
+  position: relative;
+  gap: 100px;
+  margin: 10px 0;
+  //   margin-top: -80px;
+  h2 {
+    margin-left: 160px;
+  }
+  .arc {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    right: 5%;
+    top: -5%;
+    transform: rotate(-20deg);
+  }
 }
 .aboutLine3 {
+  position: relative;
+  span {
     position: relative;
-    span {
-        position: relative;
-    }
-    span.developer::after {
-        content: '';
-        position: absolute;
-        background-image: url('../assets/Circle.svg');
-        background-repeat: no-repeat;
-        display: block;
-        width: 560px;
-        height: 400px;
-        top: -40px;
-        left: -10px;
-        background-size: 560px;
-    }
-    .arrowDown1,
-    .arrowDown2 {
-        position: absolute;
-    }
-    .arrowDown1 {
-        bottom: -20%;
-        right: 35%;
-    }
-    .arrowDown2 {
-        right: 100px;
-        bottom: -25%;
-        right: 29%;
-        transform: rotate(15deg);
-    }
+  }
+  span.developer::after {
+    content: "";
+    position: absolute;
+    background-image: url("../assets/Circle.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 560px;
+    height: 400px;
+    top: -40px;
+    left: -10px;
+    background-size: 560px;
+  }
+  .arrowDown1,
+  .arrowDown2 {
+    position: absolute;
+  }
+  .arrowDown1 {
+    bottom: -20%;
+    right: 35%;
+  }
+  .arrowDown2 {
+    right: 100px;
+    bottom: -25%;
+    right: 29%;
+    transform: rotate(15deg);
+  }
 }
 .headshot {
-    height: 300px;
-    border-radius: 50%;
-    position: absolute;
-    top: -10%;
-    right: 6%;
-    z-index: -1;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+  right: 6%;
+  z-index: -1;
 }
 .smallDisplay {
-    display: none;
+  display: none;
 }
 
 // Featured work
 .featuredWork {
-    background-color: $sand;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    text-align: center;
-    .wrapper {
-        width: 60%; 
+  background-color: $sand;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  text-align: center;
+  .wrapper {
+    width: 60%;
+  }
+  .featureTitle {
+    span {
+      position: relative;
     }
-    .featureTitle {
-        span {
-        position: relative;
-        }
-        span::after {
-        content: '';
-        position: absolute;
-        background-image: url('../assets/Circle.svg');
-        background-repeat: no-repeat;
-        display: block;
-        width: 551px;
-        height: 400px;
-        top: -40px;
-        left: -30px;
-        background-size: 550px;
-        }
+    span::after {
+      content: "";
+      position: absolute;
+      background-image: url("../assets/Circle.svg");
+      background-repeat: no-repeat;
+      display: block;
+      width: 551px;
+      height: 400px;
+      top: -40px;
+      left: -30px;
+      background-size: 550px;
     }
-    .tagline {
-        padding-top: 80px;
-        margin-bottom: 50px;
-    }
+  }
+  .tagline {
+    padding-top: 80px;
+    margin-bottom: 50px;
+  }
 }
 
 // Featured slideshow
 .featuredSlideshow {
-    background-color: $babyGreen;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    margin-top: 300px;
-    padding-bottom: 100px;
-    text-align: center;
-    position: relative;
-    .slideshowNum,
-    .projectSlideshow1,
-    .projectSlideshow2,
-    .arrowLeft,
-    .arrowRight,
-    .prev,
-    .next {
-        position: absolute;
+  background-color: $babyGreen;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  margin-top: 300px;
+  padding-bottom: 100px;
+  text-align: center;
+  position: relative;
+  .slideshowNum,
+  .projectSlideshow1,
+  .projectSlideshow2,
+  .arrowLeft,
+  .arrowRight,
+  .prev,
+  .next {
+    position: absolute;
+  }
+  .slideshowNum {
+    top: -330px;
+    left: 50%;
+  }
+  .projectSlideshow1 {
+    border-radius: 120px;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    z-index: 90;
+    transform: rotate(15deg);
+    top: -100px;
+    left: 50%;
+  }
+  .projectSlideshow2 {
+    height: 500px;
+    border-radius: 32px;
+    border: 1px solid $darkGreen;
+    top: -150px;
+    left: 30%;
+  }
+  .arrowLeft {
+    width: 60px;
+    top: 20%;
+    left: 18%;
+  }
+  .arrowRight {
+    width: 70px;
+    top: 18%;
+    right: 18%;
+  }
+  .prev,
+  .next {
+    top: 14%;
+  }
+  .prev:hover,
+  .next:hover {
+    cursor: pointer;
+  }
+  .prev {
+    left: 19%;
+  }
+  .next {
+    right: 19.5%;
+  }
+  .featuredDescriptions {
+    display: flex;
+    justify-content: center;
+    ul {
+      padding-top: 270px;
+      display: grid;
+      grid-template-columns: repeat(6, auto);
+      gap: 30px;
     }
-    .slideshowNum {
-        top: -330px;
-        left: 50%;
+    ul.shortSkillList {
+      grid-template-columns: repeat(3, auto);
     }
-    .projectSlideshow1 {
-        border-radius: 120px;
-        width: 300px;
-        height: 400px;
-        object-fit: cover;
-        z-index: 90;
-        transform: rotate(15deg);
-        top: -100px;
-        left: 50%;
+  }
+  .projectDesc {
+    width: 50%;
+    margin: 0 auto;
+  }
+  p:last-child {
+    margin-top: 60px;
+  }
+  p {
+    span {
+      position: relative;
     }
-    .projectSlideshow2 {
-        height: 500px;
-        border-radius: 32px;
-        border: 1px solid $darkGreen;
-        top: -150px;
-        left: 30%;
+    span::after {
+      content: "";
+      position: absolute;
+      content: "";
+      background-color: $happyYellow;
+      height: 2px;
+      width: 50px;
+      bottom: -8px;
+      left: calc(50% - 25px);
+      display: block;
     }
-    .arrowLeft {
-        width: 60px;
-        top: 20%;
-        left: 18%
-    }
-    .arrowRight {
-        width: 70px;
-        top: 18%;
-        right: 18%;
-    }
-    .prev,
-    .next {
-        top: 14%;
-    }
-    .prev:hover,
-    .next:hover {
-        cursor: pointer;
-    }
-    .prev {
-        left: 19%
-    }
-    .next {
-        right: 19.5%;
-    }
-    .featuredDescriptions {
-        display: flex;
-        justify-content: center;
-        ul {
-            padding-top: 270px;
-            display: grid;
-            grid-template-columns: repeat(6, auto);
-            gap: 30px;
-        }
-        ul.shortSkillList{
-            grid-template-columns: repeat(3, auto);
-        }
-    }
-    .projectDesc {
-        width: 50%;
-        margin: 0 auto;
-    }
-    p:last-child {
-        margin-top: 60px;
-    }
-    p {
-        span {
-            position: relative;
-        }
-        span::after {
-            content: '';
-            position: absolute;
-            content: '';
-            background-color: $happyYellow;
-            height: 2px;
-            width: 50px;
-            bottom: -8px;
-            left: calc(50% - 25px);
-            display: block;
-        }
-    }
+  }
 }
 
 // Media queries
 @media (max-width: 1280px) {
-    .headshot {
-        right: -10%;
-    }
-    footer h2 {
-        width: 70%;
-    }
+  .headshot {
+    right: -10%;
+  }
+  footer h2 {
+    width: 70%;
+  }
 }
 
 @media (max-width: 1090px) {
-    h1 {
-        font-size: 15rem;
+  h1 {
+    font-size: 15rem;
+  }
+  h2 {
+    font-size: 9rem;
+  }
+  header.home {
+    .yellowCircle {
+      height: 700px;
+      width: 700px;
+      left: -100px;
     }
-    h2 {
-        font-size: 9rem;
+    .arrowDown {
+      right: 10%;
     }
-    header.home {
-        .yellowCircle {
-            height: 700px;
-            width: 700px;
-            left: -100px;
-        }
-        .arrowDown {
-        right: 10%;
-        }
+  }
+  .featuredSlideshow {
+    .next {
+      right: 13%;
     }
-    .featuredSlideshow {
-        .next {
-            right: 13%;
-        }
-        .arrowRight {
-            right: 11%;
-        }
-        .projectSlideshow2 {
-            height: 400px;
-        }
+    .arrowRight {
+      right: 11%;
     }
-    .aboutLine3 {
-        span.developer::after {
-        background-size: 450px;
-        left: -20px;
-        }
+    .projectSlideshow2 {
+      height: 400px;
     }
+  }
+  .aboutLine3 {
+    span.developer::after {
+      background-size: 450px;
+      left: -20px;
+    }
+  }
 }
 
 @media (max-width: 940px) {
-    header.home {
-        .arrowDown {
-        right: 6%;
-        bottom: 10%;
-        width: 50px;
-        }
+  header.home {
+    .arrowDown {
+      right: 6%;
+      bottom: 10%;
+      width: 50px;
     }
-    h2 {
-        font-size: 8rem;
+  }
+  h2 {
+    font-size: 8rem;
+  }
+  .aboutLine1 {
+    grid-template-columns: 3fr 2.5fr;
+  }
+  .aboutLine3 {
+    .arrowDown1,
+    .arrowDown2 {
+      width: 50px;
     }
-    .aboutLine1 {
-        grid-template-columns: 3fr 2.5fr;
+  }
+  .featuredSlideshow {
+    .projectSlideshow1 {
+      width: 250px;
+      height: 350px;
     }
-    .aboutLine3 {
-        .arrowDown1,
-        .arrowDown2 {
-        width: 50px;
-        }
+    .projectSlideshow2 {
+      height: 350px;
+      width: auto;
     }
-    .featuredSlideshow {
-        .projectSlideshow1 {
-            width: 250px;
-            height: 350px;
-        }
-        .projectSlideshow2 {
-            height: 350px;
-            width: auto;
-        }
-        .featuredDescriptions {
-            ul {
-                padding-top: 150px;
-            }
-        }
+    .featuredDescriptions {
+      ul {
+        padding-top: 150px;
+      }
     }
-    .featuredWork .featureTitle span::after {
-        background-size: 450px;
-        left: -40px;
-    }
-    footer span::after {
-        background-size: 260px;
-        top: -12px;
-        left: -30px;
-    }
+  }
+  .featuredWork .featureTitle span::after {
+    background-size: 450px;
+    left: -40px;
+  }
+  footer span::after {
+    background-size: 260px;
+    top: -12px;
+    left: -30px;
+  }
 }
 
 @media (max-width: 880px) {
-    .largeDisplay {
-        display: none;
+  .largeDisplay {
+    display: none;
+  }
+  .smallDisplay {
+    display: block;
+    width: 60%;
+  }
+  .aboutLine1 {
+    p:first-of-type {
+      display: none;
     }
-    .smallDisplay {
-        display: block;
-        width: 60%;
+  }
+  .aboutLine3 {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      margin-bottom: 50px;
     }
-    .aboutLine1 {
-        p:first-of-type {
-            display: none;
-        }
+    p:nth-of-type(2) {
+      margin: 10px 0 50px 0;
     }
-    .aboutLine3 {
-        display: flex;
-        flex-direction: column;
-        h2 {
-        margin-bottom: 50px;
-        }
-        p:nth-of-type(2) {
-            margin: 10px 0 50px 0;
-        }
-        p:nth-of-type(3) {
-            text-align: right;
-            margin-right: 200px;
-        }
-        span.readMore::after {
-            position: absolute;
-            content: '';
-            background-color: $happyYellow;
-            height: 2px;
-            width: 50px;
-            bottom: -8px;
-            left: calc(50% - 25px);
-            display: block;
-        }
-        .headshot {
-            top: 18%;
-            right: -6%;
-        }
+    p:nth-of-type(3) {
+      text-align: right;
+      margin-right: 200px;
     }
-    .featuredWork {
-        border-top-left-radius: 40%;
-        border-top-right-radius: 40%;
+    span.readMore::after {
+      position: absolute;
+      content: "";
+      background-color: $happyYellow;
+      height: 2px;
+      width: 50px;
+      bottom: -8px;
+      left: calc(50% - 25px);
+      display: block;
     }
-    .featuredSlideshow {
-        padding-top: 0;
-        .projectSlideshow1 {
-            width: 250px;
-            height: 350px;
-        }
+    .headshot {
+      top: 18%;
+      right: -6%;
     }
+  }
+  .featuredWork {
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+  }
+  .featuredSlideshow {
+    padding-top: 0;
+    .projectSlideshow1 {
+      width: 250px;
+      height: 350px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-    header.home {
-        height: 70vh;
+  header.home {
+    height: 70vh;
+  }
+  .headerNav {
+    h4 {
+      margin-left: 50px;
     }
-    .headerNav {
-        h4 {
-            margin-left: 50px;
-        }
-        .fa-grip-lines {
-            margin-right: 50px;
-        }
+    .fa-grip-lines {
+      margin-right: 50px;
     }
-    h1 {
-        font-size: 12rem;
+  }
+  h1 {
+    font-size: 12rem;
+  }
+  header.home .yellowCircle {
+    height: 600px;
+    width: 600px;
+  }
+  h2 {
+    font-size: 7rem;
+  }
+  .aboutLine3 {
+    .headshot {
+      top: 35%;
+      width: 160px;
+      height: auto;
     }
-    header.home .yellowCircle {
-        height: 600px;
-        width: 600px;
+    span.developer::after {
+      background-size: 370px;
+      left: -10px;
+      top: -30px;
     }
-    h2 {
-        font-size: 7rem;
+  }
+  .featuredWork {
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    .featureTitle span::after {
+      background-size: 350px;
+      left: -10px;
+      top: -30px;
+      width: 351px;
+      height: 200px;
     }
-    .aboutLine3 {
-        .headshot {
-            top: 35%;
-            width: 160px;
-            height: auto;
-        }
-        span.developer::after {
-            background-size: 370px;
-            left: -10px;
-            top: -30px;
-        }
+  }
+  .featuredSlideshow {
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    .projectSlideshow1 {
+      width: 200px;
+      height: 300px;
     }
-    .featuredWork {
-        border-top-left-radius: 30%;
-        border-top-right-radius: 30%;
-        .featureTitle span::after {
-            background-size: 350px;
-            left: -10px;
-            top: -30px;
-            width: 351px;
-            height: 200px;
-        }
+    .projectSlideshow2 {
+      height: 300px;
+      left: 20%;
     }
-    .featuredSlideshow {
-        border-top-left-radius: 20%;
-        border-top-right-radius: 20%;
-        .projectSlideshow1 {
-            width: 200px;
-            height: 300px;
-        }
-        .projectSlideshow2 {
-            height: 300px;
-            left: 20%;
-        }
-        .arrowLeft {
-            left: 5%;
-        }
-        .prev {
-            left: 6%;
-        }
-        .arrowRight {
-            right: 5%;
-        }
-        .next {
-            right: 7%;
-        }
+    .arrowLeft {
+      left: 5%;
     }
-    footer span::after {
-        background-size: 220px;
+    .prev {
+      left: 6%;
     }
+    .arrowRight {
+      right: 5%;
+    }
+    .next {
+      right: 7%;
+    }
+  }
+  footer span::after {
+    background-size: 220px;
+  }
 }
 
 @media (max-width: 620px) {
-    header.home {
-        .yellowCircle {
-            height: 500px;
-            width: 500px;
-        }
-        .purpleCircle {
-            height: 250px;
-            width: 250px;
-            top: -150px;
-        }
-        .arrowDown {
-            bottom: 30%;
-        }
+  header.home {
+    .yellowCircle {
+      height: 500px;
+      width: 500px;
     }
-    h1 {
-        font-size: 10rem;
+    .purpleCircle {
+      height: 250px;
+      width: 250px;
+      top: -150px;
     }
-    h2 {
-        font-size: 6rem;
+    .arrowDown {
+      bottom: 30%;
     }
-    .aboutLine2 h2 {
-        margin-left: 100px;
+  }
+  .title .tagline {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 10rem;
+  }
+  h2 {
+    font-size: 6rem;
+  }
+  .aboutLine2 h2 {
+    margin-left: 100px;
+  }
+  .aboutLine3 {
+    .arrowDown1 {
+      bottom: 1px;
+      right: 10px;
     }
-    .aboutLine3 {
-        .arrowDown1 {
-            bottom: 1px;
-            right: 10px;
-        }
-        .arrowDown2 {
-            bottom: -20px;
-            right: 40px;
-        }
-        span.developer::after {
-            background-size: 300px;
-            left: -10px;
-            top: -20px;
-        }
+    .arrowDown2 {
+      bottom: -20px;
+      right: 40px;
     }
-    .featuredSlideshow {
-        .projectSlideshow1 {
-            left: 45%;
-        }
-        .projectSlideshow2 {
-            left: 20%;
-        }
-        .projectDesc {
-            width: 70%;
-        }
+    span.developer::after {
+      background-size: 300px;
+      left: -10px;
+      top: -20px;
     }
-    footer {
-        span::after {
-            background-size: 200px;
-        }
-        .footerNav ul {
-            gap: 10px;
-        }
+  }
+  .featuredSlideshow {
+    .projectSlideshow1 {
+      left: 45%;
     }
+    .projectSlideshow2 {
+      left: 20%;
+    }
+    .projectDesc {
+      width: 70%;
+    }
+  }
+  footer {
+    span::after {
+      background-size: 200px;
+    }
+    .footerNav ul {
+      gap: 10px;
+    }
+  }
 }
 
 @media (max-width: 540px) {
-    h1 {
-        font-size: 8rem;
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  .aboutLine3 {
+    span.developer::after {
+      background-size: 250px;
     }
-    h2 {
-        font-size: 5rem;
+  }
+  .featuredWork {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    .featureTitle span::after {
+      background-size: 250px;
+      top: -20px;
     }
-    .aboutLine3 {
-        span.developer::after {
-            background-size: 250px;
-        }
+  }
+  .featuredSlideshow {
+    .projectSlideshow1 {
+      left: 40%;
     }
-    .featuredWork {
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
-        .featureTitle span::after {
-            background-size: 250px;
-            top: -20px;
-        }
+    .projectSlideshow2 {
+      height: 250px;
     }
-    .featuredSlideshow {
-        .projectSlideshow1 {
-            left: 40%;
-        }
-        .projectSlideshow2 {
-            height: 250px;
-        }
+  }
+  footer {
+    .smallDisplayEmail {
+      display: inherit;
     }
-    footer {
-        .smallDisplayEmail {
-            display: inherit;
-        }
-        .largeDisplayEmail {
-            display: none;
-        }
-        span::after {
-            background-size: 170px;
-        }
+    .largeDisplayEmail {
+      display: none;
     }
+    span::after {
+      background-size: 170px;
+    }
+  }
 }
 
 @media (max-width: 450px) {
-    .aboutLine3 {
-        .arrowDown1 {
-            bottom: -10px;
-        }
-        .arrowDown2 {
-            bottom: -30px;
-        }
-        .featuredSlideshow {
-            .projectSlideshow1 {
-                width: 150px;
-                height: 250px;
-            }
-        }
-        footer h2 {
-            padding-top: 50px;
-            padding-bottom: 100px;
-        }
+  .aboutLine3 {
+    .arrowDown1 {
+      bottom: -10px;
     }
+    .arrowDown2 {
+      bottom: -30px;
+    }
+    .featuredSlideshow {
+      .projectSlideshow1 {
+        width: 150px;
+        height: 250px;
+      }
+    }
+    footer h2 {
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+  }
 }
 
 @media (max-width: 415px) {
-    .headerNav {
-        h4 {
-        margin-left: 20px;
-        }
-        .fa-grip-lines {
-        margin-right: 20px;
-        }
+  .headerNav {
+    h4 {
+      margin-left: 20px;
     }
-    h1 {
+    .fa-grip-lines {
+      margin-right: 20px;
+    }
+  }
+  h1 {
     font-size: 6.3rem;
+  }
+  header.home {
+    .yellowCircle {
+      height: 400px;
+      width: 400px;
     }
-    header.home {
-        .yellowCircle {
-            height: 400px;
-            width: 400px;
-        }
-        .purpleCircle {
-            right: 0;
-        }
+    .purpleCircle {
+      right: 0;
     }
+  }
+  h2 {
+    font-size: 3.9rem;
+  }
+  .aboutLine2 {
     h2 {
-        font-size: 3.9rem;
+      margin-left: 50px;
     }
-    .aboutLine2 {
-        h2 {
-            margin-left: 50px;
-        }
+  }
+  .aboutLine3 {
+    .headshot {
+      width: 130px;
     }
-    .aboutLine3 {
-        .headshot {
-            width: 130px;
-        }
-        span.developer::after {
-            background-size: 220px;
-        }
-        .arrowDown1 {
-            bottom: -30px;
-        }
-        .arrowDown2 {
-            bottom: -50px;
-        }
+    span.developer::after {
+      background-size: 220px;
     }
-    .smallDisplay {
-        width: 55%;
+    .arrowDown1 {
+      bottom: -30px;
     }
-    .featuredWork {
-        .featureTitle span::after {
-            background-size: 200px;
-            top: -15px;
-        }
+    .arrowDown2 {
+      bottom: -50px;
     }
-    .featuredSlideshow {
-        margin-top: 250px;
-        .slideshowNum {
-            left: 45%;
-        }
-        .projectSlideshow1 {
-            width: 150px;
-            height: 250px;
-        }
-        .featuredDescriptions ul {
-            gap: 10px;
-            padding-top: 100px;
-        }
+  }
+  .smallDisplay {
+    width: 55%;
+  }
+  .featuredWork {
+    .featureTitle span::after {
+      background-size: 200px;
+      top: -15px;
     }
-    footer {
-        h2 {
-            padding-top: 50px;
-            padding-bottom: 100px;
-        }
-        span::after {
-            background-size: 130px;
-            left: -20px;
-            top: -10px;
-        }
-        .footerNav ul {
-            gap: 7px;
-        }
+  }
+  .featuredSlideshow {
+    margin-top: 250px;
+    .slideshowNum {
+      left: 45%;
     }
+    .projectSlideshow1 {
+      width: 150px;
+      height: 250px;
+    }
+    .featuredDescriptions ul {
+      gap: 10px;
+      padding-top: 100px;
+    }
+  }
+  footer {
+    h2 {
+      padding-top: 50px;
+      padding-bottom: 100px;
+    }
+    span::after {
+      background-size: 130px;
+      left: -20px;
+      top: -10px;
+    }
+    .footerNav ul {
+      gap: 7px;
+    }
+  }
 }
 
 @media (max-width: 365px) {
-    .aboutBlurb h2 {
-        font-size: 3.3rem;
-    }
-    .aboutLine3 span.developer::after {
-        background-size: 200px;
-    }
+  .aboutBlurb h2 {
+    font-size: 3.3rem;
+  }
+  .aboutLine3 span.developer::after {
+    background-size: 200px;
+  }
 }

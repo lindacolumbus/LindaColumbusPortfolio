@@ -1,196 +1,196 @@
 .headerNav {
-    ul {
+  ul {
     width: 100%;
     height: 60px;
     display: grid;
     grid-template-columns: 5fr repeat(4, 1fr);
     border-bottom: 1px solid $darkGreen;
-    }
-    li {
+  }
+  li {
     display: flex;
     align-items: center;
     margin-top: 5px;
-    }
-    h4 {
+  }
+  h4 {
     margin-left: 100px;
-    }
+  }
 }
 
 .fa-grip-lines {
-    color: $darkGreen;
-    font-size: 2.5rem;
-    margin-right: 100px;
+  color: $darkGreen;
+  font-size: 2.5rem;
+  margin-right: 100px;
 }
 
 // Modal display
 .modal {
-    display: none;
+  display: none;
 }
 .visible {
-    background: $backgroundColor;
-    display: block;
-    height: 100vh;
-    width: 100vw;
+  background: $backgroundColor;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  .closeModal {
     position: absolute;
     top: 0;
-    left: 0;
-    z-index: 500;
-    .closeModal {
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin: 50px 100px;
+    right: 0;
+    margin: 50px 100px;
+  }
+  .closeModal::before {
+    content: "";
+    position: absolute;
+    background-image: url("../assets/Circle.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 201px;
+    height: 201px;
+    top: -15px;
+    left: -50px;
+    background-size: 150px;
+  }
+  ul {
+    margin: 50px 0 0 50px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 50px;
+    li:nth-child(2) {
+      margin-left: 100px;
     }
-    .closeModal::before {
-        content: '';
-        position: absolute;
-        background-image: url('../assets/Circle.svg');
-        background-repeat: no-repeat;
-        display: block;
-        width: 201px;
-        height: 201px;
-        top: -15px;
-        left: -50px;
-        background-size: 150px;
-        }
-    ul {
-        margin: 50px 0 0 50px;
-        display: grid;
-        grid-template-rows: repeat(4, 1fr);
-        gap: 50px;
-        li:nth-child(2) {
-            margin-left: 100px;
-        }
-        li:nth-child(3) {
-            margin-left: 200px;
-        }
-        li:nth-child(4) {
-            margin-left: 300px;
-        }
+    li:nth-child(3) {
+      margin-left: 200px;
     }
-        h2 {
-            position: relative;
-        }
-        // background colour circles
-        li:first-of-type::before,
-        li:last-of-type::after,
-        li:nth-of-type(3)::after {
-            content: '';
-            position: absolute;
-            border-radius: 100%;
-            z-index: -1;
-        }
-        li:first-of-type::before {
-            height: 300px;
-            width: 300px;
-            background-color: $babyGreen;
-            top: -30%;
-            left: -5%;
-        }
-        li:nth-of-type(3)::after {
-            height: 500px;
-            width: 500px;
-            background-color: $darkSand;
-            top: -30%;
-            right: -5%;
-        }
-        li:last-of-type::after {
-        height: 400px;
-        width: 400px;
-        background-color: $babyLilac;
-        bottom: 0;
-        left: 10%;
-        }
+    li:nth-child(4) {
+      margin-left: 300px;
+    }
+  }
+  h2 {
+    position: relative;
+  }
+  // background colour circles
+  li:first-of-type::before,
+  li:last-of-type::after,
+  li:nth-of-type(3)::after {
+    content: "";
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+  }
+  li:first-of-type::before {
+    height: 300px;
+    width: 300px;
+    background-color: $babyGreen;
+    top: -30%;
+    left: -5%;
+  }
+  li:nth-of-type(3)::after {
+    height: 500px;
+    width: 500px;
+    background-color: $darkSand;
+    top: -30%;
+    right: -5%;
+  }
+  li:last-of-type::after {
+    height: 400px;
+    width: 400px;
+    background-color: $babyLilac;
+    bottom: 0;
+    left: 10%;
+  }
 }
 
 // Nav bar & modal media queries
 .headerNav .smallDisplay {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 940px) {
-    // Modal
-    .visible ul {
-        li:last-of-type::after {
-            bottom: 20%;
-            height: 300px;
-            width: 300px;
-        }
+  // Modal
+  .visible ul {
+    li:last-of-type::after {
+      bottom: 20%;
+      height: 300px;
+      width: 300px;
     }
+  }
 }
 
 @media (max-width: 768px) {
-    .headerNav {
-        .largeDisplay {
-            display: none;
-        }
-        .smallDisplay {
-            display: block;
-            width: 100%;
-            justify-content: end;
-            margin: auto 0;
-            text-align: right;
-        }
-        ul {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
+  .headerNav {
+    .largeDisplay {
+      display: none;
     }
-    .visible ul {
-        li:nth-of-type(3)::after {
-            right: -25%;
-        }
-        li:last-of-type::after {
-            bottom: 30%;
-            left: -30%;
-        }
+    .smallDisplay {
+      display: block;
+      width: 100%;
+      justify-content: end;
+      margin: auto 0;
+      text-align: right;
     }
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .visible ul {
+    li:nth-of-type(3)::after {
+      right: -25%;
+    }
+    li:last-of-type::after {
+      bottom: 30%;
+      left: -30%;
+    }
+  }
 }
 
 @media (max-width: 620px) {
-    .visible ul {
-        li:nth-child(2) {
-            margin-left: 50px;
-        }
-        li:nth-child(3) {
-            margin-left: 150px;
-        }
-        li:nth-child(4) {
-            margin-left: 200px;
-        }
+  .visible ul {
+    li:nth-child(2) {
+      margin-left: 50px;
     }
+    li:nth-child(3) {
+      margin-left: 150px;
+    }
+    li:nth-child(4) {
+      margin-left: 200px;
+    }
+  }
 }
 
 @media (max-width: 540px) {
-    .visible {
-        h2 {
-            font-size: 6rem;
-        }
-        ul {
-            margin-top: 100px;
-            li:nth-child(2),
-            li:nth-child(3),
-            li:nth-child(4) {
-                margin-left: 0;
-            }
-            li:nth-of-type(3)::after {
-            top: 0;
-            right: -55%;
-            }
-        }
+  .visible {
+    h2 {
+      font-size: 6rem;
     }
+    ul {
+      margin-top: 100px;
+      li:nth-child(2),
+      li:nth-child(3),
+      li:nth-child(4) {
+        margin-left: 0;
+      }
+      li:nth-of-type(3)::after {
+        top: 0;
+        right: -55%;
+      }
+    }
+  }
 }
 
 @media (max-width: 450px) {
-    .visible ul {
-        li:first-of-type::before {
-            left: -35%;
-        }
-        li:nth-of-type(3)::after {
-            right: -90%;
-        }
-        li:last-of-type::after {
-            left: -60%;
-        }
+  .visible ul {
+    li:first-of-type::before {
+      left: -35%;
     }
+    li:nth-of-type(3)::after {
+      right: -90%;
+    }
+    li:last-of-type::after {
+      left: -60%;
+    }
+  }
 }

@@ -1,388 +1,398 @@
 body.projects {
-    background-color: $sand;
+  background-color: $sand;
 }
 
 .projectIntro {
-    width: 70%;
-    margin-top: 70px;
-    text-align: center;
-    position: relative;
-    margin-bottom: 500px;
-    h2 {
-        font-size: 11rem;
-    }
-    img {
-        border-radius: 100%;
-        width: 700px;
-        aspect-ratio: 1/1;
-        object-fit: cover;
-        position: absolute;
-        z-index: -1;
-        top: 5%;
-        left: calc(50% - 350px);
-    }
+  width: 70%;
+  margin-top: 70px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 500px;
+  h2 {
+    font-size: 11rem;
+  }
+  img {
+    border-radius: 100%;
+    width: 700px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 5%;
+    left: calc(50% - 350px);
+  }
 }
 
 .tasteMakerBackground {
-    background-image: url('https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?auto=format&fit=crop&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1169');
-    background-position: top;
-    margin-top: 80px;
+  background-image: url("https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?auto=format&fit=crop&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=1169");
+  background-position: top;
+  margin-top: 80px;
 }
 
 .doSomethingBackground {
-    background-image: url('https://images.unsplash.com/photo-1551818567-d49550a81408?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80');
-    background-position: 0 85%;
-    margin-top: -200px;
+  background-image: url("https://images.unsplash.com/photo-1551818567-d49550a81408?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
+  background-position: 0 85%;
+  margin-top: -200px;
 }
 
 .weatherScoutBackground {
-    background-image: url('https://images.unsplash.com/photo-1496450681664-3df85efbd29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
-    background-position: bottom;
-    margin-top: -200px;
+  background-image: url("https://images.unsplash.com/photo-1496450681664-3df85efbd29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  background-position: bottom;
+  margin-top: -200px;
 }
 
 .deliciousBackground {
-    background-image: url('https://deliciousdesign.netlify.app/assets/home-1.jpeg');
-    margin-top: -200px;
+  background-image: url("https://deliciousdesign.netlify.app/assets/home-1.jpeg");
+  margin-top: -200px;
 }
 
 .tasteMakerBackground,
 .doSomethingBackground,
 .weatherScoutBackground,
 .deliciousBackground {
-    background-size: cover;
-    height: 800px;
-    border-radius: 100px;
+  background-size: cover;
+  height: 800px;
+  border-radius: 100px;
 }
 
 .tasteMakerInfo {
-    background-color: $babyLilac;
-    ul.tagline {
-        grid-template-columns: repeat(6, 1fr);
-        width: 50%;
-    }
+  background-color: $babyLilac;
+  ul.tagline {
+    grid-template-columns: repeat(6, 1fr);
+    width: 50%;
+  }
 }
 
 .doSomethingInfo {
-    background-color: $babyGreen;
-    ul.tagline {
-        grid-template-columns: repeat(4, 1fr);
-        width: 50%;
-    }
+  background-color: $babyGreen;
+  ul.tagline {
+    grid-template-columns: repeat(4, 1fr);
+    width: 50%;
+  }
 }
 
 .weatherScoutInfo {
-    background-color: $sand;
-    ul.tagline {
-        grid-template-columns: repeat(5, 1fr);
-        width: 40%;
-    }
+  background-color: $sand;
+  ul.tagline {
+    grid-template-columns: repeat(5, 1fr);
+    width: 40%;
+  }
 }
 
 .deliciousInfo {
-    background-color: $babyLilac;
-    ul.tagline {
-        grid-template-columns: repeat(3, 1fr);
-        width: 30%;
-    }
+  background-color: $babyLilac;
+  ul.tagline {
+    grid-template-columns: repeat(3, 1fr);
+    width: 30%;
+  }
 }
 
 .tasteMakerInfo,
 .doSomethingInfo,
 .weatherScoutInfo,
 .deliciousInfo {
-    height: 950px;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    margin-top: -550px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    ul.tagline{
-        padding-top: 120px;
-        display: grid;
-        text-align: center;
+  height: 950px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  margin-top: -550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ul.tagline {
+    padding-top: 120px;
+    display: grid;
+    text-align: center;
+  }
+  div {
+    position: relative;
+    p {
+      position: absolute;
+      top: 54px;
+      left: -80px;
     }
-    div {
-        position: relative;
-        p {
-            position: absolute;
-            top: 54px;
-            left: -80px;
-        }
+  }
+  h2 {
+    margin: 50px 0 30px 0;
+  }
+  p:nth-child(3) {
+    width: 30%;
+    text-align: center;
+  }
+  ul:nth-of-type(2) {
+    margin: 50px 0;
+  }
+  ul:nth-of-type(3) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    margin: 50px 0;
+    p {
+      position: relative;
     }
-    h2 {
-        margin: 50px 0 30px 0;
+    .linkOne::after,
+    .linkTwo::after {
+      position: absolute;
+      content: "";
+      background-color: $happyYellow;
+      height: 2px;
+      width: 50px;
+      bottom: -10px;
+      display: block;
     }
-    p:nth-child(3) {
-        width: 30%;
-        text-align: center;
+    .linkOne::after {
+      left: 2px;
     }
-    ul:nth-of-type(2) {
-        margin: 50px 0;
+    .linkTwo::after {
+      left: 30%;
     }
-    ul:nth-of-type(3) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 150px;
-        margin: 50px 0;
-        p {
-            position: relative;
-        }
-        .linkOne::after,
-        .linkTwo::after {
-            position: absolute;
-            content: '';
-            background-color: $happyYellow;
-            height: 2px;
-            width: 50px;
-            bottom: -10px;
-            left: 2px;
-            display: block;
-        }
-    }
+  }
 }
 
 footer.projects {
-    margin-top: -200px;
+  margin-top: -200px;
 }
 
 // Media queries
 @media (max-width: 1280px) {
-    main.projects {
-        h2 {
-            font-size: 9rem;
-        }
-        .projectIntro img {
-            top: 0;
-            height: 600px;
-            left: calc(50% - 300px);
-        }
-        > section {
-            margin-top: -650px;
-        }
-        .doSomethingBackground,
-        .weatherScoutBackground,
-        .deliciousBackground {
-            margin-top: -250px;
-        }
-        .deliciousBackground {
-            background-size: contain;
-        }
-        .doSomethingBackground {
-            background-position: bottom;
-        }
+  main.projects {
+    h2 {
+      font-size: 9rem;
     }
-    footer.projects {
-        margin-top: -250px;
+    .projectIntro img {
+      top: 0;
+      height: 600px;
+      left: calc(50% - 300px);
     }
+    > section {
+      margin-top: -650px;
+    }
+    .doSomethingBackground,
+    .weatherScoutBackground,
+    .deliciousBackground {
+      margin-top: -250px;
+    }
+    .deliciousBackground {
+      background-size: contain;
+    }
+    .doSomethingBackground {
+      background-position: bottom;
+    }
+  }
+  footer.projects {
+    margin-top: -250px;
+  }
 }
 
 @media (max-width: 1090px) {
-    main.projects {
-        .projectIntro {
-        width: 80%;
-        h2 {
-            font-size: 8rem;
-        }
-        }
-        .tasteMakerInfo p:nth-child(3),
-        .doSomethingInfo p:nth-child(3), 
-        .weatherScoutInfo p:nth-child(3), 
-        .deliciousInfo p:nth-child(3) {
-            width: 60%;
-        }
-        .tasteMakerInfo div p, 
-        .doSomethingInfo div p, 
-        .weatherScoutInfo div p, 
-        .deliciousInfo div p {
-            left: -30px;
-        }
+  main.projects {
+    .projectIntro {
+      width: 80%;
+      h2 {
+        font-size: 8rem;
+      }
     }
+    .tasteMakerInfo p:nth-child(3),
+    .doSomethingInfo p:nth-child(3),
+    .weatherScoutInfo p:nth-child(3),
+    .deliciousInfo p:nth-child(3) {
+      width: 60%;
+    }
+    .tasteMakerInfo div p,
+    .doSomethingInfo div p,
+    .weatherScoutInfo div p,
+    .deliciousInfo div p {
+      left: -30px;
+    }
+  }
 }
 
 @media (max-width: 940px) {
-    main.projects {
-        .projectIntro {
-            width: 90%;
-            img {
-                width: 500px;
-                left: calc(50% - 250px);
-            }
-            :nth-child(3) {
-                margin-top: 300px;
-            }
-        }
+  main.projects {
+    .projectIntro {
+      width: 90%;
+      img {
+        width: 500px;
+        left: calc(50% - 250px);
+      }
+      :nth-child(3) {
+        margin-top: 300px;
+      }
     }
+  }
 }
 
 @media (max-width: 880px) {
-    main.projects {
-        .projectIntro {
-            h2 {
-                font-size: 7rem;
-            }
-        }
-        .doSomethingBackground {
-            background-position: top;
-        }
-        .tasteMakerInfo, 
-        .doSomethingInfo, 
-        .weatherScoutInfo, 
-        .deliciousInfo {
-            border-top-left-radius: 150px;
-            border-top-right-radius: 150px;
-        }
+  main.projects {
+    .projectIntro {
+      h2 {
+        font-size: 7rem;
+      }
     }
+    .doSomethingBackground {
+      background-position: top;
+    }
+    .tasteMakerInfo,
+    .doSomethingInfo,
+    .weatherScoutInfo,
+    .deliciousInfo {
+      border-top-left-radius: 150px;
+      border-top-right-radius: 150px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
-    main.projects {
-        ul.tagline {
-            width: 80%;
-        }
+  main.projects {
+    ul.tagline {
+      width: 80%;
     }
-    // .doSomethingBackground {
-    //         background-position: top;
-    //     }
-    .tasteMakerInfo,
-    .doSomethingInfo,
-    .weatherScoutInfo,
-    .deliciousInfo {
-        ul:nth-of-type(2) {
-            width: 80%;
-        }
-        ul:nth-of-type(3) {
-        margin: 0;
-        }
+  }
+  .tasteMakerInfo,
+  .doSomethingInfo,
+  .weatherScoutInfo,
+  .deliciousInfo {
+    ul:nth-of-type(2) {
+      width: 80%;
     }
+    ul:nth-of-type(3) {
+      margin: 0;
+    }
+  }
 }
 
 @media (max-width: 620px) {
-    main.projects {
-        h2 {
-            font-size: 5rem;
-        }
-        .weatherScoutBackground,
-        .deliciousBackground {
-        margin-top: -300px;
-        }
-        .projectIntro {
-            margin-bottom: 400px;
-            h2 {
-                font-size: 5rem;
-            }
-            img {
-                width: 400px;
-                height: 500px;
-                left: calc(50% - 200px);
-                top: -50px;
-            }
-            :nth-child(3) {
-                margin-top: 200px;
-            }
-        }
-        .tasteMakerInfo ul.tagline {
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-        }
+  main.projects {
+    h2 {
+      font-size: 5rem;
     }
-    footer.projects {
-        margin-top: -300px;
+    .weatherScoutBackground,
+    .deliciousBackground {
+      margin-top: -300px;
     }
+    .projectIntro {
+      margin-bottom: 400px;
+      h2 {
+        font-size: 5rem;
+      }
+      img {
+        width: 400px;
+        height: 500px;
+        left: calc(50% - 200px);
+        top: -50px;
+      }
+      :nth-child(3) {
+        margin-top: 200px;
+      }
+    }
+    .tasteMakerInfo ul.tagline {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+  }
+  footer.projects {
+    margin-top: -300px;
+  }
 }
 
 @media (max-width: 540px) {
-    main.projects {
-        .projectIntro {
-            width: 90%;
-            :nth-child(3) {
-                margin-top: 260px;
-            }
-        }
-        .doSomethingBackground {
-            margin-top: -200px;
-        }
-        .weatherScoutBackground {
-            margin-top: -275px;
-        }
+  main.projects {
+    .projectIntro {
+      width: 90%;
+      :nth-child(3) {
+        margin-top: 260px;
+      }
+    }
+    .doSomethingBackground {
+      margin-top: -200px;
+    }
+    .weatherScoutBackground {
+      margin-top: -275px;
+    }
+  }
+  .tasteMakerInfo,
+  .doSomethingInfo,
+  .weatherScoutInfo,
+  .deliciousInfo {
+    ul:nth-of-type(2) {
+      li {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  main.projects {
+    .projectIntro {
+      img {
+        width: 350px;
+        left: calc(50% - 175px);
+        height: 450px;
+        top: 0;
+      }
+    }
+    .doSomethingBackground {
+      margin-top: -175px;
+    }
+  }
+  .tasteMakerInfo,
+  .doSomethingInfo,
+  .weatherScoutInfo,
+  .deliciousInfo {
+    ul:nth-of-type(3) {
+      gap: 0;
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  main.projects {
+    .projectIntro {
+      margin-bottom: 320px;
+      img {
+        width: 300px;
+        height: 400px;
+        left: calc(50% - 150px);
+        top: 40px;
+      }
+      :nth-child(3) {
+        margin-top: 170px;
+      }
     }
     .tasteMakerInfo,
     .doSomethingInfo,
     .weatherScoutInfo,
     .deliciousInfo {
-        ul:nth-of-type(2) {
-            li {
-                margin: 10px 0;
-            }
-        }
+      border-top-left-radius: 100px;
+      border-top-right-radius: 100px;
     }
-}
-
-@media (max-width: 450px) {
-    main.projects {
-        .projectIntro {
-            img {
-                width: 350px;
-                left: calc(50% - 175px);
-                height: 450px;
-                top: 0;
-            }
-        }
-        .doSomethingBackground {
-            margin-top: -175px;
-        }
+    .doSomethingBackground {
+      margin-top: -125px;
     }
-}
-
-@media (max-width: 415px) {
-    main.projects {
-        .projectIntro {
-            margin-bottom: 320px;
-            img {
-                width: 300px;
-                height: 400px;
-                left: calc(50% - 150px);
-                top: 40px;
-            }
-            :nth-child(3) {
-                margin-top: 170px;
-            }
-        }
-        .tasteMakerInfo,
-        .doSomethingInfo,
-        .weatherScoutInfo,
-        .deliciousInfo {
-            border-top-left-radius: 100px;
-            border-top-right-radius: 100px;
-        }
-        .doSomethingBackground {
-            margin-top: -125px;
-        }
-        .doSomethingInfo {
-            h2 {
-                font-size: 4rem;
-            }
-        }
-        .weatherScoutInfo {
-            ul.tagline {
-                width: 90%;
-            }
-            h2 {
-                font-size: 3.9rem;
-            }
-            div p {
-                left: -20px;
-            }
-        }
-        .weatherScoutBackground {
-            margin-top: -225px;
-        }
-        .deliciousBackground {
-            margin-top: -280px;
-        }
+    .doSomethingInfo {
+      h2 {
+        font-size: 4rem;
+      }
     }
-    footer.projects {
-        margin-top: -250px;
+    .weatherScoutInfo {
+      ul.tagline {
+        width: 90%;
+      }
+      h2 {
+        font-size: 3.9rem;
+      }
+      div p {
+        left: -20px;
+      }
     }
+    .weatherScoutBackground {
+      margin-top: -225px;
+    }
+    .deliciousBackground {
+      margin-top: -280px;
+    }
+  }
+  footer.projects {
+    margin-top: -250px;
+  }
 }
